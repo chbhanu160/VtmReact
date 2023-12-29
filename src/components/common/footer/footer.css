@@ -1,5 +1,5 @@
 .newletter {
-  background-color: #1eb2a6;
+  background-color: #886cee;
   padding: 50px 0;
   color: #fff;
 }
@@ -27,7 +27,7 @@
 }
 .newletter i {
   padding: 12px;
-  color: #1eb2a6;
+  color: #101cc5;
   background-color: #fff;
 }
 footer {
@@ -43,16 +43,22 @@ footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-footer .logo span {
-  color: #1eb2a6;
+footer .logo img {
+  
+  max-width: 800px;
+  max-height:300px ;
+  display: flex;
+}
+/* footer .logo span {
+  color: #3e11e0;
   font-size: 14px;
 }
 footer .logo p {
   color: grey;
   margin: 30px 0 15px 0;
-}
+} */
 footer .logo .icon {
-  background-color: #1eb2a6;
+  background-color: #3a14e4;
   color: white;
   margin-right: 10px;
 }
@@ -65,7 +71,7 @@ footer ul li {
 }
 footer .link li::before {
   content: "⟶";
-  color: #1eb2a6;
+  color: #6b14cf;
   margin-right: 5px;
 }
 footer .items {
@@ -81,7 +87,7 @@ footer .items img {
 footer .items span,
 footer .items i {
   font-size: 12px;
-  color: #1eb2a6;
+  color: #5b15dd;
   margin-right: 5px;
   text-transform: capitalize;
 }
@@ -96,7 +102,7 @@ footer .last ul li {
 footer .last i {
   width: 60px;
   font-size: 20px;
-  color: #1eb2a6;
+  color: #461eb2;
 }
 .legal {
   text-align: center;
@@ -108,5 +114,5 @@ footer .last i {
   font-size: 15px;
 }
 .legal i {
-  color: #1eb2a6;
+  color: #380fee;
 }

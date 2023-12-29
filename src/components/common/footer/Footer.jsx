@@ -20,8 +20,7 @@ const Footer = () => {
       <footer>
         <div className='container padding'>
           <div className='box logo'>
-            <h1>ACADEMIA</h1>
-            <span>ONLINE EDUCATION & LEARNING</span>
+          <img src={require('./logo.png')} alt="vtm" />
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
 
             <i className='fab fa-facebook-f icon'></i>
@@ -42,7 +41,7 @@ const Footer = () => {
             <h3>Quick Links</h3>
             <ul>
               <li>Contact Us</li>
-              <li>Pricing</li>
+              <li>Gallery</li>
               <li>Terms & Conditions</li>
               <li>Privacy</li>
               <li>Feedbacks</li>
@@ -90,7 +89,7 @@ const Footer = () => {
       </footer>
       <div className='legal'>
         <p>
-          Copyright ©2022 All rights reserved | This template is made with <i className='fa fa-heart'></i> by GorkhCoder
+          Copyright ©2024 All rights reserved | VisionaryTechMate <i className='fa fa-heart'></i> 
         </p>
       </div>
     </>
