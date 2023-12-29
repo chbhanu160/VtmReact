@@ -3,26 +3,29 @@
   padding: 20px 0;
   color: #fff;
 }
-.logo h1 {
-  font-size: 35px;
-  font-weight: 900;
-}
-.logo img {
-  margin-top: -8rem;
-  margin-left: -5rem;
-  max-width: 800px;
-  max-height:400px ;
+
+#vtm_hlogo{
+  margin-top: -0.5rem;
+  margin-left: -8rem;
+  width: 100%;
+  height: 100%;
   display: block;
 }
+
+#social{
+  margin-right: -6rem;
+}
+
 .head .icon {
   margin-left: 10px;
 }
 /*--------head------------*/
 /*--------header------------*/
+
 header {
   background-color: rgba(255, 255, 255, 0.2);
   margin: 0 30px;
-  margin-top: -10rem;
+  margin-top: 2px;
 }
 header .nav {
   display: flex !important;
@@ -32,10 +35,11 @@ header li {
 }
 header ul {
   padding: 30px 20px;
+
 }
 header ul li a {
-  color: #fff;
-  font-weight: 500;
+  color: #0b0b0c;
+  font-weight: 700;
   transition: 0.5s;
 }
 header ul li a:hover {
@@ -44,7 +48,7 @@ header ul li a:hover {
 .start {
   background-color: #4c12d3;
   padding: 30px 70px;
-  color: #fff;
+  color: #ffffff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
 }
 .toggle {

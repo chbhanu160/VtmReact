@@ -30,6 +30,14 @@
   color: #101cc5;
   background-color: #fff;
 }
+#vtm_flogo{
+  margin-top: 18px;
+  margin-left: -4rem;
+  padding-bottom: 40px;
+  width: 220px;
+  height: 160px;
+  display: block;
+}
 footer {
   background-color: #eeeeee;
 }
