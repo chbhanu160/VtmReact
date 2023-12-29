@@ -8,7 +8,8 @@ const Header = () => {
 
   return (
     <>
-      <Head />
+   
+      <Head /> 
       <header>
         <nav className='flexSB'>
           <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
@@ -31,7 +32,7 @@ const Header = () => {
               <Link to='/journal'>Blog</Link>
             </li>
             <li>
-              <Link to='/contact'>Contactus</Link>
+              <Link to='/contact'>Contact Us</Link>
             </li>
           </ul>
           <div className='start'>
