@@ -29,6 +29,11 @@ header {
 }
 header .nav {
   display: flex !important;
+  justify-content: center;
+}
+#flex{
+  max-height: 100px;
+  padding-top: 10px;
 }
 header li {
   margin-right: 40px;
