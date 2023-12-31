@@ -1,0 +1,66 @@
+/* styles.css */
+
+/* Add some spacing from the navbar */
+.gallery-container {
+  max-width: 50vw; /* Set maximum width to half of the viewport width */
+  margin: 20px auto; /* Adjust the margin to create space from the navbar */
+}
+
+/* Style for the carousel images */
+.gallery-container img {
+  width: 100%; /* Make the images take up the full width of the container */
+  max-height: 150px; /* Set a maximum height for the images */
+  object-fit: cover; /* Maintain aspect ratio while covering the container */
+  margin: 0 10px; /* Add margin to create space between images */
+}
+
+/* Style for the next and previous buttons */
+.slick-prev,
+.slick-next {
+  font-size: 32px; /* Increase the font size of the buttons */
+  color: rgb(18, 39, 228);
+  background-color: #333;
+  padding: 15px; /* Increase the padding of the buttons */
+  border-radius: 100%;
+  z-index: 1;
+}
+
+/* Style for the dots (pagination) */
+.slick-dots {
+  text-align: center;
+  margin-top: 10px;
+}
+
+/* Style for individual dot */
+.slick-dots li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+/* Style for the active dot */
+.slick-dots li button:before {
+  color: #333;
+}
+
+/* Style for the track of the carousel */
+.slick-track {
+  display: flex;
+  align-items: center; /* Center the slides vertically */
+}
+
+/* Style for the slides within the carousel */
+.slick-slide {
+  transition: transform 0.5s;
+  box-sizing: border-box;
+}
+
+/* Additional styling for the container */
+.slick-list {
+  margin: 0 -15px; /* Adjust for potential negative margins */
+}
+
+/* Reset margin and padding for body and HTML */
+body, html {
+  margin: 0;
+  padding: 0;
+}
