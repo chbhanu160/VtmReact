@@ -1,3 +1,57 @@
+/* about.css */
+
+.about-container {
+  padding: 20px; /* Add padding for spacing */
+}
+
+h1 {
+  margin-bottom: 15px; /* Adjust the margin at the bottom of the h1 element */
+}
+
+.overview-box,
+.specialties-box {
+  border: 4px solid #3f12e2; /* Add a border */
+  padding: 25px; /* Add padding inside the box */
+  margin-top: 20px; /* Adjust margin at the top for spacing */
+  margin-bottom: 20px; /* Add margin at the bottom for spacing */
+  text-align: justify; /* Center the text within the box */
+  background-color: #f9f9f9; /* Add a background color */
+  border-radius: 8px; /* Add rounded corners */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+}
+
+.specialties-box h2 {
+  font-size: 1.5rem; /* Adjust the font size of the heading */
+  margin-bottom: 20px; /* Add margin at the bottom of the heading */
+}
+
+.specialties-cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.specialty-card {
+  background-color: #fff;
+  border: 4px solid #1708e7;
+  border-radius: 8px;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.specialty-card:hover {
+  background-color: #2315e2;
+  color: white;
+}
+
+/* Additional styling for AboutCard */
+.about-card {
+  margin-top: 20px; /* Add margin at the top of the AboutCard */
+}
+
+
+
 .aboutHome {
   height: auto;
 }
@@ -37,7 +91,7 @@
   color: #999999;
 }
 .aboutHome .item:hover {
-  background-color: #1eb2a6;
+  background-color: #490feb;
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);

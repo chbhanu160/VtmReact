@@ -23,13 +23,16 @@ const Header = () => {
               <Link to='/about'>About</Link>
             </li>
             <li>
-              <Link to='/team'>Services</Link>
+              <Link to='/services'>Services</Link>
             </li>
             <li>
-              <Link to='/pricing'>Gallery</Link>
+              <Link to='/team'>Team</Link>
             </li>
             <li>
-              <Link to='/journal'>Blog</Link>
+              <Link to='/gallery'>Gallery</Link>
+            </li>
+            <li>
+              <Link to='/blog'>Blog</Link>
             </li>
             <li>
               <Link to='/contact'>Contact Us</Link>
