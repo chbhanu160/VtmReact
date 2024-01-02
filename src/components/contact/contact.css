@@ -1,8 +1,105 @@
-.contacts iframe {
+/* .contacts iframe {
   width: 100%;
   height: 100%;
   border: none;
+} */
+/* contact.css */
+
+.contacts {
+  background-color: #f9f9f9;
+  padding: 20px;
 }
+
+.container_con {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.left {
+  flex: 1;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+ background-color: #ddd;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.items {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.box {
+  flex: 1;
+  border: 3px solid #3c08cd;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+form {
+  flex: 1;
+  margin-top: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+#social {
+  margin-top: 20px;
+}
+
+.icon {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #333;
+}
+
+/* Additional styles for responsiveness */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+  .items,
+  form {
+    width: 100%;
+  }
+}
+
+
+
 .contacts .right {
   padding: 50px;
 }
@@ -11,7 +108,7 @@
   font-weight: 400;
 }
 .contacts p {
-  color: grey;
+  color: rgb(45, 14, 224);
 }
 .contacts .items {
   margin: 30px 0;
@@ -37,7 +134,7 @@ form .flexSB input:nth-child(1) {
   margin-bottom: 10px;
 }
 .contacts span {
-  color: #1eb2a6;
+  color: #f0eff3;
   font-weight: 600;
   font-size: 15px;
   word-spacing: 5px;
