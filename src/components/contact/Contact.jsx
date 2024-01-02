@@ -18,11 +18,11 @@ const Contact = () => {
             <p>We're open for any suggestion or just to have a chat</p>
 
             <div className='items grid2'>
-              <div className='box address-box'>
+              <div className='box_con address-box'>
                 <h4>ADDRESS:</h4>
                 <p>Sahkar Nagar, Khatipura road, jhotwara, Jaipur, Rajasthan - 302012</p>
               </div>
-              <div className='box email-phone-box'>
+              <div className='box_con email-phone-box'>
                 <div>
                   <h4>EMAIL:</h4>
                   <p> visionarytechmate@gmail.com</p>
