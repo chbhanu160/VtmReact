@@ -43,7 +43,7 @@ h1 {
   gap: 20px;
 }
 
-.box {
+.box_con {
   flex: 1;
   border: 3px solid #3c08cd;
   border-radius: 8px;
@@ -89,7 +89,7 @@ button:hover {
 
 /* Additional styles for responsiveness */
 @media (max-width: 768px) {
-  .container {
+  .container_con {
     flex-direction: column;
   }
   .items,
@@ -113,7 +113,7 @@ button:hover {
 .contacts .items {
   margin: 30px 0;
 }
-.contacts .box p {
+.contacts .box_con p {
   font-size: 17px;
   margin-top: 10px;
 }
@@ -140,7 +140,7 @@ form .flexSB input:nth-child(1) {
   word-spacing: 5px;
 }
 @media screen and (max-width: 768px) {
-  .contacts .container {
+  .contacts_con .container {
     flex-direction: column;
   }
   .contacts iframe {
