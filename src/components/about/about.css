@@ -10,12 +10,12 @@ h1 {
 
 .overview-box,
 .specialties-box {
-  border: 4px solid #3f12e2; /* Add a border */
+  border: 4px solid #fefdff; /* Add a border */
   padding: 25px; /* Add padding inside the box */
   margin-top: 20px; /* Adjust margin at the top for spacing */
   margin-bottom: 20px; /* Add margin at the bottom for spacing */
   text-align: justify; /* Center the text within the box */
-  background-color: #f9f9f9; /* Add a background color */
+  background-color: #b2afe3; /* Add a background color */
   border-radius: 8px; /* Add rounded corners */
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
@@ -23,6 +23,7 @@ h1 {
 .specialties-box h2 {
   font-size: 1.5rem; /* Adjust the font size of the heading */
   margin-bottom: 20px; /* Add margin at the bottom of the heading */
+  color: #0c0c0c;
 }
 
 .specialties-cards {
@@ -32,7 +33,7 @@ h1 {
 
 .specialty-card {
   background-color: #fff;
-  border: 4px solid #1708e7;
+  border: 4px solid #dbdbe0;
   border-radius: 8px;
   padding: 10px;
   margin: 5px;
