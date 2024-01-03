@@ -13,8 +13,9 @@
 /* Update the .container_con class to have rounded corners and space between rows */
 .container_con {
   display: flex;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 5px;
   border: 2px solid #ddd;
   border-radius: 15px; /* Increase border-radius for rounded corners */
   overflow: hidden; /* Ensure rounded corners are applied properly */
@@ -33,6 +34,7 @@
 .right {
   flex: 1;
   display: flex;
+  border-radius: 15px;
   flex-direction: column;
   background-color: #ddd;
   margin-left: 20px; /* Adjust the margin as needed */
