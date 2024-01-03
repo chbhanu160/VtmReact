@@ -24,6 +24,7 @@
 
 header {
   background-color: rgba(255, 255, 255, 0.2);
+  /* background-color:white; */
   margin: 0 30px;
   margin-top: 2px;
 }
@@ -48,10 +49,11 @@ header ul li a {
   transition: 0.5s;
 }
 header ul li a:hover {
-  color: #5d15e2;
+  /* color: #5#027Dffd15e2; */
+  color:#027Dff;
 }
 .start {
-  background-color: #4c12d3;
+  background-color:#027Dff;
   padding: 30px 70px;
   color: #ffffff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
@@ -66,7 +68,7 @@ header ul li a:hover {
   }
   header {
     margin: 0;
-    background-color: #5d15d1;
+    background-color:#027Dff;
     position: relative;
   }
   header ul.flexSB {
@@ -89,6 +91,6 @@ header ul li a:hover {
     top: 7vh;
     left: 0;
     width: 100%;
-    background-color: #330ce0;
+    background-color:#027Dff;
   }
 }

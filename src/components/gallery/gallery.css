@@ -18,7 +18,7 @@
 .slick-prev,
 .slick-next {
   font-size: 32px; /* Increase the font size of the buttons */
-  color: rgb(18, 39, 228);
+  color: #027Dff;
   background-color: #333;
   padding: 15px; /* Increase the padding of the buttons */
   border-radius: 100%;

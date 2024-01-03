@@ -10,14 +10,14 @@ h1 {
 
 .overview-box,
 .specialties-box {
-  border: 4px solid #fefdff; /* Add a border */
+  border: 4px solid #ebdef5; /* Add a border */
   padding: 25px; /* Add padding inside the box */
   margin-top: 20px; /* Adjust margin at the top for spacing */
   margin-bottom: 20px; /* Add margin at the bottom for spacing */
   text-align: justify; /* Center the text within the box */
-  background-color: #b2afe3; /* Add a background color */
+  /* background-color: #b2afe3; */
   border-radius: 8px; /* Add rounded corners */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  box-shadow: 0 10 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 
 .specialties-box h2 {
@@ -42,7 +42,7 @@ h1 {
 }
 
 .specialty-card:hover {
-  background-color: #2315e2;
+  background-color: #027Dff;
   color: white;
 }
 
@@ -92,7 +92,7 @@ h1 {
   color: #999999;
 }
 .aboutHome .item:hover {
-  background-color: #490feb;
+  background-color: #027Dff;
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
@@ -133,4 +133,10 @@ h1 {
   .awrapper {
     height: 50vh;
   }
+}
+
+#learn_anything{
+  color: #027Dff;
+  font-weight: 500;
+  font-size: 1.3rem;
 }

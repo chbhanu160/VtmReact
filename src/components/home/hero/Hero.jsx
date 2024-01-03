@@ -11,7 +11,7 @@ const Hero = () => {
             <Heading subtitle='Welcome to VisionaryTechMate' title='Best Online Education Expertise' />
             <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
             <div className='button'>
-              <button className='primary-btn'>
+              <button className='btn'>
                 GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
               </button>
               <button>
