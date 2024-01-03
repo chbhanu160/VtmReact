@@ -60,7 +60,7 @@ const About = () => {
           ))}
         </div>
       </div>
-      <AboutCard />
+      {/* <AboutCard /> */}
     </div>
   );
 };
