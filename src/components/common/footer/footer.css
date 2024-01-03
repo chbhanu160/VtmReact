@@ -1,5 +1,5 @@
 .newletter {
-  background-color: #886cee;
+  background-color: #027Dff;
   padding: 50px 0;
   color: #fff;
 }
@@ -27,7 +27,7 @@
 }
 .newletter i {
   padding: 12px;
-  color: #101cc5;
+  color: #027Dff;
   background-color: #fff;
 }
 #vtm_flogo{
@@ -66,7 +66,7 @@ footer .logo p {
   margin: 30px 0 15px 0;
 } */
 footer .logo .icon {
-  background-color: #3a14e4;
+  background-color: #027Dff;
   color: white;
   margin-right: 10px;
 }
@@ -79,7 +79,7 @@ footer ul li {
 }
 footer .link li::before {
   content: "⟶";
-  color: #6b14cf;
+  color: #027Dff;
   margin-right: 5px;
 }
 footer .items {
@@ -95,7 +95,7 @@ footer .items img {
 footer .items span,
 footer .items i {
   font-size: 12px;
-  color: #5b15dd;
+  color: #027Dff;
   margin-right: 5px;
   text-transform: capitalize;
 }
@@ -110,7 +110,7 @@ footer .last ul li {
 footer .last i {
   width: 60px;
   font-size: 20px;
-  color: #461eb2;
+  color: #027Dff;
 }
 .legal {
   text-align: center;
@@ -122,5 +122,5 @@ footer .last i {
   font-size: 15px;
 }
 .legal i {
-  color: #380fee;
+  color: #027Dff;
 }

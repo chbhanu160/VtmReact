@@ -7,7 +7,7 @@
 }
 body {
   font-family: "Roboto", sans-serif;
-  background-color: #b0b0ce;
+  /* background-color: #b0b0ce; */
 }
 /*------------global-----------*/
 .container {
@@ -134,7 +134,7 @@ p {
   transition: 0.5s;
 }
 .outline-btn:hover {
-  background-color: #600fca;
+  /* background-color: #600fca; */
   color: #fff;
 }
 .grid3 {

@@ -13,7 +13,8 @@ const AboutCard = () => {
             <img src='./images/about.webp' alt='' />
           </div>
           <div className='right row'>
-            <Heading subtitle='LEARN ANYTHING' title='Benefits About Online Learning Expertise' />
+         <p id="learn_anything">LEARN ANYTHING</p>
+            {/* <Heading subtitle='LEARN ANYTHING' title='Benefits About Online Learning Expertise'styles={{ color: '#027Dff' }} /> */}
             <div className='items'>
               {homeAbout.map((val) => {
                 return (
