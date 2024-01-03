@@ -11,6 +11,7 @@ const Contact = () => {
         <div className='container_con shadow flexSB'>
           <div className='left row'>
             {/* <iframe src={map}></iframe> */}
+            <img  src={require('./4.png')}  alt="contact" />
           </div>
 
           <div className='right row'>

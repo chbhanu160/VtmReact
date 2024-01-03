@@ -22,11 +22,12 @@ const Footer = () => {
           <div className='box logo'>
           <img  src={require('./logo.png')} id="vtm_flogo" alt="vtm" />
             <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-
+            <div id='social'>
             <a href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true" target="_new"><i className="fab fa-linkedin-in icon" ></i></a>
             <a href="https://www.facebook.com/profile.php?id=100088829731631" target="_new"><i className='fab fa-facebook-f icon'></i></a>
             <a href="https://www.instagram.com/cloud__talk/?igshid=OGU0MmVlOWVjOQ%3D%3D" target="_new"> <i className='fab fa-instagram icon'></i></a>
             <a href="https://www.youtube.com/channel/UC0xHeCcMjsHoPqup193_nNw" target="_new"><i className='fab fa-youtube icon'></i></a>
+          </div>
           </div>
           <div className='box link'>
             <h3>Explore</h3>
