@@ -8,20 +8,20 @@ const Footer = () => {
       <section className='newletter'>
         <div className='container flexSB'>
           <div className='left row'>
-            <h1>Newsletter - Stay tune and get the latest update</h1>
-            <span>Far far away, behind the word mountains</span>
+            {/* <h1>Newsletter - Stay tune and get the latest update</h1> */}
+            {/* <span>Far far away, behind the word mountains</span> */}
           </div>
-          <div className='right row'>
+          {/* <div className='right row'>
             <input type='text' placeholder='Enter email address' />
             <i className='fa fa-paper-plane'></i>
-          </div>
+          </div> */}
         </div>
       </section>
       <footer>
         <div className='container padding'>
           <div className='box logo'>
           <img  src={require('./logo.png')} id="vtm_flogo" alt="vtm" />
-            <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
+            {/* <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> */}
             <div id='social'>
             <a href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true" target="_new"><i className="fab fa-linkedin-in icon" ></i></a>
             <a href="https://www.facebook.com/profile.php?id=100088829731631" target="_new"><i className='fab fa-facebook-f icon'></i></a>
@@ -74,16 +74,16 @@ const Footer = () => {
             <h3>Have a Questions?</h3>
             <ul>
               <li>
-                <i className='fa fa-map'></i>
-                203 Fake St. Mountain View, San Francisco, California, USA
+              <i className="fa fa-location-arrow"></i>
+                Sahkar Nagar, Khatipura road, jhotwara, Jaipur, Rajasthan - 302012
               </li>
               <li>
-                <i className='fa fa-phone-alt'></i>
-                +2 392 3929 210
+                <i className='fa fa-phone-alt'></i> 
+                +91 6375597272
               </li>
               <li>
-                <i className='fa fa-paper-plane'></i>
-                info@yourdomain.com
+              <i className="fa fa-envelope"></i>
+                visionarytechmate@gmail.com
               </li>
             </ul>
           </div>

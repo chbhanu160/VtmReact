@@ -1,11 +1,8 @@
 // Gallery.jsx
 
 import React from 'react';
-import "./gallery.css"
-import Slider from 'react-slick';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
-
+import "./gallery.css";
+import { Carousel } from 'react-bootstrap'; // Import Carousel from react-bootstrap
 
 // Import your image files
 import image1 from './4.jpg';
@@ -17,25 +14,17 @@ import image6 from './1.jpg';
 
 const Gallery = () => {
   // Array of imported image files
-  const galleryImages = [image1, image2, image3,image4,image5,image6];
-
-  const settings = {
-    dots: true,
-    infinite: true,
-    speed: 100,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-  };
+  const galleryImages = [image1, image2, image3, image4, image5, image6];
 
   return (
-    <div>
-      <Slider {...settings}>
+    <div className="gallery">
+      <Carousel>
         {galleryImages.map((image, index) => (
-          <div key={index}>
-            <img src={image} alt={`Slide ${index + 1}`} />
-          </div>
+          <Carousel.Item key={index}>
+            <img className="d-block w-100" src={image} alt={`Slide ${index + 1}`} />
+          </Carousel.Item>
         ))}
-      </Slider>
+      </Carousel>
     </div>
   );
 };

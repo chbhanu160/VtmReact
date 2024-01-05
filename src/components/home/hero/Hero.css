@@ -12,6 +12,26 @@
   padding-right: 50px;
   color: #027Dff;
 }
+.hero .button {
+  margin-top: 20px; /* Adjust the margin to change the vertical position */
+}
+
+.hero .get-started-btn, .hero .view-course-btn {
+  background-color: #027Dff; /* Change the background color */
+  color: #ffffff; /* Change the text color */
+  border: 2px solid #027Dff; /* Add a border with your desired color */
+  transition: background-color 0.3s, color 0.3s; /* Add a smooth transition effect */
+
+  /* Additional styles if needed */
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.hero .get-started-btn:hover, .hero .view-course-btn:hover {
+  background-color: #027Dff; /* Change the background color on hover */
+  color: #fff; /* Change the text color on hover */
+}
+
 .hero #heading h3 {
   color: #027Dff;
 }

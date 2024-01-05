@@ -1,0 +1,38 @@
+/* events.css */
+
+/* Add these styles to customize the carousel */
+.carousel {
+  margin-top: 20px; /* Adjust the top margin as needed */
+}
+
+.carousel-caption {
+  background-color: rgba(234, 242, 249, 0.7); /* Blue background with some transparency */
+  padding: 2px; /* Adjust padding as needed */
+  border-radius: 5px;
+}
+
+.carousel-caption h5 {
+  color: #2004d7; /* White color for caption heading */
+}
+
+.carousel-caption p {
+  color: #2308d3; /* White color for caption text */
+}
+
+/* Customize the carousel control buttons */
+.carousel-control-prev,
+.carousel-control-next {
+  width: 2%; /* Adjust the width of the buttons */
+  background-color: #027Dff; /* Blue color for the buttons */
+  opacity: 0.7; /* Adjust opacity as needed */
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: #2718d2; /* White color for the carousel control icons */
+}
+
+.carousel-control-prev:hover,
+.carousel-control-next:hover {
+  background-color: #f8f8f8; /* Darker blue color on hover */
+}

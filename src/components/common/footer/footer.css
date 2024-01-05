@@ -1,4 +1,4 @@
-.newletter {
+/* .newletter {
   background-color: #027Dff;
   padding: 50px 0;
   color: #fff;
@@ -29,13 +29,13 @@
   padding: 12px;
   color: #027Dff;
   background-color: #fff;
-}
+} */
 #vtm_flogo{
-  margin-top: 18px;
-  margin-left: -4rem;
+  margin-top: 20px;
+  margin-left: -2rem;
   padding-bottom: 40px;
-  width: 220px;
-  height: 160px;
+  width: 270px;
+  height: 200px;
   display: block;
 }
 footer {
@@ -68,6 +68,7 @@ footer .logo p {
 #social a:hover{
   color: #027Dff;
 }
+
 footer .logo .icon {
   background-color: #027Dff;
   color: white;
@@ -102,6 +103,7 @@ footer .items i {
   color: #027Dff;
   margin-right: 5px;
   text-transform: capitalize;
+  
 }
 footer h4 {
   font-weight: 400;
