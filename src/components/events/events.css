@@ -1,5 +1,32 @@
 /* events.css */
 
+/* Styles for the calendar and upcoming event section */
+.calendar-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.calendar-container,
+.upcoming-event-container {
+  flex: 0 0 48%; /* Adjust width as needed; 48% to leave some space between */
+  margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .calendar-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .calendar-container,
+  .upcoming-event-container {
+    flex: 0 0 100%;
+  }
+}
+
 /* Add these styles to customize the carousel */
 .carousel {
   margin-top: 20px; /* Adjust the top margin as needed */

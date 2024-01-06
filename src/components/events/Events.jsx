@@ -1,11 +1,19 @@
 // Events.jsx
 
-import React from "react";
+import React, { useState } from "react";
 import "./events.css"; // Make sure to create and import the corresponding CSS file
 import { Carousel } from 'react-bootstrap'; // Import Carousel from react-bootstrap
+import Calendar from 'react-calendar';
+import 'react-calendar/dist/Calendar.css';
 import Back from "../common/back/Back";
 
 const Events = () => {
+  const [selectedDate, setSelectedDate] = useState(new Date());
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    // You can add logic here to filter and display events for the selected date
+  };
+
   const eventImages = [
     {
       src: require(`./event/5.jpeg`),
@@ -16,15 +24,65 @@ const Events = () => {
       caption: "Caption for Image 2",
     },
     {
-      src: require(`./event/10.jpeg`),
+      src: require(`./event/3.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/6.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/4.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/11.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/14.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/13.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/23.jpeg`),
       caption: "Caption for Image 3",
+    },
+    {
+      src: require(`./event/16.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/18.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/22.jpeg`),
+      caption: "Caption for Image 2",
     },
     // Add more event images with captions as needed
   ];
 
+  // Upcoming event image
+  const upcomingEventImage = require(`./6.jpg`);
+
   return (
     <>
-      {/* <Back title="Events" /> */}
+    {/* Add a small calendar section */}
+    <section className="calendar-section padding">
+        <div className="calendar-container">
+          <h2>Event Calendar</h2>
+          <Calendar onChange={handleDateChange} value={selectedDate} />
+        </div>
+        <div className="upcoming-event-container">
+          <h2>Upcoming Event</h2>
+          <img src={upcomingEventImage} alt="Upcoming Event" />
+        </div>
+      </section>
+      
       <section className="events padding">
         <div className="container">
           <Carousel>
@@ -39,6 +97,8 @@ const Events = () => {
           </Carousel>
         </div>
       </section>
+
+      
     </>
   );
 };
