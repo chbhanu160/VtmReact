@@ -5,6 +5,7 @@ import "./events.css"; // Make sure to create and import the corresponding CSS f
 import { Carousel } from 'react-bootstrap';
 import CustomCalendar from "./calendar"; // Import Calendar from calendar.jsx
 
+
 const Events = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
 
