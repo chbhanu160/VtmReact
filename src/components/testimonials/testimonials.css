@@ -1,4 +1,35 @@
-.team .items {
+/* testimonials.css */
+
+.testimonials-section {
+  margin-top: 50px; /* Adjust the margin between navbar and testimonials */
+
+}
+.testimonials-section h2{
+  justify-content: center;
+}
+.carousel {
+  width: 50%; /* Set the width of the carousel to 50% */
+  margin: 20px auto; /* Add margin around the carousel */
+}
+
+.carousel-item {
+  
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px; 
+}
+
+.testimonial-content {
+  max-width: 50%; /* Set the maximum width for the testimonial content */
+}
+
+.testimonial-screenshot img {
+  width: 100%; /* Make the screenshot image fill its container */
+  border-radius: 10px; /* Add border-radius for a rounded look */
+  margin-bottom: 15px; /* Add margin to separate image from content */
+}
+
+/* .team .items {
   transition: 0.5s;
 }
 .team .img {
@@ -53,4 +84,4 @@
 .team .items:hover .overlay i:hover {
   background-color: #027Dff;
   color: #fff;
-}
+} */
