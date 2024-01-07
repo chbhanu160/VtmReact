@@ -2,17 +2,11 @@
 
 import React, { useState } from "react";
 import "./events.css"; // Make sure to create and import the corresponding CSS file
-import { Carousel } from 'react-bootstrap'; // Import Carousel from react-bootstrap
-import Calendar from 'react-calendar';
-import 'react-calendar/dist/Calendar.css';
-import Back from "../common/back/Back";
+import { Carousel } from 'react-bootstrap';
+import CustomCalendar from "./calendar"; // Import Calendar from calendar.jsx
 
 const Events = () => {
   const [selectedDate, setSelectedDate] = useState(new Date());
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-    // You can add logic here to filter and display events for the selected date
-  };
 
   const eventImages = [
     {
@@ -69,14 +63,18 @@ const Events = () => {
   // Upcoming event image
   const upcomingEventImage = require(`./6.jpg`);
 
+  const handleDateChange = (date) => {
+    setSelectedDate(date);
+    // You can add logic here to filter and display events for the selected date
+  };
+
   return (
     <>
-    {/* Add a small calendar section */}
-    <section className="calendar-section padding">
+      <section className="calendar-section padding">
         <div className="calendar-container">
-          <h2>Event Calendar</h2>
-          <Calendar onChange={handleDateChange} value={selectedDate} />
+          <CustomCalendar onChange={handleDateChange} value={selectedDate} />
         </div>
+        
         <div className="upcoming-event-container">
           <h2>Upcoming Event</h2>
           <img src={upcomingEventImage} alt="Upcoming Event" />
@@ -97,8 +95,6 @@ const Events = () => {
           </Carousel>
         </div>
       </section>
-
-      
     </>
   );
 };

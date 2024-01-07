@@ -1,49 +1,87 @@
 /* events.css */
 
-/* Styles for the calendar and upcoming event section */
+/* Styles for the entire layout */
+.events-container {
+  display: flex;
+  flex-direction: column; /* Stack the sections vertically on smaller screens */
+}
+/* Bold and white text for "Event Calendar" */
+.calendar-container h2 {
+  color: rgb(14, 13, 13);
+  font-weight: bold;
+}
+
+.upcoming-event-container h2{
+  margin-bottom: 30px;
+}
+
+/* Change the background color and text color for the calendar dates */
+div.react-calendar__tile {
+  background-color: #027Dff !important; /* Blue color for normal dates */
+  color: rgb(15, 14, 14) !important; /* White text for normal dates */
+}
+
+/* Change the background color for Sundays and holidays */
+div.react-calendar__tile--active,
+div.react-calendar__tile--hasActive {
+  background-color: #ff3b30 !important; /* Red color for Sundays and holidays */
+}
+
+/* Hover effect for all dates */
+div.react-calendar__tile:hover {
+  background-color: #027Dff !important; /* Blue color on hover */
+  color: rgb(16, 14, 14) !important; /* White text on hover */
+}
+
+/* Hover effect for event dates */
+div.react-calendar__tile--hasActive:hover {
+  background-color: #027Dff !important; /* Blue color on hover for event dates */
+  color: rgb(9, 8, 8) !important; /* White text on hover for event dates */
+}
+
+/* Change the color for the month */
+div.react-calendar__navigation__label {
+  color: rgb(15, 14, 14) !important;
+}
+
+/* Change the color for days of the week */
+div.react-calendar__month-view__weekdays__weekday {
+  color: rgb(15, 14, 14) !important;
+}
+/* Styles for the calendar section */
 .calendar-section {
   display: flex;
+}
+
+.calendar-container {
+  flex: 1; /* Take up the entire left side */
+  margin-right: 30px; /* Add some spacing between calendar and upcoming event */
+  margin-left: 60px;
+}
+
+/* Styles for the upcoming event section */
+.upcoming-event-section {
+  display: flex;
   justify-content: space-between;
-  align-items: flex-start;
-  flex-wrap: wrap;
 }
 
-.calendar-container,
 .upcoming-event-container {
-  flex: 0 0 48%; /* Adjust width as needed; 48% to leave some space between */
-  margin-bottom: 20px; /* Adjust margin as needed */
+  flex: 1; /* Take up the entire right side */
+  max-height: 50%; /* Set the maximum height to 50% of the container */
 }
 
-/* Adjust styles for smaller screens */
-@media screen and (max-width: 768px) {
-  .calendar-section {
-    flex-direction: column;
-    align-items: stretch;
-  }
-
-  .calendar-container,
-  .upcoming-event-container {
-    flex: 0 0 100%;
-  }
+.upcoming-event-container img {
+  max-width: 80%; /* Ensure the image does not exceed its container width */
+  height: auto; /* Maintain aspect ratio */
 }
 
-/* Add these styles to customize the carousel */
+/* Styles for the carousel section */
+.carousel-section {
+  margin-top: 20px; /* Add some spacing above the carousel */
+}
+
 .carousel {
-  margin-top: 20px; /* Adjust the top margin as needed */
-}
-
-.carousel-caption {
-  background-color: rgba(234, 242, 249, 0.7); /* Blue background with some transparency */
-  padding: 2px; /* Adjust padding as needed */
-  border-radius: 5px;
-}
-
-.carousel-caption h5 {
-  color: #2004d7; /* White color for caption heading */
-}
-
-.carousel-caption p {
-  color: #2308d3; /* White color for caption text */
+  max-width: 100%; /* Ensure the carousel does not exceed its container width */
 }
 
 /* Customize the carousel control buttons */
@@ -62,4 +100,18 @@
 .carousel-control-prev:hover,
 .carousel-control-next:hover {
   background-color: #f8f8f8; /* Darker blue color on hover */
+}
+
+/* Adjust styles for smaller screens */
+@media screen and (max-width: 768px) {
+  .events-container,
+  .calendar-container,
+  .upcoming-event-container {
+    flex: 1 0 100%;
+  }
+
+  .calendar-container {
+    margin-right: 0; /* Remove margin for smaller screens */
+    margin-left: 0; /* Remove left margin for smaller screens */
+  }
 }
