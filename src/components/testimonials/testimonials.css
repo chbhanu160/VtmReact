@@ -8,7 +8,7 @@
   justify-content: center;
 }
 .carousel {
-  width: 50%; /* Set the width of the carousel to 50% */
+  width: 100%; /* Set the width of the carousel to 50% */
   margin: 20px auto; /* Add margin around the carousel */
 }
 

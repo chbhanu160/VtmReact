@@ -11,11 +11,11 @@ const Events = () => {
 
   const eventImages = [
     {
-      src: require(`./event/5.jpeg`),
+      src: require(`./event/1.png`),
       caption: "Caption for Image 1",
     },
     {
-      src: require(`./event/6.jpeg`),
+      src: require(`./event/2.png`),
       caption: "Caption for Image 2",
     },
     {
@@ -23,11 +23,31 @@ const Events = () => {
       caption: "Caption for Image 2",
     },
     {
+      src: require(`./event/4.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/5.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
       src: require(`./event/6.jpeg`),
       caption: "Caption for Image 2",
     },
     {
-      src: require(`./event/4.jpeg`),
+      src: require(`./event/7.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/8.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/9.jpeg`),
+      caption: "Caption for Image 3",
+    },
+    {
+      src: require(`./event/10.jpeg`),
       caption: "Caption for Image 2",
     },
     {
@@ -35,7 +55,7 @@ const Events = () => {
       caption: "Caption for Image 2",
     },
     {
-      src: require(`./event/14.jpeg`),
+      src: require(`./event/12.jpeg`),
       caption: "Caption for Image 2",
     },
     {
@@ -43,11 +63,19 @@ const Events = () => {
       caption: "Caption for Image 2",
     },
     {
-      src: require(`./event/23.jpeg`),
-      caption: "Caption for Image 3",
+      src: require(`./event/14.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/15.jpeg`),
+      caption: "Caption for Image 2",
     },
     {
       src: require(`./event/16.jpeg`),
+      caption: "Caption for Image 2",
+    },
+    {
+      src: require(`./event/17.jpeg`),
       caption: "Caption for Image 2",
     },
     {
@@ -55,9 +83,11 @@ const Events = () => {
       caption: "Caption for Image 2",
     },
     {
-      src: require(`./event/22.jpeg`),
+      src: require(`./event/19.jpeg`),
       caption: "Caption for Image 2",
     },
+  
+
     // Add more event images with captions as needed
   ];
 
