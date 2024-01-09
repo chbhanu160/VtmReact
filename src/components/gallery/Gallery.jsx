@@ -5,16 +5,21 @@ import "./gallery.css";
 import { Carousel } from 'react-bootstrap'; // Import Carousel from react-bootstrap
 
 // Import your image files
-import image1 from './Training/photo1688534084.jpeg';
-import image2 from './Training/photo1691981526.jpeg';
-import image3 from './Training/photo1695879399.jpeg';
-import image4 from './Training/photo1695879402.jpeg';
-import image5 from './Training/photo1695879407.jpeg';
-import image6 from './Training/photo1697629102 (2).jpeg';
+import image1 from './Training/1.jpeg';
+import image2 from './Training/2.jpeg';
+import image3 from './Training/3.jpeg';
+import image4 from './Training/4.jpeg';
+import image5 from './Training/5.jpeg';
+import image6 from './Training/6.jpeg';
+import image7 from './Training/7.jpeg';
+import image8 from './Training/8.jpeg';
+import image9 from './Training/9.jpeg';
+import image10 from './Training/10.jpeg';
+import image11 from './Training/11.jpeg';
 
 const Gallery = () => {
   // Array of imported image files
-  const galleryImages = [image1, image2, image3, image4, image5, image6];
+  const galleryImages = [image1, image2, image3, image4, image5, image6, image7,image8,image9,image10,image11];
 
   return (
     <div className="gallery">
