@@ -42,7 +42,7 @@ h1 {
 }
 
 .specialty-card:hover {
-  background-color: #027Dff;
+  background-color: #004AAD;
   color: white;
 }
 
@@ -92,7 +92,7 @@ h1 {
   color: #999999;
 }
 .aboutHome .item:hover {
-  background-color: #027Dff;
+  background-color: #004AAD;
   color: #fff;
   cursor: pointer;
   box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
@@ -136,7 +136,7 @@ h1 {
 }
 
 #learn_anything{
-  color: #027Dff;
+  color: #004AAD;
   font-weight: 500;
   font-size: 1.3rem;
 }

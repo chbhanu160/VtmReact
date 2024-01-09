@@ -17,7 +17,7 @@
 
 /* Change the background color and text color for the calendar dates */
 div.react-calendar__tile {
-  background-color: #027Dff !important; /* Blue color for normal dates */
+  background-color: #004AAD !important; /* Blue color for normal dates */
   color: rgb(15, 14, 14) !important; /* White text for normal dates */
 }
 
@@ -29,13 +29,13 @@ div.react-calendar__tile--hasActive {
 
 /* Hover effect for all dates */
 div.react-calendar__tile:hover {
-  background-color: #027Dff !important; /* Blue color on hover */
+  background-color: #004AAD !important; /* Blue color on hover */
   color: rgb(16, 14, 14) !important; /* White text on hover */
 }
 
 /* Hover effect for event dates */
 div.react-calendar__tile--hasActive:hover {
-  background-color: #027Dff !important; /* Blue color on hover for event dates */
+  background-color: #004AAD !important; /* Blue color on hover for event dates */
   color: rgb(9, 8, 8) !important; /* White text on hover for event dates */
 }
 
@@ -88,13 +88,13 @@ div.react-calendar__month-view__weekdays__weekday {
 .carousel-control-prev,
 .carousel-control-next {
   width: 2%; /* Adjust the width of the buttons */
-  background-color: #027Dff; /* Blue color for the buttons */
+  background-color: #004AAD; /* Blue color for the buttons */
   opacity: 0.7; /* Adjust opacity as needed */
 }
 
 .carousel-control-prev-icon,
 .carousel-control-next-icon {
-  background-color: #2718d2; /* White color for the carousel control icons */
+  background-color: #004AAD; /* White color for the carousel control icons */
 }
 
 .carousel-control-prev:hover,

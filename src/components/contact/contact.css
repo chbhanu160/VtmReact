@@ -78,7 +78,7 @@ h1 {
 
 .box_con {
   flex: 1;
-  border: 3px solid #027Dff;
+  border: 3px solid #004AAD;
   border-radius: 8px;
   padding: 20px;
 }
@@ -98,7 +98,7 @@ textarea {
 }
 
 button {
-  background-color: #027Dff;
+  background-color: #004AAD;
   color: #fff;
   padding: 10px 20px;
   border: none;
@@ -107,7 +107,7 @@ button {
 }
 
 button:hover {
-  background-color: #027Dff;
+  background-color: #004AAD;
 }
 
 #social {
@@ -117,7 +117,7 @@ button:hover {
 .icon {
   font-size: 24px;
   margin-right: 10px;
-  color: #027Dff;
+  color: #004AAD;
 }
 
 /* Additional styles for responsiveness */
@@ -141,7 +141,7 @@ button:hover {
   font-weight: 400;
 }
 .contacts p {
-  color: #027Dff;
+  color: #004AAD;
 }
 .contacts .items {
   margin: 30px 0;
