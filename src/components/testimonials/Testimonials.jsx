@@ -97,9 +97,11 @@ const Testimonials = () => {
             <div className="carousel-item d-flex flex-column align-items-center">
               <div className="testimonial-content mb-3">
                 <p>{testimonial.content}</p>
-                <Link to={testimonials.postLink}>
-                  <button className="btn btn-primary">Read More</button>
-                </Link>
+            <Link to={testimonial.postLink} target="_blank" rel="noopener noreferrer">
+           <button className="btn btn-primary">Read More</button>
+            </Link>
+
+
               </div>
               <div className="testimonial-screenshot">
                 <img
