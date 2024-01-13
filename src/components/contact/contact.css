@@ -28,6 +28,7 @@
   flex: 1;
   display: flex;
   align-items: center; /* Center the content vertically */
+  margin-right: 22px;
 }
 
 /* Add some space between the left and right rows */
@@ -37,7 +38,7 @@
   border-radius: 15px;
   flex-direction: column;
   background-color: #ddd;
-  margin-left: 20px; /* Adjust the margin as needed */
+  margin-right: 5px; /* Adjust the margin as needed */
 }
 
 /* Make the image fully fit into the left flex */
@@ -45,7 +46,7 @@
   width: 100%;
   height: 100%;
   object-fit: cover; /* Ensure the image covers the entire container */
-  border-radius: 10px; /* Optional: Add rounded corners to the image */
+  border-radius: 35px; 
 }
 
 /* Additional styles for responsiveness */
