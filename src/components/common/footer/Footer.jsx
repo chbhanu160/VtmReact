@@ -1,13 +1,14 @@
-import React from "react"
-import { blog } from "../../../dummydata"
-import "./footer.css"
+import React from "react";
+import { blog } from "../../../dummydata";
+import "./footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <>
-      <section className='newletter'>
-        <div className='container flexSB'>
-          <div className='left row'>
+      <section className="newletter">
+        <div className="container flexSB">
+          <div className="left row">
             {/* <h1>Newsletter - Stay tune and get the latest update</h1> */}
             {/* <span>Far far away, behind the word mountains</span> */}
           </div>
@@ -18,38 +19,73 @@ const Footer = () => {
         </div>
       </section>
       <footer>
-        <div className='container padding'>
-          <div className='box logo'>
-          <img  src={require('./logo.png')} id="vtm_flogo" alt="vtm" />
+        <div className="container padding">
+          <div className="box logo">
+            <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
             {/* <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p> */}
-            <div id='social'>
-            <a href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true" target="_new"><i className="fab fa-linkedin-in icon" ></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100088829731631" target="_new"><i className='fab fa-facebook-f icon'></i></a>
-            <a href="https://www.instagram.com/cloud__talk/?igshid=OGU0MmVlOWVjOQ%3D%3D" target="_new"> <i className='fab fa-instagram icon'></i></a>
-            <a href="https://www.youtube.com/channel/UC0xHeCcMjsHoPqup193_nNw" target="_new"><i className='fab fa-youtube icon'></i></a>
+            <div id="social">
+              <a
+                href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true"
+                target="_new"
+              >
+                <i className="fab fa-linkedin-in icon"></i>
+              </a>
+              <a
+                href="https://www.facebook.com/profile.php?id=100088829731631"
+                target="_new"
+              >
+                <i className="fab fa-facebook-f icon"></i>
+              </a>
+              <a
+                href="https://www.instagram.com/cloud__talk/?igshid=OGU0MmVlOWVjOQ%3D%3D"
+                target="_new"
+              >
+                {" "}
+                <i className="fab fa-instagram icon"></i>
+              </a>
+              <a
+                href="https://www.youtube.com/channel/UC0xHeCcMjsHoPqup193_nNw"
+                target="_new"
+              >
+                <i className="fab fa-youtube icon"></i>
+              </a>
+            </div>
           </div>
-          </div>
-          <div className='box link'>
+          <div className="box link" id="exp">
             <h3>Explore</h3>
             <ul>
-              <li>About Us</li>
-              <li>Services</li>
-              <li>Courses</li>
-              <li>Blog</li>
-              <li>Contact us</li>
+              <li>
+                <Link to="/about">About Us</Link>
+              </li>
+              <li>
+                <Link to="/services">Services</Link>
+              </li>
+              <li>
+                <Link to="/courses">Courses</Link>
+              </li>
+              <li>
+                <Link to="/blog">Blog</Link>
+              </li>
             </ul>
           </div>
-          <div className='box link'>
+          <div className="box link" id="quick">
             <h3>Quick Links</h3>
             <ul>
-              <li>Contact Us</li>
-              <li>Gallery</li>
-              <li>Terms & Conditions</li>
-              <li>Privacy</li>
-              <li>Feedbacks</li>
+              <li>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/gallery">Gallery</Link>
+              </li>
+              <li>
+                <Link to="/events">Events</Link>
+              </li>
+              <li>
+                <Link to="/testimonials">Testimonial</Link>
+              </li>
             </ul>
           </div>
-          <div className='box'>
+          {/* <div className='box'>
             <h3>Recent Post</h3>
             {blog.slice(0, 3).map((val) => (
               <div className='items flexSB'>
@@ -69,33 +105,36 @@ const Footer = () => {
                 </div>
               </div>
             ))}
-          </div>
-          <div className='box last'>
-            <h3>Have a Questions?</h3>
+          </div> */}
+          <div className="box last" id="f_contact">
+            <h3>Contact Us </h3>
             <ul>
               <li>
-              <i className="fa fa-location-arrow"></i>
-                Sahkar Nagar, Khatipura road, jhotwara, Jaipur, Rajasthan - 302012
+                <i className="fa fa-location-arrow"></i>
+                Sahkar Nagar,Khatipura road, jhotwara, Jaipur, Rajasthan -
+                302012
               </li>
+
               <li>
-                <i className='fa fa-phone-alt'></i> 
+                <i className="fa fa-phone-alt"></i>
                 +91 6375597272
               </li>
               <li>
-              <i className="fa fa-envelope"></i>
+                <i className="fa fa-envelope"></i>
                 visionarytechmate@gmail.com
               </li>
             </ul>
           </div>
         </div>
       </footer>
-      <div className='legal'>
+      <div className="legal">
         <p>
-          Copyright ©2024 All rights reserved | VisionaryTechMate <i className='fa fa-heart'></i> 
+          Copyright ©2024 All rights reserved | VisionaryTechMate{" "}
+          <i className="fa fa-heart"></i>
         </p>
       </div>
     </>
-  )
-}
+  );
+};
 
-export default Footer
+export default Footer;
