@@ -1,7 +1,7 @@
 /* events.css */
 
 /* Styles for the entire layout */
-.events-container {
+.events-events_container {
   display: flex;
   flex-direction: column; /* Stack the sections vertically on smaller screens */
 }
@@ -80,9 +80,9 @@ div.react-calendar__month-view__weekdays__weekday {
   margin-top: 20px; /* Add some spacing above the carousel */
 }
 
-.carousel {
-  max-width: 100%; /* Ensure the carousel does not exceed its container width */
-}
+/* .carousel {
+  max-width: 60%; 
+} */
 
 /* Customize the carousel control buttons */
 .carousel-control-prev,
