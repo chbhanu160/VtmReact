@@ -14,7 +14,7 @@ const Testimonials = () => {
     {
       id: 1,
       name: "John Doe",
-       postLink: "https://www.linkedin.com/in/deekshasharma191196/",
+      postLink: "https://www.linkedin.com/in/deekshasharma191196/",
       screenshot: require(`./feedback/WhatsApp Image 2024-01-08 at 12.39.29 AM (1).jpeg`),
     },
     {
@@ -90,33 +90,31 @@ const Testimonials = () => {
     <>
 
 <div className="testimonials-section text-center">
-    <h2>Student Testimonials</h2>
-      <Carousel>
-        {testimonials.map((testimonial, index) => (
-          <Carousel.Item key={index}>
-            <div className="carousel-item d-flex flex-column align-items-center">
-              <div className="testimonial-content mb-3">
-                <p>{testimonial.content}</p>
-            <Link to={testimonial.postLink} target="_blank" rel="noopener noreferrer">
-           <button className="btn btn-primary">Read More</button>
-            </Link>
-
-
+        <h2>Student Testimonials</h2>
+        <Carousel className="carousel testimonial-carousel">
+          {testimonials.map((testimonial, index) => (
+            <Carousel.Item key={index}>
+              <div className="carousel-item d-flex flex-column align-items-center">
+                <div className="testimonial-content mb-3">
+                  <p>{testimonial.content}</p>
+                  <a href={testimonial.postLink} target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-primary">Read More</button>
+                  </a>
+                </div>
+                <div className="testimonial-screenshot">
+                  <img
+                    src={testimonial.screenshot}
+                    alt={`Screenshot ${index + 1}`}
+                  />
+                </div>
+                <div className="testimonial-name mt-3">
+                  <h4>{testimonial.name}</h4>
+                </div>
               </div>
-              <div className="testimonial-screenshot">
-                <img
-                  src={testimonial.screenshot}
-                  alt={`Screenshot ${index + 1}`}
-                />
-              </div>
-              <div className="testimonial-name mt-3">
-                <h4>{testimonial.name}</h4>
-              </div>
-            </div>
-          </Carousel.Item>
-        ))}
-      </Carousel>
-    </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
+      </div>
 
       {/* <Back title='Team' />
       <section className='team padding'>
@@ -125,6 +123,7 @@ const Testimonials = () => {
         </div>
       </section>
       <Awrapper /> */}
+
     </>
   )
 }

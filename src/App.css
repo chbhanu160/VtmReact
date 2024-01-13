@@ -9,6 +9,21 @@ body {
   font-family: "Roboto", sans-serif;
   /* background-color: #b0b0ce; */
 }
+
+
+.event-carousel {
+  max-width: 60%; 
+}
+
+.gallery-carousel {
+  max-width: 70%; 
+  max-height: 50%;
+}
+
+.testimonial-carousel {
+  max-width: 50%; 
+}
+
 /*------------global-----------*/
 .container {
   max-width: 85%;
