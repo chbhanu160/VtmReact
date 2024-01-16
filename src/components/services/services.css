@@ -1,11 +1,19 @@
+.services .container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  justify-content: space-around;
+}
+
 .services .items {
-  margin: 20px;
   padding: 20px;
   border: 1px solid #004AAD;
   border-radius: 8px;
   text-align: center;
   background-color: #004AAD;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
   gap: 20px;
 }
 
@@ -14,19 +22,10 @@
   margin-bottom: 30px;
 }
 
-#consult{
-  margin-top: 40px;
-}
-.services .items h4 {
-  color: #ffffff;
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
+.services .items h4,
 .services .items p {
   color: #ffffff;
-  font-size: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
 }
 
 .services .items .outline-btn {
@@ -45,38 +44,24 @@
   background-color: #fcfcfc;
 }
 
-.services .items .description {
-  text-align: justify;
-  margin-bottom: 15px;
-}
-
 .services .items .description ul {
   list-style-type: disc;
-  padding-left: 10px; 
+  padding-left: 20px;
+  text-align: left;
 }
 
 .services .items .description li {
-  color: rgb(255, 255, 255);
+  color: #ffffff;
   font-size: 16px;
-}
-.services .container {
-  display: flex;
-  justify-content: space-around; /* or 'space-between', 'space-evenly', etc. */
-  flex-wrap: wrap; /* Allow items to wrap to the next line */
-  gap: 2px;
-}
-.services .description ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.services .description li {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
 }
 
-.services .description .bullet-icon {
+.services .items .description .bullet-icon {
   margin-right: 8px;
-  color: #ffffff; /* Adjust the color as needed */
+  color: #ffffff;
+}
+#consult{
+  margin-top: 40px;
 }

@@ -3,7 +3,7 @@ import React from "react"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
-const ServiceCard = ({ name, desc, bulletPoints }) => {
+const ServiceCard = ({ name, bulletPoints }) => {
   return (
     <div className='services items shadow'>
       <h4>{name}</h4>

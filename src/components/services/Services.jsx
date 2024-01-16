@@ -9,14 +9,12 @@ const Services = () => {
     {
       id: 1,
       name: "Training Programs:",
-      bulletPoints: ["Technical Training: Courses covering programming languages, software development methodologies, database management, networking, cybersecurity, etc.",
-       "Certification Training: Preparation courses for industry-recognized certifications such as CompTIA, Cisco, Microsoft, AWS, etc."],
+      bulletPoints: ["Technical Training: Courses covering programming languages, software development methodologies, database management, networking, cybersecurity, etc.","Certification Training: Preparation courses for industry-recognized certifications such as CompTIA, Cisco, Microsoft, AWS, etc."],
     },
     {
       id: 2,
       name: "Workshops and Seminars:",
-      bulletPoints: ["Customized workshops and seminars on specific technologies or industry trends.",
-      "Hands-on training sessions to provide practical experience." ],
+      bulletPoints: ["Customized workshops and seminars on specific technologies or industry trends.","Hands-on training sessions to provide practical experience." ],
     },
     {
       id: 3,
