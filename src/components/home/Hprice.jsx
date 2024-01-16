@@ -1,6 +1,6 @@
 import React from "react"
 import Heading from "../common/heading/Heading"
-import PriceCard from "../services/PriceCard"
+import ServiceCard from "../services/ServiceCard"
 
 const Hprice = () => {
   return (
@@ -8,7 +8,7 @@ const Hprice = () => {
       <section className='hprice padding'>
         <Heading subtitle='OUR PRICING' title='Pricing & Packages' />
         <div className='price container grid'>
-          <PriceCard />
+          <ServiceCard />
         </div>
       </section>
     </>

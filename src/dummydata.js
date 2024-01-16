@@ -243,70 +243,69 @@ export const online = [
     course: "17 Courses",
   },
 ]
-export const team = [
-  {
-    cover: "./images/team/t1.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t2.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t3.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t4.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t5.webp",
-    name: "Ph.D Adrian Molises",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t6.webp",
-    name: "Ph.D Arthur MaGregor",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t7.webp",
-    name: "Ph.D Anna Hanzen",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-  {
-    cover: "./images/team/t8.webp",
-    name: "Ph.D Brian Wooden",
-    work: "DEVELOPER AND LEAD INSTRUCTOR",
-  },
-]
-export const price = [
-  {
-    name: "BASIC PLAN",
-    price: "49K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "BEGINNER PLAN",
-    price: "79K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "PREMIUM PLAN",
-    price: "109k",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-  {
-    name: "ULTIMATE PLAN",
-    price: "149K",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-  },
-]
+// export const testimonials = [
+//   {
+//     cover: "./images/team/t1.webp",
+//     name: "Ph.D Adrian Molises",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t2.webp",
+//     name: "Ph.D Arthur MaGregor",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t3.webp",
+//     name: "Ph.D Anna Hanzen",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t4.webp",
+//     name: "Ph.D Brian Wooden",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t5.webp",
+//     name: "Ph.D Adrian Molises",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t6.webp",
+//     name: "Ph.D Arthur MaGregor",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t7.webp",
+//     name: "Ph.D Anna Hanzen",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+//   {
+//     cover: "./images/team/t8.webp",
+//     name: "Ph.D Brian Wooden",
+//     work: "DEVELOPER AND LEAD INSTRUCTOR",
+//   },
+// ]
+// export const services = [
+//   {
+//     name: "Training Programs:",
+//     desc: "Technical Training: Courses covering programming languages, software development methodologies, database management, networking, cybersecurity, etc. Certification Training: Preparation courses for industry-recognized certifications such as CompTIA, Cisco, Microsoft, AWS, etc.",
+//   },
+//   {
+//     name: "BEGINNER PLAN",
+//     price: "79K",
+//     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+//   },
+//   {
+//     name: "PREMIUM PLAN",
+//     price: "109k",
+//     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+//   },
+//   {
+//     name: "ULTIMATE PLAN",
+//     price: "149K",
+//     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+//   },
+// ]
 export const faq = [
   {
     title: "How to Enroll This Online Courses?",
