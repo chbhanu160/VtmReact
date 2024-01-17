@@ -1,56 +1,47 @@
-import React, { useState } from "react"
-import { Link } from "react-router-dom"
-import Head from "./Head"
-import "./header.css"
+// Header.js
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import Head from "./Head";
+import { Nav, Navbar, NavDropdown } from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./header.css";
+
 
 const Header = () => {
-  const [click, setClick] = useState(false)
+  const [click, setClick] = useState(false);
+
+  const handleClick = () => setClick(!click);
 
   return (
     <>
-   
-      <Head /> 
+      <Head />
       <header>
-        <nav className='flexSB'id="flex" >
-          <ul className={click ? "mobile-nav" : "flexSB "} onClick={() => setClick(false)}>
-            <li>
-              <Link to='/'>Home</Link>
-            </li>
-            <li>
-              <Link to='/courses'>Courses</Link>
-            </li>
-            <li>
-              <Link to='/about'>About</Link>
-            </li>
-            <li>
-              <Link to='/services'>Services</Link>
-            </li>
-            <li>
-              <Link to='/testimonials'>Testimonials</Link>
-            </li>
-            <li>
-              <Link to='/gallery'>Gallery</Link>
-            </li>
-            <li>
-              <Link to='/events'>Events</Link>
-            </li>
-            <li>
-              <Link to='/blog'>Blog</Link>
-            </li>
-            <li>
-              <Link to='/contact'>Contact Us</Link>
-            </li>
-          </ul>
-          <div className='start'>
-            <div className='button'>GET CERTIFICATE</div>
-          </div>
-          <button className='toggle' onClick={() => setClick(!click)}>
-            {click ? <i className='fa fa-times'> </i> : <i className='fa fa-bars'></i>}
-          </button>
-        </nav>
+        <Navbar bg="light" expand="lg">
+          <Navbar.Toggle onClick={handleClick} aria-controls="navbarNav" />
+          <Navbar.Collapse id="navbarNav">
+            <Nav className="navbar-nav">
+              <Nav.Link as={Link} to="/">Home</Nav.Link>
+              <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
+              <Nav.Link as={Link} to="/about">About</Nav.Link>
+           
+              <NavDropdown title="Services" id="basic-nav-dropdown">
+  <NavDropdown.Item as={Link} to="/services/learning">Learning</NavDropdown.Item>
+  <NavDropdown.Item as={Link} to="/services/consulting">Consulting</NavDropdown.Item>
+</NavDropdown>
+              <Nav.Link as={Link} to="/testimonials">Testimonials</Nav.Link>
+              <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
+              <Nav.Link as={Link} to="/events">Events</Nav.Link>
+              <Nav.Link as={Link} to="/blog">Blog</Nav.Link>
+              <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
+            </Nav>
+            <div className="start">
+              <div className="button">GET CERTIFICATE</div>
+            </div>
+          </Navbar.Collapse>
+        </Navbar>
       </header>
     </>
-  )
-}
+  );
+};
 
-export default Header
+export default Header;

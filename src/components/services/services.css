@@ -1,12 +1,13 @@
-.services .container {
+/* Updated services.css for LearningPage and ConsultingPage */
+.container.grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   justify-content: space-around;
-  
 }
 
-.services .items {
+/* Shared CSS for LearningPage and ConsultingPage ServiceCard */
+.items {
   padding: 20px;
   border: 1px solid #004AAD;
   border-radius: 8px;
@@ -16,44 +17,44 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
 }
 
-.services h3 {
+h3 {
   text-align: center;
   margin-bottom: 30px;
 }
 
-.services .items h4,
-.services .items p {
+h4,
+p {
   color: #ffffff;
   margin-bottom: 10px;
 }
 
-.services .items .outline-btn {
+.outline-btn {
   display: inline-block;
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #ffffff;
-  color: #004AAD;
+  background-color: #004AAD;
+  color: #ffffff; /* Updated text color to white */
   border: none;
   border-radius: 5px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: auto; 
+  margin-top: auto;
 }
 
-.services .items .outline-btn:hover {
+.outline-btn:hover {
   background-color: #fcfcfc;
+  color: #004AAD;
 }
 
-.services .items .description ul {
+.description ul {
   list-style-type: disc;
   padding-left: 20px;
   text-align: left;
 }
 
-.services .items .description li {
+.description li {
   color: #ffffff;
   font-size: 16px;
   display: flex;
@@ -61,10 +62,11 @@
   margin-bottom: 10px;
 }
 
-.services .items .description .bullet-icon {
+.description .bullet-icon {
   margin-right: 8px;
   color: #ffffff;
 }
-#consult{
+
+#consult {
   margin-top: 40px;
 }

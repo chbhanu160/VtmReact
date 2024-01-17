@@ -4,7 +4,7 @@
   color: #fff;
 }
 
-#vtm_hlogo{
+#vtm_hlogo {
   margin-top: -0.5rem;
   margin-left: -8rem;
   width: 100%;
@@ -12,7 +12,7 @@
   display: block;
 }
 
-#social{
+#social {
   margin-right: -6rem;
 }
 
@@ -20,61 +20,74 @@
   margin-left: 10px;
 }
 /*--------head------------*/
-/*--------header------------*/
 
+/*--------header------------*/
 header {
   background-color: rgba(165, 156, 156, 0.2);
-  /* background-color:white; */
-  margin: 0 30px;
+  margin: 0 20px;
   margin-top: 2px;
+  margin-bottom: 5px;
 }
-header .nav {
-  display: flex !important;
-  justify-content: center;
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#flex{
+
+.navbar-nav {
+  margin-right: auto;
+}
+
+.navbar-nav .nav-link {
+  margin-right: 20px; /* Adjust the margin between navbar items */
+}
+
+#flex {
   max-height: 100px;
   padding-top: 10px;
 }
-header li {
-  margin-right: 40px;
-}
-header ul {
-  padding: 30px 20px;
 
+.navbar-nav li {
+  margin-left: 30px;
 }
-header ul li a {
-  color: #0b0b0c;
-  font-weight: 700;
-  transition: 0.5s;
+
+.navbar-nav a {
+  font-weight: bold;
+  font-size: large;
+  transition: color 0.3s;
 }
-header ul li a:hover {
-  /* color: #5#027Dffd15e2; */
-  color:#004AAD;
+
+.navbar-nav a:hover {
+  color: #004AAD;
 }
+
 .start {
-  background-color:#004AAD;
+  background-color: #004AAD;
   padding: 30px 70px;
   color: #ffffff;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
+  margin-left: auto; /* Add this to push the "GET CERTIFICATE" button to the right */
 }
+
 .toggle {
   display: none;
 }
 /*--------header------------*/
+
 @media screen and (max-width: 768px) {
   .start {
     clip-path: none;
   }
   header {
     margin: 0;
-    background-color:#004AAD;
+    background-color: #004AAD;
     position: relative;
   }
-  header ul.flexSB {
-    display: none;
+  .navbar-nav.flexSB {
+    display: none; /* You may need to define .flexSB if it's intended to be used here */
   }
-  header ul li {
+  .navbar-nav li {
     margin-bottom: 20px;
   }
   .toggle {
@@ -91,6 +104,25 @@ header ul li a:hover {
     top: 7vh;
     left: 0;
     width: 100%;
-    background-color:#004AAD;
+    background-color: #004AAD;
   }
+}
+
+.navbar .nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  background-color: #004AAD;
+  border: none;
+}
+
+.dropdown-item {
+  color: #fff;
+  transition: 0.3s;
+}
+
+.dropdown-item:hover {
+  background-color: #ffffff;
+  color: #004AAD;
 }
