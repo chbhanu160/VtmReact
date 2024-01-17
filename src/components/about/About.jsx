@@ -46,7 +46,7 @@ const About = () => {
   return (
     <div className="about-container">
       {/* <Back title="VisionaryTechMate" /> */}
-      <div className="overview-box">
+      <div className="about-overview-box">
         <h2>Overview</h2> <br />
         <p>{overviewText}</p>
       </div>

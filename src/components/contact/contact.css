@@ -168,7 +168,7 @@ form .flexSB input:nth-child(1) {
   margin-bottom: 10px;
 }
 .contacts span {
-  color: #f0eff3;
+  color: #4f4f50;
   font-weight: 600;
   font-size: 15px;
   word-spacing: 5px;
@@ -184,3 +184,24 @@ form .flexSB input:nth-child(1) {
     width: 100%;
   }
 }
+.form-group {
+  margin-bottom: 15px;
+}
+#countryCode {
+  width: 60px; 
+  height: 55px;
+  margin-right: 10px;
+}
+#contact {
+  flex: 1;
+}
+#country {
+  width: 60%; 
+  height: 45px;
+  /* margin-left: 15px; */
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+}
+
