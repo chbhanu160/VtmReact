@@ -1,5 +1,11 @@
 /* Updated services.css for LearningPage and ConsultingPage */
-.container.grid {
+.Learn_container .grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  justify-content: space-around;
+}
+.Consult_container grid{
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
@@ -17,6 +23,9 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  margin-left:20px;
+  margin-right:20px;
+  margin-bottom: 20px;
 }
 
 h3 {
