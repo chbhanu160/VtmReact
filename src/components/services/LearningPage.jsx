@@ -59,7 +59,7 @@ const LearningPage = () => {
   ];
 
   return (
-    <div className="container grid">
+    <div className="Learn_container grid">
       {learningServices.map((service) => (
         <ServiceCard key={service.id} {...service} />
       ))}
