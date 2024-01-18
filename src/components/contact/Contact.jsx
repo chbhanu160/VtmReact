@@ -9,7 +9,7 @@ const Contact = () => {
       <section className="contacts padding">
         <div className="container_con shadow flexSB">
           <div className="left row">
-            <img src={require("./4.png")} alt="contact" />
+            <img src={require("./15.svg")} alt="contact" />
           </div>
 
           <div className="right">

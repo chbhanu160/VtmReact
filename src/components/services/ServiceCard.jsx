@@ -8,7 +8,7 @@ const ServiceCard = ({ name, bulletPoints }) => {
   return (
     <div className="services items shadow">
       <h4>{name}</h4>
-      <div className="description">
+      <div className="Ser_description">
         <ul>
           {bulletPoints.map((point, index) => (
             <li key={index}>
