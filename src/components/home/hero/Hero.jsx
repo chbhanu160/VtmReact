@@ -1,29 +1,32 @@
-import React from "react"
-import Heading from "../../common/heading/Heading"
-import "./Hero.css"
+import React from "react";
+import { Link } from "react-router-dom";
+import Heading from "../../common/heading/Heading";
+import "./Hero.css";
 
 const Hero = () => {
   return (
     <>
-      <section className='hero'>
-        <div className='container'>
-          <div className='row'>
-            <Heading subtitle='Welcome to Visionary TechMate' title='Best Online Education Expertise' />
-            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-            <div className='button'>
-              <button className='get-started-btn'>
-                GET STARTED NOW <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
-              <button className='view-course-btn'>
-                VIEW COURSE <i className='fa fa-long-arrow-alt-right'></i>
-              </button>
+      <section className="hero-section">
+        <div className="hero-container">
+          <div className="row">
+            <div className="heading">
+              <Heading subtitle="Welcome to Visionary TechMate" title="Best Online Education Expertise" />
+            </div>
+            <p className="hero-text">Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div className="button">
+              <Link to="/services/learning" className="get-started-btn">
+                GET STARTED NOW <i className="fa fa-long-arrow-alt-right"></i>
+              </Link>
+              <Link to="/courses" className="view-course-btn">
+                VIEW COURSE <i className="fa fa-long-arrow-alt-right"></i>
+              </Link>
             </div>
           </div>
         </div>
       </section>
-      <div className='margin'></div>
+      <div className="margin"></div>
     </>
-  )
-}
+  );
+};
 
-export default Hero
+export default Hero;
