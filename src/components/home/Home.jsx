@@ -11,9 +11,10 @@ const Home = () => {
   return (
     <>
       <Hero />
+      <Hservices />
       <AboutCard />
       <HAbout />
-      <Hservices />
+     
       <Testimonal />
       <Hblog />
       

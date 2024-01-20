@@ -73,11 +73,18 @@ const ConsultingPage = () => {
   ];
 
   return (
+    <>
+       <div className="head_service">
+      <h1>Consulting Services</h1>
+    </div>
+
     <div className="Consult_container grid">
       {consultingServices.map((service) => (
         <ServiceCard key={service.id} {...service} />
       ))}
     </div>
+    </>
+    
   );
 };
 

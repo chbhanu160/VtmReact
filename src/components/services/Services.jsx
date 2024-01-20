@@ -13,6 +13,9 @@ const Services = () => {
           <LearningPage />
         </Route>
         <Route path="/services/consulting">
+        <div id="head_service" >
+          <h3>Consulting Services</h3>
+        </div>
           <ConsultingPage />
         </Route>
       </Switch>

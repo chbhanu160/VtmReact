@@ -1,5 +1,5 @@
 
-.hero-container {
+.hero_container {
   position: relative;
   padding-left: 50px;
   text-align: left;
@@ -18,7 +18,7 @@
 }
 
 
-#heading h3 {
+#hero_heading h3 {
   color: #004AAD;
   margin-top: 20px;
   text-align: left;
@@ -31,14 +31,14 @@
   text-align: left;
 }
 
-#hero-text {
+.hero-text {
   margin-bottom: 60px;
   text-align: left;
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
-.button {
-  margin-top: 40px;
+.hero_button {
+  margin-top: 30px;
   cursor: pointer;
 }
 
