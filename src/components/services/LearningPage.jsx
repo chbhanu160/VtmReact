@@ -2,7 +2,7 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import "./services.css";
-
+import Heading from "../common/heading/Heading"
 const LearningPage = () => {
   const learningServices = [
     {
@@ -59,11 +59,19 @@ const LearningPage = () => {
   ];
 
   return (
+   <>
+     <div className="head_service">
+      <h1>Learning Services</h1>
+    </div>
     <div className="Learn_container grid">
+    
       {learningServices.map((service) => (
         <ServiceCard key={service.id} {...service} />
       ))}
     </div>
+    
+   </>
+   
   );
 };
 
