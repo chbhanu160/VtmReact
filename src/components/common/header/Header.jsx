@@ -23,11 +23,14 @@ const Header = () => {
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
-           
+
               <NavDropdown title="Services" id="basic-nav-dropdown">
-  <NavDropdown.Item as={Link} to="/services/learning">Learning</NavDropdown.Item>
-  <NavDropdown.Item as={Link} to="/services/consulting">Consulting</NavDropdown.Item>
-</NavDropdown>
+                <NavDropdown.Item as={Link} to="/services">All Services</NavDropdown.Item>
+                <NavDropdown.Divider />
+                <NavDropdown.Item as={Link} to="/services/learning">Learning</NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/services/consulting">Consulting</NavDropdown.Item>
+              </NavDropdown>
+
               <Nav.Link as={Link} to="/testimonials">Testimonials</Nav.Link>
               <Nav.Link as={Link} to="/gallery">Gallery</Nav.Link>
               <Nav.Link as={Link} to="/events">Events</Nav.Link>
