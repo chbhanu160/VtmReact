@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import Heading from "../common/heading/Heading";
 import ServiceSlider from "../services/ServiceSlider";
+import { Link } from "react-router-dom";
 
 const Hservices = () => {
   // Define your learning and consulting services data here
@@ -143,10 +144,14 @@ const Hservices = () => {
               services={learningServices}
               serviceName="Learning"
             />
+            
+
             <ServiceSlider
               services={consultingServices}
               serviceName="Consulting"
             />
+          
+            <h6 >View-More</h6>
           </div>
       
         </section>
