@@ -18,7 +18,7 @@ const ServiceSlider = ({ services, serviceName }) => {
 
   return (
     <div className="service-slider">
-      <h3>{serviceName} Services</h3>
+      <h3  >{serviceName} Services</h3>
       <div className="slider-content">
         <div
           className={`slide ${currentSlide === 0 ? "active" : ""}`}

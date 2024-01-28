@@ -1,4 +1,4 @@
-/* ServiceSlider.css */
+
 .service-slider {
   position: relative;
   overflow: hidden;
@@ -7,18 +7,18 @@
 .slider-content {
   display: flex;
   transition: transform 0.5s ease-in-out;
-  height: 100%; 
+  height: 100%;
 }
 
 .slide {
-  width: 100%; /* Ensure each slide takes 100% width */
+  width: 100%;
   box-sizing: border-box;
-  flex: 0 0 auto; /* Ensure each slide has a fixed size */
+  flex: 0 0 auto;
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
-  height: 300px; /* Set a fixed height for each box */
+  height: 300px;
   position: relative;
 }
 
@@ -32,8 +32,8 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  flex-grow: 1; /* Make the bullet points take remaining height */
-  overflow-y: auto; /* Add scroll if content exceeds the fixed height */
+  flex-grow: 1;
+  overflow-y: auto;
 }
 
 .bullet-points li {
@@ -42,10 +42,23 @@
 
 .button-container {
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
 }
 
-.get-started-button {
+.slider-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+
+.slider-buttons button {
   background-color: #004AAD;
   color: #ffffff;
   border: none;
@@ -53,36 +66,32 @@
   cursor: pointer;
   border-radius: 5px;
   transition: background-color 0.3s, color 0.3s;
-}
-
-.get-started-button:hover {
-  background-color: #ffffff;
-  color: #004AAD;
-}
-
-.slider-buttons {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0 20px;
-  box-sizing: border-box;
-}
-
-.slider-buttons button {
-  background-color: #004AAD;
-  color: #ffffff;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-  transition: background-color 0.3s, color 0.3s;
+  margin: 0 10px; /* Add margin between buttons */
 }
 
 .slider-buttons button:hover {
   background-color: #ffffff;
   color: #004AAD;
+}
+
+.viewMore {
+  background-color: #004AAD;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 38rem;
+}
+
+.viewMore:hover {
+  background-color: #ffffff;
+  color: #004AAD;
+}
+#vim{
+  justify-content: center;
+  align-items: center;
 }

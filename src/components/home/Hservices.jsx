@@ -4,8 +4,9 @@ import Heading from "../common/heading/Heading";
 import ServiceSlider from "../services/ServiceSlider";
 import { Link } from "react-router-dom";
 
+
 const Hservices = () => {
-  // Define your learning and consulting services data here
+  
   const learningServices = [
     {
       id: 1,
@@ -144,16 +145,21 @@ const Hservices = () => {
               services={learningServices}
               serviceName="Learning"
             />
-            
-
+            <Link to="/services/learning">
+            <button className="viewMore">View More</button>
+            </Link>
+           
             <ServiceSlider
               services={consultingServices}
               serviceName="Consulting"
             />
-          
-            <h6 >View-More</h6>
+          <Link to="/services/consulting">
+            <button className="viewMore" id="vim" >View More</button>
+      </Link>
+           
           </div>
-      
+          
+          
         </section>
       </>
     );
