@@ -59,19 +59,16 @@ const LearningPage = () => {
   ];
 
   return (
-   <>
-     <div className="head_service">
-      <h1>Learning Services</h1>
+    <div className="page-container">
+      <div className="head_service">
+        <h1>Learning Services</h1>
+      </div>
+      <div className="Learn_container grid">
+        {learningServices.map((service) => (
+          <ServiceCard key={service.id} {...service} />
+        ))}
+      </div>
     </div>
-    <div className="Learn_container grid">
-    
-      {learningServices.map((service) => (
-        <ServiceCard key={service.id} {...service} />
-      ))}
-    </div>
-    
-   </>
-   
   );
 };
 
