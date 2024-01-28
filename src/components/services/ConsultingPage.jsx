@@ -74,7 +74,9 @@ const ConsultingPage = () => {
 
   return (
     <>
-       <div className="head_service">
+    <div className="page-container" >
+      
+    <div className="head_service">
       <h1>Consulting Services</h1>
     </div>
 
@@ -82,6 +84,7 @@ const ConsultingPage = () => {
       {consultingServices.map((service) => (
         <ServiceCard key={service.id} {...service} />
       ))}
+    </div>
     </div>
     </>
     

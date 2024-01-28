@@ -1,12 +1,9 @@
-
 .hero_container {
   position: relative;
   padding-left: 50px;
   text-align: left;
   z-index: 1;
-  top: 0;
-  left: 0;
-  background-image: url("./bg.svg"); 
+  background-image: url("./bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
@@ -14,9 +11,9 @@
   width: 100%;
   background-attachment: fixed;
   padding-top: 5%;
+margin-bottom: -30rem;
   padding-right: 50px;
 }
-
 
 #hero_heading h3 {
   color: #004AAD;
@@ -32,13 +29,13 @@
 }
 
 .hero-text {
-  margin-bottom: 60px;
+  margin-bottom: 30px; /* Adjusted margin for better spacing */
   text-align: left;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 .hero_button {
-  margin-top: 30px;
+  margin-top: 20px; /* Adjusted margin for better spacing */
   cursor: pointer;
 }
 
@@ -51,10 +48,9 @@
   padding: 10px 20px;
   border-radius: 5px;
   cursor: pointer;
-  margin-top: -150px;
-  margin-right: 50px;
   justify-content: center;
   text-align: left;
+  margin-right: 50px;
 }
 
 .get-started-btn:hover,
