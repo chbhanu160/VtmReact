@@ -17,11 +17,13 @@ const ServiceSlider = ({ services, serviceName }) => {
   };
 
   return (
-    <div className="service-slider">
+    <div className="service-slider-container">
+
+<div className="service-slider">
       <h3  >{serviceName} Services</h3>
       <div className="slider-content">
         <div
-          className={`slide ${currentSlide === 0 ? "active" : ""}`}
+          id={`slide ${currentSlide === 0 ? "active" : ""}`}
         >
           <ServiceCard {...services[currentSlide]} />
         </div>
@@ -31,6 +33,8 @@ const ServiceSlider = ({ services, serviceName }) => {
         <button onClick={handleNextSlide}>Next &#8250;</button>
       </div>
     </div>
+    </div>
+   
   );
 };
 

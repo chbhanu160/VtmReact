@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Heading from "../common/heading/Heading";
 import ServiceSlider from "../services/ServiceSlider";
 import { Link } from "react-router-dom";
-
+import "../services/ServiceSlider.css"
 
 const Hservices = () => {
   
@@ -130,39 +130,36 @@ const Hservices = () => {
   ];
 
   
-    const [currentService, setCurrentService] = useState("Learning");
-  
-    const handleServiceChange = (serviceName) => {
-      setCurrentService(serviceName);
-    };
-  
-    return (
-      <>
-        <section className="hprice padding">
-          <Heading subtitle="OUR Services" />
-          <div className="service-slider-container">
-            <ServiceSlider
-              services={learningServices}
-              serviceName="Learning"
-            />
-            <Link to="/services/learning">
-            <button className="viewMore">View More</button>
-            </Link>
-           
-            <ServiceSlider
-              services={consultingServices}
-              serviceName="Consulting"
-            />
-          <Link to="/services/consulting">
-            <button className="viewMore" id="vim" >View More</button>
-      </Link>
-           
-          </div>
-          
-          
-        </section>
-      </>
-    );
+  const [currentService, setCurrentService] = useState("Learning");
+
+  const handleServiceChange = (serviceName) => {
+    setCurrentService(serviceName);
   };
+
+  return (
+    <>
+      <section className="hprice padding">
+        <Heading subtitle="OUR Services" />
+        <div className="service-slider-container">
+          <div className="unique-container">
+            <ServiceSlider services={learningServices} serviceName="Learning" />
+            
+              <Link to="/services/learning">
+                <button  id="vim" >View More</button>
+              </Link>
+            
   
-  export default Hservices;
+            <ServiceSlider services={consultingServices} serviceName="Consulting" />
+       
+              <Link to="/services/consulting">
+                <button  id="vim" >View More</button>
+              </Link>
+        
+          </div>
+        </div>
+      </section>
+    </>
+  );
+};
+
+export default Hservices;
