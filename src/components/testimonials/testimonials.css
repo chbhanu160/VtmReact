@@ -1,33 +1,35 @@
-/* testimonials.css */
 
 .testimonials-section {
-  margin-top: 50px; /* Adjust the margin between navbar and testimonials */
+  margin-top: 50px; 
+  text-align: center;
+}
 
+.testimonials-section h2 {
+  margin-bottom: 20px; 
 }
-.testimonials-section h2{
-  justify-content: center;
-}
+
 .carousel {
-  width: 100%; /* Set the width of the carousel to 50% */
-  margin: 20px auto; /* Add margin around the carousel */
+  display: inline-block; 
+  width: 48%; 
+  margin: 20px 1%; 
 }
 
 .carousel-item {
-  
   justify-content: space-between;
   align-items: center;
-  padding: 20px; 
+  padding: 20px;
 }
 
 .testimonial-content {
-  max-width: 50%; /* Set the maximum width for the testimonial content */
+  max-width: 100%; 
 }
 
 .testimonial-screenshot img {
-  width: 100%; /* Make the screenshot image fill its container */
-  border-radius: 10px; /* Add border-radius for a rounded look */
-  margin-bottom: 15px; /* Add margin to separate image from content */
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
+
 
 /* .team .items {
   transition: 0.5s;
