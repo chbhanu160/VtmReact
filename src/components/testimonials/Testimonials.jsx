@@ -87,12 +87,12 @@ const Testimonials = () => {
   ];
 
   return (
-    <>
-
-<div className="testimonials-section text-center">
-        <h2>Student Testimonials</h2>
-        <Carousel className="carousel testimonial-carousel">
-          {testimonials.map((testimonial, index) => (
+    <div className="testimonials-section text-center">
+      <h2>Student Testimonials</h2>
+      <div className="d-flex justify-content-center">
+        {/* First Carousel */}
+        <Carousel className="carousel testimonial-carousel mr-3">
+          {testimonials.slice(0, testimonials.length / 2).map((testimonial, index) => (
             <Carousel.Item key={index}>
               <div className="carousel-item d-flex flex-column align-items-center">
                 <div className="testimonial-content mb-3">
@@ -114,18 +114,34 @@ const Testimonials = () => {
             </Carousel.Item>
           ))}
         </Carousel>
+
+        {/* Second Carousel */}
+        <Carousel className="carousel testimonial-carousel ml-3">
+          {testimonials.slice(testimonials.length / 2).map((testimonial, index) => (
+            <Carousel.Item key={index}>
+              <div className="carousel-item d-flex flex-column align-items-center">
+                <div className="testimonial-content mb-3">
+                  <p>{testimonial.content}</p>
+                  <a href={testimonial.postLink} target="_blank" rel="noopener noreferrer">
+                    <button className="btn btn-primary">Read More</button>
+                  </a>
+                </div>
+                <div className="testimonial-screenshot">
+                  <img
+                    src={testimonial.screenshot}
+                    alt={`Screenshot ${index + testimonials.length / 2 + 1}`}
+                  />
+                </div>
+                <div className="testimonial-name mt-3">
+                  <h4>{testimonial.name}</h4>
+                </div>
+              </div>
+            </Carousel.Item>
+          ))}
+        </Carousel>
       </div>
-
-      {/* <Back title='Team' />
-      <section className='team padding'>
-        <div className='container grid'>
-          <TeamCard />
-        </div>
-      </section>
-      <Awrapper /> */}
-
-    </>
-  )
+    </div>
+  );
 }
 
-export default Testimonials
+export default Testimonials;
