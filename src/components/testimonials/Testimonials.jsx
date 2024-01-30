@@ -91,7 +91,7 @@ const Testimonials = () => {
       <h2>Student Testimonials</h2>
       <div className="d-flex justify-content-center">
         {/* First Carousel */}
-        <Carousel className="carousel testimonial-carousel mr-3">
+        <Carousel className="carousel testimonial-carousel mr-3" id="test" >
           {testimonials.slice(0, testimonials.length / 2).map((testimonial, index) => (
             <Carousel.Item key={index}>
               <div className="carousel-item d-flex flex-column align-items-center">
@@ -116,7 +116,7 @@ const Testimonials = () => {
         </Carousel>
 
         {/* Second Carousel */}
-        <Carousel className="carousel testimonial-carousel ml-3">
+        <Carousel className="carousel testimonial-carousel ml-3" id="test">
           {testimonials.slice(testimonials.length / 2).map((testimonial, index) => (
             <Carousel.Item key={index}>
               <div className="carousel-item d-flex flex-column align-items-center">
