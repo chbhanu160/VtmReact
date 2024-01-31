@@ -77,7 +77,7 @@ const ConsultingPage = () => {
     <div className="page-container" >
       
     <div className="head_service">
-      <h1>Consulting Services</h1>
+      <h1 id="con_title" >Consulting Services</h1>
     </div>
 
     <div className="Consult_container grid">

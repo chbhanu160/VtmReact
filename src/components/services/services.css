@@ -1,15 +1,24 @@
 /* Updated services.css for LearningPage and ConsultingPage */
-.Learn_container, .Consult_container {
+.Learn_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   justify-content: space-around;
-  background-image: url("./service.svg");
+  background-image: url("./7.jpg");
   background-size: cover;
   background-position: center;
   padding: 20px; /* Adjust as needed */
 }
-
+.Consult_container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 10px;
+  justify-content: space-around;
+  background-image: url("./1.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Adjust as needed */
+}
 .head_service {
   text-align: center;
   margin-bottom: 40px;
@@ -22,7 +31,12 @@
   font-size: 24px;
   margin-bottom: 10px;
 }
-
+#con_title{
+  font-size: 3rem;
+}
+#learn_title{
+  font-size: 3rem;
+}
 .items {
   padding: 20px;
   border: 1px solid #004AAD;
