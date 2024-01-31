@@ -61,7 +61,7 @@ const LearningPage = () => {
   return (
     <div className="page-container">
       <div className="head_service">
-        <h1>Learning Services</h1>
+        <h1 id="learn_title">Learning Services</h1>
       </div>
       <div className="Learn_container grid">
         {learningServices.map((service) => (
