@@ -1,7 +1,7 @@
 /* testimonials.css */
 
 .testimonials-section {
-  margin-top: 50px; /* Adjust the margin between navbar and testimonials */
+  margin-top: 50px; 
 
 }
 .testimonials-section h2{
@@ -9,11 +9,12 @@
 }
 .carousel {
 
-  margin: 20px auto; /* Add margin around the carousel */
+  margin: 30px auto; 
   
 }
+
 #test{
-  width:40%;
+  width:46%;
 }
 .carousel-item {
   
@@ -23,13 +24,13 @@
 }
 
 .testimonial-content {
-  max-width: 50%; /* Set the maximum width for the testimonial content */
+  max-width: 50%; 
 }
 
 .testimonial-screenshot img {
-  width: 100%; /* Make the screenshot image fill its container */
-  border-radius: 10px; /* Add border-radius for a rounded look */
-  margin-bottom: 15px; /* Add margin to separate image from content */
+  width: 100%; 
+  border-radius: 20px;
+  margin-bottom: 15px;
 }
 
 /* .team .items {
