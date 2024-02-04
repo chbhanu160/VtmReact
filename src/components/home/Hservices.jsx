@@ -1,9 +1,9 @@
 // Hservices.jsx
 import React, { useState } from "react";
 import Heading from "../common/heading/Heading";
-import ServiceSlider from "../services/ServiceSlider";
+import ServiceSlider from "./ServiceSlider";
 import { Link } from "react-router-dom";
-import "../services/ServiceSlider.css"
+
 
 const Hservices = () => {
   
@@ -138,25 +138,13 @@ const Hservices = () => {
 
   return (
     <>
-      <section className="hprice padding">
+      <section className="hservices-padding">
         <Heading subtitle="OUR Services" />
         <div className="service-slider-container">
-          <div className="unique-container">
-            <ServiceSlider services={learningServices} serviceName="Learning" />
-            
-              <Link to="/services/learning">
-                <button  id="vim" >View More</button>
-              </Link>
-            
-  
-            <ServiceSlider services={consultingServices} serviceName="Consulting" />
-       
-              <Link to="/services/consulting">
-                <button  id="vim" >View More</button>
-              </Link>
-        
+        <ServiceSlider services={learningServices} serviceName="Learning" />
+      <ServiceSlider services={consultingServices} serviceName="Consulting" />
           </div>
-        </div>
+        
       </section>
     </>
   );

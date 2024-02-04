@@ -1,4 +1,4 @@
-/* Updated services.css for LearningPage and ConsultingPage */
+
 .Learn_container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -25,7 +25,9 @@
   margin-top: 40px;
   color: #004AAD;
 }
-
+#servicecard{
+  max-height: 600px;
+}
 .service-title {
   color: #004AAD;
   font-size: 24px;

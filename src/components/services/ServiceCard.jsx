@@ -1,4 +1,3 @@
-// ServiceCard.jsx
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
@@ -6,7 +5,7 @@ import { faCheckCircle } from "@fortawesome/free-solid-svg-icons";
 
 const ServiceCard = ({ name, bulletPoints }) => {
   return (
-    <div className="services items shadow">
+    <div className="services items shadow" id="servicecard">
       <h4>{name}</h4>
       <div className="Ser_description">
         <ul>
