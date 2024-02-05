@@ -1,91 +1,54 @@
-/* testimonials.css */
 
 .testimonials-section {
-  margin-top: 50px; 
-
-}
-.testimonials-section h2{
-  justify-content: center;
-}
-.carousel {
-
-  margin: 30px auto; 
-  
+  margin-top:20px;
+  padding: 20px;
 }
 
-#test{
-  width:46%;
-}
-.carousel-item {
-  
+.testimonial-sliders {
+  display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px; 
+  margin-top:20px;
+  max-height:1000px;
 }
 
-.testimonial-content {
-  max-width: 50%; 
+.testimonial-slider {
+  margin-right: 20px; 
+  margin-top:40px;
+}
+
+
+.slider-content {
+  display: flex;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  display: block;
 }
 
 .testimonial-screenshot img {
-  width: 100%; 
-  border-radius: 20px;
-  margin-bottom: 15px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-/* .team .items {
-  transition: 0.5s;
-}
-.team .img {
-  position: relative;
-}
-.team img {
-  width: 100%;
-  height: 100%;
-}
-.overlay {
-  position: absolute;
-  bottom: 0;
-  z-index: 11;
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-  opacity: 0;
-  transition: 0.5s;
-}
-.overlay i {
-  background-color: #000;
-  color: #fff;
-  margin: 5px;
-  transition: 0.5s;
-}
-.team .details {
-  padding: 30px;
-  text-align: center;
-}
-.team .details h2 {
-  font-weight: 500;
-  font-size: 20px;
-  transition: 0.5s;
-}
-.team .details p {
-  font-size: 15px;
-  color: grey;
+.slider-buttons {
   margin-top: 10px;
-  transition: 0.5s;
 }
-.team .items:hover {
-  background-color: #027Dff;
+
+button {
+  background-color: #007bff;
   color: #fff;
+  font-size: 18px;
+  padding: 8px 16px;
+  margin: 0 8px;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
-.team .items:hover p {
-  color: #fff;
-}
-.team .items:hover .overlay {
-  opacity: 1;
-}
-.team .items:hover .overlay i:hover {
-  background-color: #027Dff;
-  color: #fff;
-} */
+
+/* Adjust styles as needed */
