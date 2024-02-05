@@ -1,7 +1,6 @@
 // Gallery.jsx
-import React from 'react';
-import { Carousel } from 'react-bootstrap';
-import "./gallery.css";
+import React, { useState, useEffect } from 'react';
+import './gallery.css';
 
 import image1 from './Training/1.jpeg';
 import image2 from './Training/2.jpeg';
@@ -16,18 +15,52 @@ import image10 from './Training/10.jpeg';
 import image11 from './Training/11.jpeg';
 
 const Gallery = () => {
-  const galleryImages = [image1, image2, image3, image4, image5, image6, image7, image8, image9, image10, image11];
+  const galleryImages = [
+    { id: 1, image: image1, caption: 'Image 1 Caption' },
+    { id: 2, image: image2, caption: 'Image 2 Caption' },
+    { id: 3, image: image3, caption: 'Image 3 Caption' },
+    { id: 4, image: image4, caption: 'Image 4 Caption' },
+    { id: 5, image: image5, caption: 'Image 5 Caption' },
+    { id: 6, image: image6, caption: 'Image 6 Caption' },
+    { id: 7, image: image7, caption: 'Image 7 Caption' },
+    { id: 8, image: image8, caption: 'Image 8 Caption' },
+    { id: 9, image: image9, caption: 'Image 9 Caption' },
+    { id: 10, image: image10, caption: 'Image 10 Caption' },
+    { id: 11, image: image11, caption: 'Image 11 Caption' },
+  ];
+
+  const [currentSlide, setCurrentSlide] = useState(0);
+
+  const handlePrevSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide - 1 + galleryImages.length) % galleryImages.length);
+  };
+
+  const handleNextSlide = () => {
+    setCurrentSlide((prevSlide) => (prevSlide + 1) % galleryImages.length);
+  };
+
+  useEffect(() => {
+    const timer = setInterval(() => {
+      handleNextSlide();
+    }, 5000);
+
+    return () => clearInterval(timer);
+  }, [currentSlide]);
 
   return (
     <div className="gallery-container">
-  
-      <Carousel className="gallery-carousel">
-        {galleryImages.map((image, index) => (
-          <Carousel.Item key={index}>
-            <img className="d-block w-100" src={image} alt={`Slide ${index + 1}`} />
-          </Carousel.Item>
+      <div className="gallery-buttons">
+        <button onClick={handlePrevSlide}>&#8249;</button>
+        <button onClick={handleNextSlide}>&#8250;</button>
+      </div>
+      <div className="gallery-slider">
+        {galleryImages.map((item, index) => (
+          <div key={index} className={`G-slide ${currentSlide === index ? 'active' : ''}`}>
+            <img src={item.image} alt={`Image ${item.id}`} />
+            <div className="caption">{item.caption}</div>
+          </div>
         ))}
-      </Carousel>
+      </div>
     </div>
   );
 };

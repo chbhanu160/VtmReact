@@ -1,19 +1,52 @@
-/* Updated gallery.css */
-
-.gallery {
-  max-width: 80vw; /* Adjust the max-width as needed */
-  margin: 20px auto;
-  height: 60vh; /* Adjust the height as needed */
+/* gallery.css */
+.gallery-container {
+  position: relative;
+  width: 70%; /* Adjust the desired width */
+  margin: auto; /* Center the slider */
+  margin-bottom:40px;
 }
 
-.gallery-carousel {
-  max-height: 100%; /* Ensure the carousel takes the full height of the gallery */
+.gallery-buttons {
+  position: absolute;
+  top: 20px; /* Adjust the distance from the top */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1; /* Ensure buttons are above the slider */
 }
 
-.carousel img {
-  width: auto; /* Allow images to adjust their width */
-  height: 100%; /* Ensure images take the full height of the carousel */
-  object-fit: cover;
+.gallery-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px; /* Adjust the distance from the top */
 }
 
-/* Add any additional styles as needed */
+.G-slide {
+  display: none;
+  height: 600px; /* Adjust the desired height */
+  width: 100%;
+  transition: opacity 0.5s ease-in-out; /* Add transition for smoother slide */
+  
+}
+
+.active {
+  display: block;
+}
+
+.G-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Maintain aspect ratio and cover container */
+ 
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}

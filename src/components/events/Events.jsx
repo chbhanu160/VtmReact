@@ -114,7 +114,7 @@ const Events = () => {
       
       <section className="events padding">
         <div className="events_container">
-          <Carousel className="carousel event-carousel">
+          <Carousel className="event-carousel">
             {eventImages.map((image, index) => (
               <Carousel.Item key={index}>
                 <img className="d-block w-100" src={image.src} alt={`Event ${index + 1}`} />
