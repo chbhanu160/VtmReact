@@ -8,7 +8,7 @@
   display: flex;
   justify-content: space-between;
   margin-top:20px;
-  max-height:1000px;
+ 
 }
 
 .testimonial-slider {
@@ -17,12 +17,13 @@
 }
 
 
-.slider-content {
+.test-slider-content {
   display: flex;
 }
 
-.slide {
+.testinom-slide {
   display: none;
+  height:800px;
 }
 
 .active {
@@ -36,7 +37,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.slider-buttons {
+.test-slider-buttons {
   margin-top: 10px;
 }
 
@@ -51,4 +52,4 @@ button {
   cursor: pointer;
 }
 
-/* Adjust styles as needed */
+

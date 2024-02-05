@@ -4,7 +4,7 @@
   padding: 0 20px;
 }
 
-.slider-content {
+.service-slider-content {
   display: flex;
   transition: transform 0.3s ease;
   margin-bottom: 20px;
@@ -19,7 +19,7 @@
   transition: opacity 0.3s ease;
 }
 
-.slide.active {
+#Hslide.active {
   opacity: 1;
 }
 
@@ -55,14 +55,14 @@
   color: #004AAD;
 }
 
-.slider-buttons {
+.service-slider-buttons {
   display: flex;
   justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.slider-buttons button {
+.service-slider-buttons button {
   background-color: #004AAD;
   color: #ffffff;
   border: none;
@@ -73,7 +73,7 @@
   margin: 0 10px;
 }
 
-.slider-buttons button:hover {
+.service-slider-buttons button:hover {
   background-color: #ffffff;
   color: #004AAD;
 }
