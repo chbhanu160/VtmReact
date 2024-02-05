@@ -1,5 +1,5 @@
 // ServiceSlider.jsx
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import "./ServiceSlider.css";
 
@@ -15,6 +15,19 @@ const ServiceSlider = ({ services, serviceName }) => {
       (prevSlide) => (prevSlide - 1 + Math.ceil(services.length / 3)) % Math.ceil(services.length / 3)
     );
   };
+ // Function to automatically slide to the next one after 5 seconds
+ const autoSlide = () => {
+  handleNextSlide();
+};
+
+useEffect(() => {
+  // Set up a timer to automatically slide every 5 seconds
+  const timer = setInterval(autoSlide, 5000);
+
+  // Clean up the timer when the component unmounts
+  return () => clearInterval(timer);
+}, [currentSlide]);
+
 
   return (
     <div className="service-slider-container">
