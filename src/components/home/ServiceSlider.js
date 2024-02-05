@@ -32,7 +32,7 @@ useEffect(() => {
   return (
     <div className="service-slider-container">
       <h3>{serviceName} Services</h3>
-      <div className="slider-content">
+      <div className="service-slider-content">
         {services.slice(currentSlide * 3, (currentSlide + 1) * 3).map((service, index) => (
           <div key={index} className="slide"id="Hslide" >
             <div className="service-content">
@@ -49,7 +49,7 @@ useEffect(() => {
           </div>
         ))}
       </div>
-      <div className="slider-buttons">
+      <div className="service-slider-buttons">
         <button onClick={handlePrevSlide}>&#8249; Prev</button>
         <button onClick={handleNextSlide}>Next &#8250;</button>
       </div>

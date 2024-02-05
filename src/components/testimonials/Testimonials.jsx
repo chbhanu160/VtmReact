@@ -32,12 +32,12 @@ const Testimonials = () => {
   };
 
   const handleNextSlide2 = () => {
-    setCurrentSlide2((prevSlide) => (prevSlide + 1) % testimonials.length);
+    setCurrentSlide2((prevSlide) => (prevSlide + 2) % testimonials.length);
   };
 
   const handlePrevSlide2 = () => {
     setCurrentSlide2(
-      (prevSlide) => (prevSlide - 1 + testimonials.length) % testimonials.length
+      (prevSlide) => (prevSlide - 2 + testimonials.length) % testimonials.length
     );
   };
 
@@ -58,11 +58,17 @@ const Testimonials = () => {
       <div className="testimonial-sliders">
         {/* First Testimonial Slider */}
         <div className="testimonial-slider">
-          <div className="slider-content">
+
+        <div className="test-slider-buttons">
+            <button onClick={handlePrevSlide1}>&#8249;</button>
+            <button onClick={handleNextSlide1}>&#8250;</button>
+          </div>
+          
+          <div className="test-slider-content">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className={`slide ${currentSlide1 === index ? 'active' : ''}`}
+                className={`testinom-slide ${currentSlide1 === index ? 'active' : ''}`}
               >
                 <div className="testimonial-screenshot">
                   <img
@@ -73,19 +79,22 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-          <div className="slider-buttons">
-            <button onClick={handlePrevSlide1}>&#8249;</button>
-            <button onClick={handleNextSlide1}>&#8250;</button>
-          </div>
+        
         </div>
 
         {/* Second Testimonial Slider */}
         <div className="testimonial-slider">
-          <div className="slider-content">
+
+        <div className="test-slider-buttons">
+            <button onClick={handlePrevSlide2}>&#8249;</button>
+            <button onClick={handleNextSlide2}>&#8250;</button>
+          </div>
+
+          <div className="test-slider-content">
             {testimonials.map((testimonial, index) => (
               <div
                 key={index}
-                className={`slide ${currentSlide2 === index ? 'active' : ''}`}
+                className={`testinom-slide ${currentSlide2 === index ? 'active' : ''}`}
               >
                 <div className="testimonial-screenshot">
                   <img
@@ -96,10 +105,7 @@ const Testimonials = () => {
               </div>
             ))}
           </div>
-          <div className="slider-buttons">
-            <button onClick={handlePrevSlide2}>&#8249;</button>
-            <button onClick={handleNextSlide2}>&#8250;</button>
-          </div>
+          
         </div>
       </div>
     </div>
