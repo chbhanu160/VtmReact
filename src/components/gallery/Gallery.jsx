@@ -29,39 +29,87 @@ const Gallery = () => {
     { id: 11, image: image11, caption: 'Image 11 Caption' },
   ];
 
-  const [currentSlide, setCurrentSlide] = useState(0);
+  const [currentSlide1, setCurrentSlide1] = useState(0);
+  const [currentSlide2, setCurrentSlide2] = useState(0);
 
-  const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + galleryImages.length) % galleryImages.length);
+  const handleNextSlide1 = () => {
+    setCurrentSlide1((prevSlide) => (prevSlide + 1) % galleryImages.length);
   };
 
-  const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % galleryImages.length);
+  const handlePrevSlide1 = () => {
+    setCurrentSlide1(
+      (prevSlide) => (prevSlide - 1 + galleryImages.length) % galleryImages.length
+    );
+  };
+
+  const handleNextSlide2 = () => {
+    setCurrentSlide2((prevSlide) => (prevSlide + 2) % galleryImages.length);
+  };
+
+  const handlePrevSlide2 = () => {
+    setCurrentSlide2(
+      (prevSlide) => (prevSlide - 2 + galleryImages.length) % galleryImages.length
+    );
+  };
+
+  const autoSlide = () => {
+    handleNextSlide1();
+    handleNextSlide2();
   };
 
   useEffect(() => {
-    const timer = setInterval(() => {
-      handleNextSlide();
-    }, 5000);
+    const timer = setInterval(autoSlide, 5000);
 
     return () => clearInterval(timer);
-  }, [currentSlide]);
+  }, [currentSlide1, currentSlide2]);
+
 
   return (
+
+    <div className="gallery-section text-center">
+  
     <div className="gallery-container">
-      <div className="gallery-buttons">
-        <button onClick={handlePrevSlide}>&#8249;</button>
-        <button onClick={handleNextSlide}>&#8250;</button>
-      </div>
+
+{/*  1st slider */}
+
+      
       <div className="gallery-slider">
+
+      <div className="gallery-buttons">
+      <button onClick={handlePrevSlide1}>&#8249;</button>
+            <button onClick={handleNextSlide1}>&#8250;</button>
+      </div>
         {galleryImages.map((item, index) => (
-          <div key={index} className={`G-slide ${currentSlide === index ? 'active' : ''}`}>
+          <div key={index} className={`G-slide ${currentSlide1 === index ? 'active' : ''}`}>
             <img src={item.image} alt={`Image ${item.id}`} />
             <div className="G-caption">{item.caption}</div>
           </div>
         ))}
       </div>
+
+
+    {/* 2nd slider */}
+
+      
+      <div className="gallery-slider">
+
+      <div className="gallery-buttons">
+      <button onClick={handlePrevSlide2}>&#8249;</button>
+            <button onClick={handleNextSlide2}>&#8250;</button>
+      </div>
+
+        {galleryImages.map((item, index) => (
+          <div key={index} className={`G-slide ${currentSlide2 === index ? 'active' : ''}`}>
+            <img src={item.image} alt={`Image ${item.id}`} />
+            <div className="G-caption">{item.caption}</div>
+          </div>
+        ))}
+      </div>
+
     </div>
+
+    </div>
+    
   );
 };
 
