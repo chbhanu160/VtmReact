@@ -57,7 +57,7 @@ const Gallery = () => {
         {galleryImages.map((item, index) => (
           <div key={index} className={`G-slide ${currentSlide === index ? 'active' : ''}`}>
             <img src={item.image} alt={`Image ${item.id}`} />
-            <div className="caption">{item.caption}</div>
+            <div className="G-caption">{item.caption}</div>
           </div>
         ))}
       </div>
