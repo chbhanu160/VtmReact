@@ -1,117 +1,52 @@
-.coursesCard {
-  padding: 50px 0;
-}
-.coursesCard .items {
-  background-color: #fff;
-  padding: 30px;
+/* courses.css */
+
+/* Add your global styles here */
+
+.course-section {
   text-align: center;
+  padding: 20px;
 }
-.coursesCard .img {
-  width: 80px;
-  height: 80px;
-  border-radius: 50%;
-  background-color: #027Dff;
-  padding: 15px;
-}
-.coursesCard img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.coursesCard .text {
-  margin-left: 15px;
-  text-align: left;
-}
-.coursesCard .text h1 {
-  font-size: 30px;
-  font-weight: 500;
-  line-height: 45px;
-}
-.coursesCard .rate {
-  margin: 20px 0;
-  color: #027Dff;
-}
-.coursesCard .rate i {
-  font-size: 13px;
-  margin-right: 5px;
-}
-.coursesCard .details .dimg img {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 20px;
-}
-.coursesCard .details .box {
+
+.courses-container {
   display: flex;
-  align-items: center;
-  color: grey;
+  justify-content: space-around;
+  align-items: center; /* Center vertically */
+  flex-wrap: wrap;
 }
-.coursesCard .details span {
-  color: #027Dff;
-  font-weight: 500;
-  font-size: 14px;
+
+.course-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 20px;
+  max-width: 300px;
+  text-align: left;
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center horizontally */
 }
-.coursesCard .price {
-  margin: 30px 0;
-  background-color: #f8f8f8;
-  padding: 10px;
+
+.course-card:hover {
+  transform: scale(1.05);
 }
-.coursesCard h3 {
-  font-weight: 500;
-  color: #027Dff;
+
+.course-icon {
+  font-size: 40px;
+  margin-bottom: 10px;
 }
-/*-------------online---------*/
-.online {
+
+.course-details {
   text-align: center;
 }
-.online .box {
-  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
-  background-color: #fff;
-  padding: 30px 20px;
-  transition: 0.5s;
-}
-.online .img {
-  width: 80px;
-  height: 80px;
-  margin: auto;
-  position: relative;
-}
-.online img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.online h1 {
-  font-weight: 500;
-  font-size: 20px;
-  margin: 20px 0;
-  line-height: 30px;
-}
-.online span {
-  background-color: #f8f8f8;
-  padding: 5px 20px;
-  font-weight: 500;
-  font-size: 15px;
-  color: #027Dff;
-  border-radius: 5px;
-}
-.online .box .show {
-  opacity: 0;
-}
-.online .box:hover {
-  background-color: #027Dff;
-  border-radius: 5px;
+
+.know-more-button {
+  background-color: #004AAD;
+  color: white;
+  border: none;
+  padding: 10px;
   cursor: pointer;
 }
-.online .box:hover .show {
-  opacity: 1;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-.online .box:hover h1 {
-  color: #fff;
-}
-/*-------------online---------*/
-@media screen and (max-width: 768px) {
+
+.know-more-button:hover {
+  background-color: #00284a; /* Darker blue color on hover */
 }
