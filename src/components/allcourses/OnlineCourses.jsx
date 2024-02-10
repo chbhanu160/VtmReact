@@ -1,31 +1,78 @@
-import React from "react"
-import "./courses.css"
-import { online } from "../../dummydata"
-import Heading from "../common/heading/Heading"
+// OnlineCourses.jsx
+import React from 'react';
+import './courses.css';
+import CourseCard from './CoursesCard';
+
+const coursesData = [
+  {
+    id: 1,
+    icon: '🚀',
+    title: 'Microsoft Azure Data Engineering',
+    hours: '20',
+    description: 'Learn the basics of web development and build your first website.',
+  },
+  {
+    id: 2,
+    icon: '💻',
+    title: 'Microsoft Azure Administration',
+    hours: '15',
+    description: 'Master the fundamentals of JavaScript programming language.',
+  },
+  {
+    id: 3,
+    icon: '💻',
+    title: '3. Microsoft Azure Architecture',
+    hours: '15',
+    description: 'Master the fundamentals of JavaScript programming language.',
+  },
+  {
+    id: 3,
+    icon: '💻',
+    title: '3. Microsoft Azure Architecture',
+    hours: '15',
+    description: 'Master the fundamentals of JavaScript programming language.',
+  },
+  {
+    id: 4,
+    icon: '💻',
+    title: '3. Microsoft Azure Architecture',
+    hours: '15',
+    description: 'Master the fundamentals of JavaScript programming language.',
+  },
+  {
+    id: 5,
+    icon: '💻',
+    title: '3. Microsoft Azure Architecture',
+    hours: '15',
+    description: 'Master the fundamentals of JavaScript programming language.',
+  },
+  {
+    id: 6,
+    icon: '💻',
+    title: '3. Microsoft Azure Architecture',
+    hours: '15',
+    description: 'Master the fundamentals of JavaScript programming language.',
+  },
+  
+];
 
 const OnlineCourses = () => {
   return (
-    <>
-      <section className='online'>
-        <div className='container'>
-        <p id="learn_anything">COURSES</p>
-          {/* <Heading subtitle='COURSES' title='Browse Our Online Courses' /> */}
-          <div className='content grid3'>
-            {online.map((val) => (
-              <div className='box'>
-                <div className='img'>
-                  <img src={val.cover} />
-                  <img src={val.hoverCover} alt='' className='show' />
-                </div>
-                <h1>{val.courseName}</h1>
-                <span>{val.course}</span>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-    </>
-  )
-}
+    <div className="course-section">
+      <h2>Online Courses</h2>
+      <div className="courses-container">
+        {coursesData.map((course) => (
+          <CourseCard
+            key={course.id}
+            icon={course.icon}
+            title={course.title}
+            hours={course.hours}
+            description={course.description}
+          />
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default OnlineCourses
+export default OnlineCourses;
