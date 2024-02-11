@@ -1,52 +1,63 @@
-/* courses.css */
-
-/* Add your global styles here */
-
-.course-section {
+.online-courses {
   text-align: center;
-  padding: 20px;
 }
 
-.courses-container {
+.courses-heading {
+  margin-bottom: 40px;
+  margin-top: 50px;
+  font-size: 44px;
+}
+
+.courses-flex {
   display: flex;
-  justify-content: space-around;
-  align-items: center; /* Center vertically */
   flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px; /* Set the maximum width as needed */
+  margin: 0 auto; /* Center the container */
+  margin-bottom: 30px;
 }
 
 .course-card {
-  border: 1px solid #ddd;
-  padding: 20px;
-  margin: 20px;
-  max-width: 300px;
-  text-align: left;
-  transition: transform 0.3s ease-in-out;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center horizontally */
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 450px; /* Adjust the height as needed */
+  width: 350px; /* Adjust the width as needed */
+  margin: 10px;
+  background-color: #f4f4f4;
+  border: 1px solid #ddd;
+  padding: 10px;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
 }
 
-.course-card:hover {
-  transform: scale(1.05);
+.content-container {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
-.course-icon {
-  font-size: 40px;
+.icon-container {
   margin-bottom: 10px;
 }
 
-.course-details {
+h3,
+p {
   text-align: center;
+  margin: 5px 0;
 }
 
-.know-more-button {
-  background-color: #004AAD;
-  color: white;
+button.know-more-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
   border: none;
-  padding: 10px;
   cursor: pointer;
-}
-
-.know-more-button:hover {
-  background-color: #00284a; /* Darker blue color on hover */
 }

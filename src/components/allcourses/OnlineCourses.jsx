@@ -1,74 +1,69 @@
-// OnlineCourses.jsx
-import React from 'react';
-import './courses.css';
-import CourseCard from './CoursesCard';
 
-const coursesData = [
-  {
-    id: 1,
-    icon: '🚀',
-    title: 'Microsoft Azure Data Engineering',
-    hours: '20',
-    description: 'Learn the basics of web development and build your first website.',
-  },
-  {
-    id: 2,
-    icon: '💻',
-    title: 'Microsoft Azure Administration',
-    hours: '15',
-    description: 'Master the fundamentals of JavaScript programming language.',
-  },
-  {
-    id: 3,
-    icon: '💻',
-    title: '3. Microsoft Azure Architecture',
-    hours: '15',
-    description: 'Master the fundamentals of JavaScript programming language.',
-  },
-  {
-    id: 3,
-    icon: '💻',
-    title: '3. Microsoft Azure Architecture',
-    hours: '15',
-    description: 'Master the fundamentals of JavaScript programming language.',
-  },
-  {
-    id: 4,
-    icon: '💻',
-    title: '3. Microsoft Azure Architecture',
-    hours: '15',
-    description: 'Master the fundamentals of JavaScript programming language.',
-  },
-  {
-    id: 5,
-    icon: '💻',
-    title: '3. Microsoft Azure Architecture',
-    hours: '15',
-    description: 'Master the fundamentals of JavaScript programming language.',
-  },
-  {
-    id: 6,
-    icon: '💻',
-    title: '3. Microsoft Azure Architecture',
-    hours: '15',
-    description: 'Master the fundamentals of JavaScript programming language.',
-  },
-  
-];
+import React from 'react';
+import CoursesCard from './CoursesCard';
+import './courses.css';
 
 const OnlineCourses = () => {
+ 
+  const coursesData = [
+    {
+          icon:'faBookOpen',
+          title:"Microsoft Azure Data Engineering",
+          hours:"40 ",
+          description:"comprehensive training covering Azure Databricks, Delta Lake, Data Factory, Synapse, HDInsight,...",
+    },
+    {
+      icon:'faBookOpen',
+      title:"Microsoft Azure Administration Training",
+      hours:"50 ",
+      description:"comprehensive training on Implementation, Management and Monitoring of Microsoft Azure Assets.",
+    },
+
+    {
+      icon:'faBookOpen',
+      title:"Microsoft Azure Architecture",
+      hours:"50 ",
+      description:"This is the description of Course 3.",
+    },
+    
+    {
+      icon:'faBookOpen',
+          title:"SQL Server DBA Training + SQL/TSQL Training",
+          hours:"90 ",
+          description:" comprehensive training covering both database administration and TSQL Programming...",
+    },
+    {
+      icon:'faBookOpen',
+          title:"SQL Server BI Training + Power BI Training",
+          hours:"70 ",
+          description:"comprehensive training covering SSIS, SSAS, MDX, SSRS, Power BI and Data Warehousing...",
+    },
+    {
+      icon:'faBookOpen',
+          title:'SQL Server Performance Tuning',
+          hours:'70 ',
+          description:'comprehensive training on SQL Server Performance Monitering, Tuning, Creating Performance Benchmark etc...',
+    },
+    {
+      icon:'faBookOpen',
+      title:'DevOps Engineering (Git, Jenkins, Docker, Ansible, Terraform, Kubernetes)',
+      hours:'70 ',
+      description:'DevOps Engineering training program will provide you with in-depth knowledge of various DevOps tools, including Git..',
+    },
+    {
+      icon:'faCoffee',
+          title:'AWS Solutions Architect Associate',
+          hours:'60 ',
+          description:'Our AWS Solutions Architect – Associate course is intended for every aspersing individual who want to learn and perform an ..',
+    }
+  ];
+
   return (
-    <div className="course-section">
-      <h2>Online Courses</h2>
-      <div className="courses-container">
-        {coursesData.map((course) => (
-          <CourseCard
-            key={course.id}
-            icon={course.icon}
-            title={course.title}
-            hours={course.hours}
-            description={course.description}
-          />
+    <div className="online-courses">
+    <h1 className="courses-heading">Online Courses</h1>
+      <div className="courses-flex">
+        {coursesData.map((course, index) => (
+          <CoursesCard key={index} {...course} />
         ))}
       </div>
     </div>
@@ -76,3 +71,4 @@ const OnlineCourses = () => {
 };
 
 export default OnlineCourses;
+
