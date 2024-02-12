@@ -26,7 +26,8 @@
   width: 350px; /* Adjust the width as needed */
   margin: 10px;
   background-color: #f4f4f4;
-  border: 1px solid #ddd;
+  border: 2px solid #004AAD;
+  border-radius: 5%;
   padding: 10px;
   position: relative;
   transition: transform 0.3s ease-in-out;
@@ -55,7 +56,7 @@ p {
 }
 
 button.know-more-button {
-  background-color: #007bff;
+  background-color: #004AAD;
   color: #fff;
   padding: 5px 10px;
   border: none;
