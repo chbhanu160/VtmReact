@@ -12,7 +12,7 @@ const CoursesCard = ({ icon, title, hours, description }) => {
     <div className="course-card">
       <div className="content-container">
         <div className="icon-container">
-          <FontAwesomeIcon icon={icon} size="2x" />
+          <FontAwesomeIcon icon={icon} size="4x" color="#004AAD"/>
         </div>
         <h3>{title}</h3>
         <p>{hours} Hours</p>
