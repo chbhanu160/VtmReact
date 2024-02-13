@@ -93,6 +93,7 @@ const Contact = () => {
               >
                 <i className="fab fa-youtube icon"></i>
               </a>
+              <div></div>
             </div>
           </div>
         </div>
