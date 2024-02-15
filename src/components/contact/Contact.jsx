@@ -5,32 +5,32 @@ import "./contact.css";
 const Contact = () => {
   return (
     <>
-      {/* <Back title='Contact us' /> */}
-      <section className="contacts padding">
+ 
+      <section className="contacts padding" id="contact_us_page">
         <div className="container_con shadow flexSB">
           <div className="left row">
             <img src={require("./15.svg")} alt="contact" />
           </div>
 
-          <div className="right">
-            <h1>Contact us</h1>
+          {/* <div className="right my-0">
+            <h3>Contact Us</h3>
             <p id="con1">We're open for any suggestion or just to have a chat</p>
 
             <div className="address-email-phone">
-              <div className="box_con address-box">
-                <h4>ADDRESS:</h4>
+              <div className="box_con address-box display-flex">
+                <h3>Address:</h3>
                 <p>
                   Sahkar Nagar, Khatipura road, jhotwara, Jaipur, Rajasthan -
                   302012
                 </p>
               </div>
-              <div className="box_con email-phone-box">
+              <div className="box_con email-phone-box display-flex">
                 <div>
-                  <h4>EMAIL:</h4>
+                  <h3>Email:</h3>
                   <p>visionarytechmate@gmail.com</p>
                 </div>
                 <div>
-                  <h4>PHONE:</h4>
+                  <h3>Phone:</h3>
                   <p>+91 6375597272</p>
                 </div>
               </div>
@@ -94,7 +94,8 @@ const Contact = () => {
                 <i className="fab fa-youtube icon"></i>
               </a>
             </div>
-          </div>
+          </div> */}
+          
         </div>
       </section>
     </>

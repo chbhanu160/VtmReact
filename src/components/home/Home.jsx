@@ -15,7 +15,7 @@ const Home = () => {
       <div className="bg-home">
       <Hservices />
       <AboutCard />
-      <HAbout />
+      {/* <HAbout /> */}
       <Testimonal />
       <Hblog />
       </div>
