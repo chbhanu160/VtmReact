@@ -7,8 +7,6 @@ const Contact = () => {
     <>
       
       <section className="contacts padding">
- 
-      <section className="contacts padding" id="contact_us_page">
         <div className="container_con shadow flexSB">
           <div className="left row">
             <img src={require("./15.svg")} alt="contact" />
@@ -21,17 +19,6 @@ const Contact = () => {
               
               <div>
 <p>We're open for any suggestion or just to have a chat</p>
-          {/* <div className="right my-0">
-            <h3>Contact Us</h3>
-            <p id="con1">We're open for any suggestion or just to have a chat</p>
-
-            <div className="address-email-phone">
-              <div className="box_con address-box display-flex">
-                <h3>Address:</h3>
-                <p>
-                  Sahkar Nagar, Khatipura road, jhotwara, Jaipur, Rajasthan -
-                  302012
-                </p>
               </div>
               <div className="row w-100">
                 
@@ -65,15 +52,6 @@ const Contact = () => {
  <p>+91 6375597272
   </p> 
   </div>
-              <div className="box_con email-phone-box display-flex">
-                <div>
-                  <h3>Email:</h3>
-                  <p>visionarytechmate@gmail.com</p>
-                </div>
-                <div>
-                  <h3>Phone:</h3>
-                  <p>+91 6375597272</p>
-                </div>
               </div>
 
 </div>
@@ -179,8 +157,6 @@ const Contact = () => {
               </div>
             </div>
           </div>
-          </div> */}
-          
         </div>
       </section>
     </>
