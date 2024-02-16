@@ -68,7 +68,7 @@ const Gallery = () => {
       >
         {galleryImages.map((item, index) => (
           <div key={index} className="G-slide">
-            <img src={item.image} alt={`Image ${item.id}`} />
+            <img src={item.image} alt={Image ${item.id}} />
             <div className="G-caption">{item.caption}</div>
           </div>
         ))}
