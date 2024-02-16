@@ -1,10 +1,10 @@
 // Testimonials.jsx
 import React, { useState, useEffect } from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import './testimonials.css';
 
 const Testimonials = () => {
-  const [currentSlide1, setCurrentSlide1] = useState(0);
-  const [currentSlide2, setCurrentSlide2] = useState(0);
 
   const testimonials = [
     { id: 1, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.29 AM (1).jpeg') },
@@ -21,94 +21,50 @@ const Testimonials = () => {
     { id: 12, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.37 AM.jpeg') },
   ];
 
-  const handleNextSlide1 = () => {
-    setCurrentSlide1((prevSlide) => (prevSlide + 1) % testimonials.length);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
   };
-
-  const handlePrevSlide1 = () => {
-    setCurrentSlide1(
-      (prevSlide) => (prevSlide - 1 + testimonials.length) % testimonials.length
-    );
-  };
-
-  const handleNextSlide2 = () => {
-    setCurrentSlide2((prevSlide) => (prevSlide + 2) % testimonials.length);
-  };
-
-  const handlePrevSlide2 = () => {
-    setCurrentSlide2(
-      (prevSlide) => (prevSlide - 2 + testimonials.length) % testimonials.length
-    );
-  };
-
-  const autoSlide = () => {
-    handleNextSlide1();
-    handleNextSlide2();
-  };
-
-  useEffect(() => {
-    const timer = setInterval(autoSlide, 5000);
-
-    return () => clearInterval(timer);
-  }, [currentSlide1, currentSlide2]);
 
   return (
-    <div className="testimonials-section text-center">
-      <h2>Student Testimonials</h2>
-      <div className="testimonial-sliders">
-        {/* First Testimonial Slider */}
-        <div className="testimonial-slider">
-
-        <div className="test-slider-buttons">
-            <button onClick={handlePrevSlide1}>&#8249;</button>
-            <button onClick={handleNextSlide1}>&#8250;</button>
-          </div>
-          
-          <div className="test-slider-content">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`testinom-slide ${currentSlide1 === index ? 'active' : ''}`}
-              >
-                <div className="testimonial-screenshot">
-                  <img
-                    src={testimonial.image}
-                    alt={`Screenshot ${index + 1}`}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        
+    <div className="testimonial-section text-center">
+    <Carousel
+      responsive={responsive}
+      swipeable={false}
+      draggable={false}
+      showDots={true}
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={5000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={500}
+      containerClass="T-carousel-container"
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      dotListClass="T-custom-dot-list-style"
+      itemClass="T-carousel-item-padding-40-px"
+    >
+      {testimonials.map((item, index) => (
+        <div key={index} className="T-slide">
+          <img src={item.image} alt={`Image ${item.id}`} />
+          <div className="T-caption">{item.caption}</div>
         </div>
-
-        {/* Second Testimonial Slider */}
-        <div className="testimonial-slider">
-
-        <div className="test-slider-buttons">
-            <button onClick={handlePrevSlide2}>&#8249;</button>
-            <button onClick={handleNextSlide2}>&#8250;</button>
-          </div>
-
-          <div className="test-slider-content">
-            {testimonials.map((testimonial, index) => (
-              <div
-                key={index}
-                className={`testinom-slide ${currentSlide2 === index ? 'active' : ''}`}
-              >
-                <div className="testimonial-screenshot">
-                  <img
-                    src={testimonial.image}
-                    alt={`Screenshot ${index + 1}`}
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-          
-        </div>
-      </div>
-    </div>
+      ))}
+    </Carousel>
+  </div>
   );
 };
 

@@ -1,5 +1,6 @@
-// Gallery.jsx
 import React, { useState, useEffect } from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import './gallery.css';
 
 import image1 from './Training/1.jpeg';
@@ -29,87 +30,50 @@ const Gallery = () => {
     { id: 11, image: image11, caption: 'Image 11 Caption' },
   ];
 
-  const [currentSlide1, setCurrentSlide1] = useState(0);
-  const [currentSlide2, setCurrentSlide2] = useState(0);
-
-  const handleNextSlide1 = () => {
-    setCurrentSlide1((prevSlide) => (prevSlide + 1) % galleryImages.length);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
   };
-
-  const handlePrevSlide1 = () => {
-    setCurrentSlide1(
-      (prevSlide) => (prevSlide - 1 + galleryImages.length) % galleryImages.length
-    );
-  };
-
-  const handleNextSlide2 = () => {
-    setCurrentSlide2((prevSlide) => (prevSlide + 2) % galleryImages.length);
-  };
-
-  const handlePrevSlide2 = () => {
-    setCurrentSlide2(
-      (prevSlide) => (prevSlide - 2 + galleryImages.length) % galleryImages.length
-    );
-  };
-
-  const autoSlide = () => {
-    handleNextSlide1();
-    handleNextSlide2();
-  };
-
-  useEffect(() => {
-    const timer = setInterval(autoSlide, 5000);
-
-    return () => clearInterval(timer);
-  }, [currentSlide1, currentSlide2]);
-
 
   return (
-
     <div className="gallery-section text-center">
-  
-    <div className="gallery-container">
-
-{/*  1st slider */}
-
-      
-      <div className="gallery-slider">
-
-      <div className="gallery-buttons">
-      <button onClick={handlePrevSlide1}>&#8249;</button>
-            <button onClick={handleNextSlide1}>&#8250;</button>
-      </div>
+      <Carousel
+        responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="G-carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="G-carousel-item-padding-40-px"
+      >
         {galleryImages.map((item, index) => (
-          <div key={index} className={`G-slide ${currentSlide1 === index ? 'active' : ''}`}>
+          <div key={index} className="G-slide">
             <img src={item.image} alt={`Image ${item.id}`} />
             <div className="G-caption">{item.caption}</div>
           </div>
         ))}
-      </div>
-
-
-    {/* 2nd slider */}
-
-      
-      <div className="gallery-slider">
-
-      <div className="gallery-buttons">
-      <button onClick={handlePrevSlide2}>&#8249;</button>
-            <button onClick={handleNextSlide2}>&#8250;</button>
-      </div>
-
-        {galleryImages.map((item, index) => (
-          <div key={index} className={`G-slide ${currentSlide2 === index ? 'active' : ''}`}>
-            <img src={item.image} alt={`Image ${item.id}`} />
-            <div className="G-caption">{item.caption}</div>
-          </div>
-        ))}
-      </div>
-
+      </Carousel>
     </div>
-
-    </div>
-    
   );
 };
 
