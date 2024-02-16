@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
 import "./events.css"; 
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
 import CustomCalendar from "./calendar"; // Import Calendar from calendar.jsx
 
 import event1 from './event/1.png';
@@ -60,23 +62,23 @@ const Events = () => {
 
   // slider section
 
-  const [currentSlide, setCurrentSlide] = useState(0);
-
-  const handlePrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide - 1 + eventImages.length) % eventImages.length);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
   };
-
-  const handleNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide + 1) % eventImages.length);
-  };
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      handleNextSlide();
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [currentSlide]);
 
   return (
     <>
@@ -93,22 +95,32 @@ const Events = () => {
 
       {/* slider */}
       
-      <section className="events padding">
-      <div className="event-container">
-      <div className="event-buttons">
-        <button onClick={handlePrevSlide}>&#8249;</button>
-        <button onClick={handleNextSlide}>&#8250;</button>
-      </div>
-      <div className="event-slider">
-        {eventImages.map((item, index) => (
-          <div key={index} className={`E-slide ${currentSlide === index ? 'active' : ''}`}>
-            <img src={item.image} alt={`Image ${item.id}`} />
-            <div className="E-caption">{item.caption}</div>
-          </div>
-        ))}
-      </div>
-    </div>
-      </section>
+      <div className="evennts-section text-center">
+    <Carousel
+      responsive={responsive}
+      swipeable={false}
+      draggable={false}
+      showDots={true}
+      infinite={true}
+      autoPlay={true}
+      autoPlaySpeed={5000}
+      keyBoardControl={true}
+      customTransition="all .5"
+      transitionDuration={500}
+      containerClass="E-carousel-container"
+      removeArrowOnDeviceType={["tablet", "mobile"]}
+      dotListClass="E-custom-dot-list-style"
+      itemClass="E-carousel-item-padding-40-px"
+    >
+      {eventImages.map((item, index) => (
+        <div key={index} className="E-slide">
+          <img src={item.image} alt={`Image ${item.id}`} />
+          <div className="E-caption">{item.caption}</div>
+        </div>
+      ))}
+    </Carousel>
+  </div>
+
     </>
   );
 };

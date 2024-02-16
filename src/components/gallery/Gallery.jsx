@@ -33,7 +33,7 @@ const Gallery = () => {
   const responsive = {
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 2,
       slidesToSlide: 1,
     },
     tablet: {
@@ -61,10 +61,10 @@ const Gallery = () => {
         keyBoardControl={true}
         customTransition="all .5"
         transitionDuration={500}
-        containerClass="carousel-container"
+        containerClass="G-carousel-container"
         removeArrowOnDeviceType={["tablet", "mobile"]}
         dotListClass="custom-dot-list-style"
-        itemClass="carousel-item-padding-40-px"
+        itemClass="G-carousel-item-padding-40-px"
       >
         {galleryImages.map((item, index) => (
           <div key={index} className="G-slide">
