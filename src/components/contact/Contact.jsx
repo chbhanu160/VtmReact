@@ -117,8 +117,12 @@ const Contact = () => {
 </form>
 
 
-            <h3>Follow us here</h3>
-            <div id="social">
+
+<h3>Follow us here</h3>
+
+            
+            <div id="social" className="d-flex justify-content-center">
+              
               <a
                 href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true"
                 target="_new"
@@ -145,17 +149,7 @@ const Contact = () => {
                 <i className="fab fa-youtube icon"></i>
               </a>
             </div>
-            <div id="info_vtm">
-              <div id="address_id">
-
-              </div>
-              <div id="email_id">
-
-              </div>
-              <div id="mobile_id">
-
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>

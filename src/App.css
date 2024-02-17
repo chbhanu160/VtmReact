@@ -8,6 +8,17 @@
 body {
   font-family: "Roboto", sans-serif;
   /* background-color: #b0b0ce; */
+  
+}
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #667eea;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(102,126,234,0.55), rgba(161,83,74,0.55));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(102,126,234,0.55), rgba(161,83,74,0.55))
 }
 
 
@@ -160,10 +171,7 @@ p {
 .padding {
   padding: 80px 0;
 }
-.shadow {
-  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
-  background-color: #004AAD;
-}
+
 @media screen and (max-width: 768px) {
   .grid2,
   .grid3,
