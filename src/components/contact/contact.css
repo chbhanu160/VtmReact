@@ -103,6 +103,10 @@ button:hover {
 #social {
   margin-top: 20px;
 margin-left: 200px;
+
+}
+#social a i{
+  font-size: 2rem;
 }
 
 .icon {
