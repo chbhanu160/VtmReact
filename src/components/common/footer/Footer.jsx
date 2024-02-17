@@ -6,15 +6,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <>
-      <section className="newletter">
-        <div className="container flexSB">
-          <div className="left row">
-            
-          </div>
-          
-        </div>
-      </section>
-      <footer>
+      
+      <footer className="gradient-custom">
         <div className="container padding">
           <div className="box logo">
             <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
@@ -103,7 +96,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="legal">
+      <div className="legal gradient-custom">
         <p>
           Copyright ©2024 All rights reserved | VisionaryTechMate{" "}
           <i className="fa fa-heart"></i>

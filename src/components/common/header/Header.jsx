@@ -14,9 +14,9 @@ const Header = () => {
 
   return (
     <>
-      <Head />
-      <header>
-        <Navbar bg="light" expand="lg">
+     <Head/>
+      <div className="gradient-custom">
+        <Navbar bg="light" expand="lg" className="gradient-custom">
           <Navbar.Toggle onClick={handleClick} aria-controls="navbarNav" />
           <Navbar.Collapse id="navbarNav">
             <Nav className="navbar-nav">
@@ -42,7 +42,7 @@ const Header = () => {
             </div>
           </Navbar.Collapse>
         </Navbar>
-      </header>
+      </div>
     </>
   );
 };

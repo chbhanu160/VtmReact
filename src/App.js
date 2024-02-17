@@ -32,7 +32,7 @@ ReactDOM.render(
 
 function App() {
   return (
-    <>
+    <div className="gradient-custom">
       <Router>
         <Header />
         <Switch>
@@ -50,7 +50,7 @@ function App() {
         </Switch>
         <Footer />
       </Router>
-    </>
+    </div>
   );
 }
 
