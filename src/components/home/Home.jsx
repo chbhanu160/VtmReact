@@ -2,6 +2,7 @@ import React from "react";
 import AboutCard from "../about/AboutCard";
 import Hblog from "./Hblog";
 import HAbout from "./HAbout";
+import HCourses from "./HCourses"
 import Hero from "./hero/Hero";
 import Hservices from "./Hservices";
 import Testimonal from "./testimonal/Testimonal";
@@ -13,6 +14,7 @@ const Home = () => {
     <>
       <Hero />
       <div className="bg-home">
+      <HCourses />
       <Hservices />
       <AboutCard />
       {/* <HAbout /> */}

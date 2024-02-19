@@ -1,9 +1,16 @@
 // Hservices.jsx
-import React, { useState } from "react";
-import Heading from "../common/heading/Heading";
-import ServiceSlider from "./ServiceSlider";
-import { Link } from "react-router-dom";
+import React from 'react';
+import Carousel from 'react-multi-carousel';
+import 'react-multi-carousel/lib/styles.css';
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+import "./Hservices.css";
 
+
+// Add Font Awesome icons to the library
+library.add(fab, fas);
 
 const Hservices = () => {
   
@@ -129,24 +136,96 @@ const Hservices = () => {
     },
   ];
 
-  
-  const [currentService, setCurrentService] = useState("Learning");
 
-  const handleServiceChange = (serviceName) => {
-    setCurrentService(serviceName);
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 3,
+      slidesToSlide: 1,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 2,
+      slidesToSlide: 1,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 1,
+      slidesToSlide: 1,
+    },
   };
 
   return (
-    <>
-      <section className="hservices-padding">
-        <Heading subtitle="OUR Services" />
-        <div className="service-slider-container">
-        <ServiceSlider services={learningServices} serviceName="Learning" />
-      <ServiceSlider services={consultingServices} serviceName="Consulting" />
+    <div>
+      <div className="H_s_l-services-section text-center">
+    <h1 className="H_s_l-h1">Our Services</h1>
+    <h2 className='h_s_l-h2'>Learning Services</h2>
+      <Carousel
+        responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        infinite={false}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container "
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px "
+      >
+        {learningServices.map((lserviceD) => (
+          <div key={lserviceD.id} className="H_s_l-slide">
+            <div className="H_s_l-caption">
+              <FontAwesomeIcon icon={lserviceD.icon} className="H_s_l-icon" />
+              <h3>{lserviceD.name}</h3>
+              <p>{lserviceD.bulletPoints}</p>
+            </div>
           </div>
+        ))}
+      </Carousel>
+      <button className='H_s_l-view'>View More</button>
+    </div>
+    
+
         
-      </section>
-    </>
+    <div className="H_s_c-services-section text-center">
+    <h2 className='h_s_c-h2'>Consulting Services</h2>
+      <Carousel
+        responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        infinite={false}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="carousel-container "
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="custom-dot-list-style"
+        itemClass="carousel-item-padding-40-px "
+      >
+        {consultingServices.map((cserviceD) => (
+          <div key={cserviceD.id} className="H_s_c-slide">
+            <div className="H_s_c-caption">
+              <FontAwesomeIcon icon={cserviceD.icon} className="H_s_c-icon" />
+              <h3>{cserviceD.name}</h3>
+              <p>{cserviceD.bulletPoints}</p>
+            </div>
+          </div>
+        ))}
+      </Carousel>
+      <button className='H_s_c-view'>View More</button>
+      </div>
+      </div>
+
+    
+    
+
   );
 };
 

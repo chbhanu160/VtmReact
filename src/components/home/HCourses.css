@@ -1,0 +1,65 @@
+.H_c-courses-section {
+    text-align: center;
+    
+  }
+
+  .H_c-h1{
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+
+
+  
+  .H_c-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; /* Set the width to 100% for responsiveness */
+    height: 500px;
+    
+  }
+  
+  .H_c-slide .H_c-caption {
+    border: 2px solid #004AAD;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    height: 400px; 
+    width : 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: transform 0.3s inherit;
+  }
+
+  .H_c-view{
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+
+  .H_c-slide:hover .H_c-caption {
+    transform: scale(1.005);
+  }
+  
+  .H_c-slide .H_c-caption h3 {
+    font-size: 28px; /* Adjust the font size as needed */
+    margin-bottom: 10px;
+    color: #004AAD;
+  }
+  
+  .H_c-slide .H_c-caption p {
+    font-size: 22px; /* Adjust the font size as needed */
+    margin-bottom: 8px;
+  color: #004AAD;
+  }
+  
+  .H_c-slide .H_c-caption strong {
+    font-weight: bold;
+  }
+
+  .H_c-icon{
+    color: #004AAD;
+    font-size: 60px;
+  }
+  
