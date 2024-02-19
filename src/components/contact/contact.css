@@ -1,9 +1,9 @@
 /* contact.css */
 
-.contacts {
+/* .contacts {
   background-color: #004aad;
   padding: 20px;
-}
+} */
 
 .contacts .container_con {
   display: flex;
@@ -103,6 +103,10 @@ button:hover {
 #social {
   margin-top: 20px;
 margin-left: 200px;
+
+}
+#social a i{
+  font-size: 2rem;
 }
 
 .icon {

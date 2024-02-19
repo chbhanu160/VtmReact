@@ -1,35 +1,31 @@
-/* .newletter {
-  background-color: #027Dff;
-  padding: 50px 0;
-  color: #fff;
+.gradient-custom {
+  /* fallback for old browsers */
+  background: #a8edea;
+
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-linear-gradient(to right, rgba(168,237,234,0.65), rgba(254,214,227,0.65));
+
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  background: linear-gradient(to right, rgba(168,237,234,0.65), rgba(254,214,227,0.65))
 }
-.newletter .right,
-.newletter .left {
-  padding-right: 50px;
+#exp ul {
+  list-style: none;
+  padding: 0;
 }
-.newletter h1 {
-  color: #fff;
-  font-size: 30px;
-  font-weight: 500;
-  margin-bottom: 15px;
+
+#exp li {
+  margin-bottom: 10px;
 }
-.newletter .right {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+
+#exp a {
+  text-decoration: none; 
+  display: inline-block; 
 }
-.newletter input {
-  width: 100%;
-  padding: 20px;
-  border: none;
-  outline: none;
-  height: 30px;
+#quick a {
+  text-decoration: none; 
+  display: inline-block; 
 }
-.newletter i {
-  padding: 12px;
-  color: #027Dff;
-  background-color: #fff;
-} */
+
 
 #vtm_flogo{
   margin-top: 20px;
@@ -41,8 +37,9 @@
 }
 
 footer {
-  background-color: #eeeeee;
+  /* background-color: #eeeeee; */
   justify-content: center;
+  height: 350px;
 }
 
 footer .container {
@@ -57,21 +54,7 @@ footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
-/* footer .logo img {
-  
-  max-width: 800px;
-  max-height:300px ;
-  display: flex;
-} */
 
-/* footer .logo span {
-  color: #3e11e0;
-  font-size: 14px;
-}
-footer .logo p {
-  color: grey;
-  margin: 30px 0 15px 0;
-} */
 #social a:hover{
   color: #004AAD;
 }
@@ -88,7 +71,7 @@ footer h3 {
 
 }
 #exp{
-  justify-content: center;
+  justify-content:center;
   text-align: center;
 }
 #quick {
@@ -106,26 +89,19 @@ footer h3 {
   color: #004AAD;
 }
 footer ul li {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
  
 }
 footer .link li::before {
-  content: "⟶";
+  /* content: "⟶"; */
   color: #004AAD;
-  margin-right: 5px;
+  /* margin-right: 15px; */
 }
 footer .items {
   margin-bottom: 30px;
   
 }
 
-/* footer .items img {
-  width: 50px;
-  height: 50px;
-  border-radius: 5px;
-  margin-right: 10px;
-  object-fit: cover;
-} */
 
 footer .items span,
 footer .items i {

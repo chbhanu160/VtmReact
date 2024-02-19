@@ -2,12 +2,14 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Heading from "../../common/heading/Heading";
 import "./Hero.css";
+import image1 from "./bg.svg"
 
 const Hero = () => {
   return (
-    <>
+    <div>
       <section className="hero-section">
         <div className="hero_container">
+          
           <div className="row">
             <div className="heading" id="hero_heading" >
               <Heading subtitle="Welcome to Visionary TechMate" title="Best Online Education Expertise" />
@@ -25,7 +27,7 @@ const Hero = () => {
         </div>
       </section>
       <div className="margin"></div>
-    </>
+    </div>
   );
 };
 

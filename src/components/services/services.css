@@ -4,7 +4,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   justify-content: space-around;
-  background-image: url("./7.jpg");
+  /* background-image: url("./7.jpg"); */
   background-size: cover;
   background-position: center;
   padding: 20px; /* Adjust as needed */
@@ -14,7 +14,7 @@
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: 10px;
   justify-content: space-around;
-  background-image: url("./1.jpg");
+  /* background-image: url("./1.jpg"); */
   background-size: cover;
   background-position: center;
   padding: 20px; /* Adjust as needed */

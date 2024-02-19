@@ -11,7 +11,7 @@ import "./home.css"
 
 const Home = () => {
   return (
-    <>
+    <div className="gradient-custom">
       <Hero />
       <div className="bg-home">
       <HCourses />
@@ -22,7 +22,7 @@ const Home = () => {
       <Hblog />
       </div>
       
-    </>
+    </div>
   );
 };
 
