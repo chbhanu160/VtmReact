@@ -10,15 +10,10 @@ body {
   /* background-color: #b0b0ce; */
   
 }
+
 .gradient-custom {
-  /* fallback for old browsers */
-  background: #667eea;
-
-  /* Chrome 10-25, Safari 5.1-6 */
-  background: -webkit-linear-gradient(to right, rgba(102,126,234,0.55), rgba(161,83,74,0.55));
-
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  background: linear-gradient(to right, rgba(102,126,234,0.55), rgba(161,83,74,0.55))
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(181,213,255,1) 79%, rgba(255,235,173,1) 100%); 
 }
 
 
