@@ -1,9 +1,9 @@
 /* contact.css */
 
-.contacts {
+/* .contacts {
   background-color: #004aad;
   padding: 20px;
-}
+} */
 
 
 .contacts .container_con {
@@ -104,19 +104,41 @@ button:hover {
 #social {
   margin-top: 20px;
 margin-left: 200px;
+
+}
+#social a i{
+  font-size: 2rem;
 }
 
 .icon {
+  font-size: 20px;
+
   font-size: 24px;
+
+  font-size: 20px;
+
+
   margin-right: 10px;
   color: #004aad;
  
 }
 
 .contacts h3 {
+
+  font-size: 2.5rem;
+  margin-top: 18px;
+  font-weight: 500;
+
+
   margin-top: 20px;
   font-weight: 500;
   margin-bottom: 10px;
+
+  font-size: 2.5rem;
+  margin-top: 18px;
+  font-weight: 500;
+
+  margin-bottom: 8px;
   color: #004aad;
 }
 
@@ -128,7 +150,7 @@ margin-left: 200px;
 .contacts input {
   width: 100%;
   padding: 15px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   outline: none;
   border: 1px solid grey;
   background-color: #fff;
@@ -136,22 +158,24 @@ margin-left: 200px;
 }
 
 .form-group {
+
+  margin-bottom: 5px;
+
+
   margin-bottom: 15px;
+
 }
 
 #countryCode {
-  width: 60px;
+  width: 4px;
   height: 55px;
-  margin-right: 10px;
+  margin-right:4px;
 }
 
-#contact {
-  flex: 1;
-}
 
 #country {
-  width: 60%;
-  height: 45px;
+  width: 100%;
+  height: 55px;
 }
 .right p ,h4{
   color:#004aad;
@@ -159,4 +183,41 @@ margin-left: 200px;
 .flexSB {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+#countryCode {
+  width: 4px;
+  height: 55px;
+  margin-right:4px;
+}
+
+
+#country {
+  width: 100%;
+  height: 55px;
+}
+.right p ,h4{
+  color:#004aad;
+}
+.flexSB {
+  display: flex;
+  justify-content: space-between;
+}
+
+#countryCode{
+  
+  width: 10px;
+  border-color: black;
+}
+
+
+#countryCode{
+  
+  width: 10px;
+  border-color: black;
+}
+
+#country{
+  border-color: black;
 }

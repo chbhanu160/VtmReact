@@ -8,6 +8,12 @@
 body {
   font-family: "Roboto", sans-serif;
   /* background-color: #b0b0ce; */
+  
+}
+
+.gradient-custom {
+  background: rgb(255,255,255);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(181,213,255,1) 79%, rgba(255,235,173,1) 100%); 
 }
 
 
@@ -160,10 +166,7 @@ p {
 .padding {
   padding: 80px 0;
 }
-.shadow {
-  box-shadow: 0 5px 25px -2px rgb(0 0 0 / 6%);
-  background-color: #004AAD;
-}
+
 @media screen and (max-width: 768px) {
   .grid2,
   .grid3,

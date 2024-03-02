@@ -3,14 +3,11 @@ import React from "react"
 const Head = () => {
   return (
     <>
-      <section className='head'>
+      <section className='head gradient-custom'>
 
      
         <div className='container flexSB'>
         
-          {/* <div className='logo'>
-          <img src={require('./logo.png')} alt="vtm" />
-          </div> */}
           <div >
           <img  src={require('./logo.png')} id="vtm_hlogo" alt="vtm" />
           </div>

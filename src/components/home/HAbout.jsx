@@ -7,7 +7,7 @@ import { coursesCard } from "../../dummydata"
 const HAbout = () => {
   return (
     <>
-      <section className='homeAbout'>
+      <section className='homeAbout gradient-custom'>
         <div className='container'>
           <Heading subtitle='our courses' title='explore our popular online courses' />
 
