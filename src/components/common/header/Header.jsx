@@ -16,10 +16,10 @@ const Header = () => {
     <>
      <Head/>
       <div className="gradient-custom">
-        <Navbar bg="light" expand="lg" className="gradient-custom">
-          <Navbar.Toggle onClick={handleClick} aria-controls="navbarNav" />
-          <Navbar.Collapse id="navbarNav">
-            <Nav className="navbar-nav">
+        <Navbar id="navbg" expand="lg" className="gradient-custom">
+          <Navbar.Toggle onClick={handleClick} aria-controls="navbarT" />
+          <Navbar.Collapse id="navbar">
+            <Nav id="navbar-nav">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
