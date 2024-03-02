@@ -3,7 +3,6 @@
   position: relative;
   /* padding-left: 50px; */
   text-align: left;
-  z-index: 1;
   background-image: url("./bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
