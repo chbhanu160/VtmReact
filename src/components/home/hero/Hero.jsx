@@ -1,8 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Heading from "../../common/heading/Heading";
 import "./Hero.css";
-import image1 from "./bg.svg"
+
 
 const Hero = () => {
   return (

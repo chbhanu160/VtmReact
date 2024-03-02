@@ -2,7 +2,6 @@
 import React from "react";
 import ServiceCard from "./ServiceCard";
 import "./services.css";
-import Heading from "../common/heading/Heading"
 const LearningPage = () => {
   const learningServices = [
     {

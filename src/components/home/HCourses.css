@@ -1,14 +1,12 @@
 .H_c-courses-section {
-    text-align: center;
-    
+    text-align: center; 
+    margin-top: -30rem;
   }
 
   .H_c-h1{
     font-size: 40px;
-    margin-top: 20px;
     margin-bottom: 40px;
   }
-
 
   
   .H_c-slide {
@@ -17,7 +15,7 @@
     align-items: center;
     width: 100%; /* Set the width to 100% for responsiveness */
     height: 500px;
-    
+  
   }
   
   .H_c-slide .H_c-caption {
@@ -31,6 +29,7 @@
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s inherit;
+    
   }
 
   .H_c-view{
