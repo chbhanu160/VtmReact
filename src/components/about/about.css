@@ -1,5 +1,9 @@
 /* about.css */
+/* Your CSS file */
 
+#img_id{
+  color: #004AAD;
+}
 .about-container {
   padding: 20px; /* Add padding for spacing */
 }
@@ -116,6 +120,7 @@ h1 {
 }
 .awrapper img {
   margin-right: 30px;
+ 
 }
 .awrapper h1 {
   font-size: 50px;
@@ -142,3 +147,8 @@ h1 {
   font-weight: 500;
   font-size: 1.3rem;
 }
+
+#title_text{
+  color:#004AAD;
+}
+
