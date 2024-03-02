@@ -1,6 +1,6 @@
 import React from "react"
 import OnlineCourses from "../allcourses/OnlineCourses"
-import Heading from "../common/heading/Heading"
+
 import "../allcourses/courses.css"
 import { coursesCard } from "../../dummydata"
 
@@ -9,7 +9,8 @@ const HAbout = () => {
     <>
       <section className='homeAbout gradient-custom'>
         <div className='container'>
-          <Heading subtitle='our courses' title='explore our popular online courses' />
+          <h1>our courses</h1>
+          <h2>explore our popular online courses</h2>
 
           <div className='coursesCard'>
             {/* copy code form  coursesCard */}

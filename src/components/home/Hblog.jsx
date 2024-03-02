@@ -1,7 +1,7 @@
 import React from "react"
 import "../blog/blog.css"
 import { blog } from "../../dummydata"
-import Heading from "../common/heading/Heading"
+
 
 // copy code of blog => blogCard
 
@@ -10,7 +10,8 @@ const Hblog = () => {
     <div>
       <section className='blog'>
         <div className='container'>
-          <Heading subtitle='OUR BLOG' title='Recent From Blog' />
+          <h1>OUR BLOG</h1>
+          <h2>Recent From Blog</h2>
           <div className='grid2'>
             {blog.slice(0, 3).map((val) => (
               <div className='items shadow'>

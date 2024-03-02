@@ -10,11 +10,11 @@ body {
   /* background-color: #b0b0ce; */
   
 }
-
 .gradient-custom {
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(181,213,255,1) 79%, rgba(255,235,173,1) 100%); 
+  background: rgb(185,215,255);
+  background: linear-gradient(90deg, rgba(185,215,255,1) 0%, rgba(193,255,252,1) 51%, rgba(158,200,255,1) 100%);
 }
+
 
 
 .event-carousel {

@@ -1,6 +1,5 @@
 import React from "react"
 import { testimonal } from "../../../dummydata"
-import Heading from "../../common/heading/Heading"
 import "./style.css"
 
 const Testimonal = () => {
@@ -8,7 +7,8 @@ const Testimonal = () => {
     <>
       <section className='testimonal padding'>
         <div className='container'>
-          <Heading subtitle='TESTIMONIAL' title='Our Successful Students' />
+          <h1>TESTIMONIAL</h1>
+          <h2>Our Successful Students</h2>
 
           <div className='content grid2'>
             {testimonal.map((val) => (

@@ -1,13 +1,8 @@
-.gradient-custom {
-  background: rgb(255,255,255);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(181,213,255,1) 79%, rgba(255,235,173,1) 100%); 
-}
 
 .hero_container {
   position: relative;
   /* padding-left: 50px; */
   text-align: left;
-  z-index: 1;
   background-image: url("./bg.svg");
   background-size: cover;
   background-repeat: no-repeat;
@@ -21,28 +16,40 @@
   
 }
 
-#hero_heading h3 {
+#hero_heading h1 {
   color: #004AAD;
-  margin-top: 20px;
+  margin-top: 70px;
   text-align: left;
+  margin-left: 40px;
+  font-size: 40px;
 }
 
-#heading {
-  margin: 0;
-  padding: 0;
+#hero_heading h2 {
+  color: #004AAD;
+  text-align: center;
+  margin-left: 40px;
+  font-size: 26px;
   margin-top: 20px;
-  text-align: left;
 }
 
-.hero-text {
+
+.hero-text p {
   margin-bottom: 30px; /* Adjusted margin for better spacing */
-  text-align: left;
-  margin-top: 20px;
+  text-align: justify;
+  margin-top: 40px;
+  margin-left: 40px;
+  margin-right: 15px;
+  font-size: 20px;
+  border: #004AAD solid;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .hero_button {
-  margin-top: 20px; /* Adjusted margin for better spacing */
+  margin-top: 12px; /* Adjusted margin for better spacing */
   cursor: pointer;
+  margin-left: 17%;
+  margin-bottom: auto;
 }
 
 .get-started-btn,

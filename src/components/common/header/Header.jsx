@@ -15,16 +15,16 @@ const Header = () => {
   return (
     <>
      <Head/>
-      <div className="gradient-custom">
-        <Navbar bg="light" expand="lg" className="gradient-custom">
-          <Navbar.Toggle onClick={handleClick} aria-controls="navbarNav" />
-          <Navbar.Collapse id="navbarNav">
-            <Nav className="navbar-nav">
+      <div >
+        <Navbar id="navbg" expand="lg">
+          <Navbar.Toggle onClick={handleClick} aria-controls="navbarT" />
+          <Navbar.Collapse id="navbar">
+            <Nav id="navbar-item">
               <Nav.Link as={Link} to="/">Home</Nav.Link>
               <Nav.Link as={Link} to="/courses">Courses</Nav.Link>
               <Nav.Link as={Link} to="/about">About</Nav.Link>
 
-              <NavDropdown title="Services" id="basic-nav-dropdown">
+              <NavDropdown title="Services" classname="dropdown">
                 <NavDropdown.Item as={Link} to="/services">All Services</NavDropdown.Item>
                 <NavDropdown.Divider />
                 <NavDropdown.Item as={Link} to="/services/learning">Learning</NavDropdown.Item>
@@ -38,8 +38,12 @@ const Header = () => {
               <Nav.Link as={Link} to="/contact">Contact Us</Nav.Link>
             </Nav>
             <div className="start">
-              <div className="button">GET CERTIFICATE</div>
-            </div>
+              
+              <Link to="/courses" className="Gc_button">
+              GET CERTIFICATE
+             </Link>
+             </div>
+
           </Navbar.Collapse>
         </Navbar>
       </div>
