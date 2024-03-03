@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./events.css"; 
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import CustomCalendar from "./calendar"; // Import Calendar from calendar.jsx
+// import CustomCalendar from "./calendar"; 
 
 import event1 from './event/1.png';
 import event2 from './event/2.png';
@@ -25,7 +25,7 @@ import event18 from './event/18.jpeg';
 import event19 from './event/19.jpeg';
 
 const Events = () => {
-  const [selectedDate, setSelectedDate] = useState(new Date());
+  // const [selectedDate, setSelectedDate] = useState(new Date());
 
   const eventImages = [
 
@@ -53,12 +53,12 @@ const Events = () => {
   ];
 
  //upcoming event section
-  const upcomingEventImage = require(`./6.jpg`);
+  // const upcomingEventImage = require(`./6.jpg`);
 
-  const handleDateChange = (date) => {
-    setSelectedDate(date);
-    // You can add logic here to filter and display events for the selected date
-  };
+  // const handleDateChange = (date) => {
+  //   setSelectedDate(date);
+  //   // You can add logic here to filter and display events for the selected date
+  // };
 
   // slider section
 
@@ -82,7 +82,7 @@ const Events = () => {
 
   return (
     <>
-      <section className="calendar-section padding">
+      {/* <section className="calendar-section padding">
         <div className="calendar-container">
           <CustomCalendar onChange={handleDateChange} value={selectedDate} />
         </div>
@@ -91,11 +91,12 @@ const Events = () => {
           <h2>Upcoming Event</h2>
           <img src={upcomingEventImage} alt="Upcoming Event" />
         </div>
-      </section>
+      </section> */}
 
       {/* slider */}
       
-      <div className="evennts-section text-center">
+      <div className="events-section text-center">
+      <h1 className="events_h1">Connecting Moments, Inspiring Journeys – Where Every Event Tells a Unique Story!</h1>
     <Carousel
       responsive={responsive}
       swipeable={false}

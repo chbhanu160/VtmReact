@@ -2,6 +2,11 @@
   margin-top: 20px;
   padding: 20px;
 }
+.gallery_h1{
+  font-size: 32px;
+  color: #004AAD;
+  margin-top: 20px;
+}
 
 .G-carousel-container {
   max-width: 100%;

@@ -21,7 +21,7 @@ const Contact = () => {
         setTimeout(() => {
           setShowPopup(false);
           e.target.reset(); // Reset the form fields
-        }, 3000);
+        }, 6000);
       })
       .catch((error) => {
         console.log(error.text);
@@ -79,34 +79,34 @@ const Contact = () => {
             </div>
 
             <form id="contactForm" onSubmit={sendEmail}>
-              <div className="d-flex flex-column">
-                <div className="row w-100">
-                  <div className="col">
-                    <input type="text" className="form-control" placeholder="Name" name="from_name" />
-                  </div>
-                  <div className="col">
-                    <input type="email" className="form-control" placeholder="Email" name="from_mail" />
-                  </div>
-                </div>
-                <div className="row w-100">
-                  <div className="col">
-                    <div className="input-group">
-                      <select id="countryCode" className="form-control" name="from_country">
-                        <option value="+91">+91</option>
-                        {/* Add more options if needed */}
-                      </select>
-                      <input type="tel" id="contact" className="form-control contact-input w-50" placeholder="Contact No." name="from_contact" />
-                    </div>
-                  </div>
-                  <div className="col">
-                    <select id="country" className="form-control" name="from_country">
-                      <option value="Country">Country</option>
-                      <option value="India">India</option>
-                      <option value="United States">United States</option>
-                      {/* Add more options if needed */}
-                    </select>
-                  </div>
-                </div>
+  <div className="d-flex flex-column">
+    <div className="row w-100">
+      <div className="col">
+        <input type="text" className="form-control" placeholder="Name" name="from_name" required />
+      </div>
+      <div className="col">
+        <input type="email" className="form-control" placeholder="Email" name="from_mail" required />
+      </div>
+    </div>
+    <div className="row w-100">
+      <div className="col">
+        <div className="input-group">
+          <select id="countryCode" className="form-control" name="from_country" required>
+            <option value="+91">+91</option>
+            {/* Add more options if needed */}
+          </select>
+          <input type="tel" id="contact" className="form-control contact-input w-50" placeholder="Contact No." name="from_contact" required />
+        </div>
+      </div>
+      <div className="col">
+        <select id="country" className="form-control" name="from_country" required>
+          <option value="Country">Country</option>
+          <option value="India">India</option>
+          <option value="United States">United States</option>
+          {/* Add more options if needed */}
+        </select>
+      </div>
+    </div>
                 <div className="row w-100">
                   <div className="form-group">
                     <textarea cols="8" rows="3" className="form-control" placeholder="Message" name="message"></textarea>
@@ -118,7 +118,7 @@ const Contact = () => {
 
             {showPopup && (
               <div className="popup">
-                <p>Message sent successfully!</p>
+                <p>Your message has been received successfully. We appreciate your inquiry and will get back to you shortly.</p>
                 <button onClick={() => setShowPopup(false)}>Close</button>
               </div>
             )}

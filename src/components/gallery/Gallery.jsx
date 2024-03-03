@@ -50,6 +50,7 @@ const Gallery = () => {
 
   return (
     <div className="gallery-section text-center">
+    <h1 className="gallery_h1">Capturing Every Happy Moment – Where Learning Meets Joy!</h1>
       <Carousel
         responsive={responsive}
         swipeable={false}

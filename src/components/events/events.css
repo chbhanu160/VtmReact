@@ -78,7 +78,11 @@ div.react-calendar__month-view__weekdays__weekday {
 }
 
 /* slider */
-
+.events_h1{
+  font-size: 32px;
+  color: #004AAD;
+  margin-top: 20px;
+}
 .events-section {
   margin-top: 20px;
   padding: 20px;
