@@ -14,7 +14,7 @@
     justify-content: center;
     align-items: center;
     width: 100%; /* Set the width to 100% for responsiveness */
-    height: 500px;
+    height: 550px;
   
   }
   
@@ -23,13 +23,13 @@
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    height: 400px; 
+    height: 500px; 
     width : 400px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s inherit;
-    
+    margin-bottom: 30px;
   }
 
   .H_c-view{
@@ -49,7 +49,7 @@
   
   .H_c-slide .H_c-caption p {
     font-size: 22px; /* Adjust the font size as needed */
-    margin-bottom: 8px;
+    margin-bottom: 10px;
   color: #004AAD;
   }
   
@@ -59,6 +59,7 @@
 
   .H_c-icon{
     color: #004AAD;
-    font-size: 60px;
+    height: 80px;
+    width: 80px;
   }
   

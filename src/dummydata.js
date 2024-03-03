@@ -1,46 +1,47 @@
 export const homeAbout = [
   {
     id: 1,
-    cover: "https://img.icons8.com/dotty/80/000000/storytelling.png",
+    cover: 'fa-solid fa-trophy-star',
     title: "Online Courses",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
   {
     id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/diploma.png",
+    cover: "",
     title: "Earn A Certificates",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
   {
     id: 1,
-    cover: "https://img.icons8.com/ios/80/000000/athlete.png",
+    cover: "",
     title: "Learn with Expert",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
   },
 ]
 export const awrapper = [
   {
-    cover: "https://img.icons8.com/external-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto/80/ffffff/external-graduation-education-yogi-aprelliyanto-basic-outline-yogi-aprelliyanto.png",
+    cover: "fa-solid fa-trophy-star",
     data: "3000",
     title: "SUCCESS STORIES",
   },
 
   {
-    cover: "https://img.icons8.com/ios/80/ffffff/athlete.png",
+    cover: "fa-solid fa-book",
     data: "320",
     title: "TRUSTED TUTORS",
   },
   {
-    cover: "https://img.icons8.com/external-outline-icons-maxicons/80/ffffff/external-calender-insurance-outline-outline-icons-maxicons.png",
+    cover: "fa-duotone fa-user-secret",
     data: "1000",
     title: "SCHEDULES",
   },
   {
-    cover: "https://img.icons8.com/ios/80/ffffff/macbook-idea--v3.png",
+    cover: "fa-solid fa-book",
     data: "587",
     title: "COURSES",
   },
 ]
+
 export const coursesCard = [
   {
     id: 1,

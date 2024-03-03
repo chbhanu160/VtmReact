@@ -16,8 +16,8 @@ const AboutCard = () => {
             <div className='items'>
               {homeAbout.map((val, index) => (
                 <div key={index} className='item flexSB'>
-                  <div className='img'>
-                    <img src={val.cover} alt='' />
+                  <div className='About_img'>
+                    {val.cover} 
                   </div>
                   <div className='text'>
                     <h2>{val.title}</h2>

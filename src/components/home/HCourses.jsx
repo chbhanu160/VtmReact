@@ -3,72 +3,103 @@ import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './HCourses.css';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { fab } from '@fortawesome/free-brands-svg-icons';
-import { fas } from '@fortawesome/free-solid-svg-icons';
-
-// Add Font Awesome icons to the library
-library.add(fab, fas);
+import azureImage from './icons/icons8-azure.svg';
+import azureStorageImage from './icons/icons8-azure-storage-connection.svg';
+import googleCloudImage from './icons/icons8-google-cloud.svg';
+import azureADImage from './icons/icons8-azure-active-directory.svg';
 
 const HCourses = () => {
- 
   const coursesData = [
     {
       id: 1,
-      icon:'fa-brands fa-microblog',
-      title:"Microsoft Azure Data Engineering",
-      hours:"40 ",
-      description:"comprehensive training covering Azure Databricks, Delta Lake, Data Factory, Synapse, HDInsight,...",
+      cover: azureImage,
+      title: "Exam DP-203: Data Engineering on Microsoft Azure",
+      hours: "40",
+      description: "Comprehensive training covering Azure Data Factory, Azure Synapse Analytics, Azure Stream Analytics, Azure Event Hubs, Azure Data Lake Storage, Azure Databricks",
     },
     {
       id: 2,
-      icon:'fa-user-tie',
-      title:"Microsoft Azure Administration Training",
-      hours:"50 ",
-      description:"comprehensive training on Implementation, Management and Monitoring of Microsoft Azure Assets.",
+      cover: azureStorageImage,
+      title: "Exam DP-600: Implementing Analytics Solutions Using Microsoft Fabric (beta)",
+      hours: "50",
+      description: "Comprehensive training on Lakehouses, Data warehouses, Notebooks, Dataflows, Data pipelines, Semantic models, Reports",
     },
     {
       id: 3,
-      icon:'fa-sharp fa-sitemap',
-      title:"Microsoft Azure Architecture",
-      hours:"50 ",
-      description:"This is the description of Course 3.",
+      cover: googleCloudImage,
+      title: "GCP-Professional Data Engineer",
+      hours: "50",
+      description: "Comprehensive training on Design data processing systems, Ingest and process the data, Store the data, Prepare and use data for analysis, Maintain and automate data workloads",
     },
     {
       id: 4,
-      icon:'fa-file-code',
-      title:"SQL Server DBA Training + SQL/TSQL Training",
-      hours:"90 ",
-      description:" comprehensive training covering both database administration and TSQL Programming...",
+      cover: azureADImage,
+      title: "Exam AZ-900: Microsoft Azure Fundamentals",
+      hours: "90",
+      description: "Comprehensive training covering Infrastructure management, Database management, Software development, Describe Azure architectural components and Azure services - Compute, Networking, Storage",
     },
     {
       id: 5,
-      icon:'fa-server',
-      title:"SQL Server BI Training + Power BI Training",
-      hours:"70 ",
-      description:"comprehensive training covering SSIS, SSAS, MDX, SSRS, Power BI and Data Warehousing...",
+      cover: azureStorageImage,
+      title: "Exam DP-900: Microsoft Azure Data Fundamentals",
+      hours: "70",
+      description: "Comprehensive training covering relational and non-relational data, Different types of data workloads such as transactional or analytical.",
     },
     {
       id: 6,
-      icon:'fa-sharp fa-database',
-      title:'SQL Server Performance Tuning',
-      hours:'70 ',
-      description:'comprehensive training on SQL Server Performance Monitering, Tuning, Creating Performance Benchmark etc...',
+      cover: azureADImage,
+      title: "Exam AI-900: Microsoft Azure AI Fundamentals",
+      hours: "70",
+      description: "Comprehensive training on Basic cloud concepts, Client-server applications. Opportunity for you to demonstrate knowledge of machine learning and AI concepts and related Microsoft Azure services.",
     },
     {
       id: 7,
-      icon:'fa-cloud-bolt',
-      title:'DevOps Engineering (Git, Jenkins, Docker, Ansible, Terraform, Kubernetes)',
-      hours:'70 ',
-      description:'DevOps Engineering training program will provide you with in-depth knowledge of various DevOps tools, including Git..',
+      cover: azureImage,
+      title: "Exam PL-900: Microsoft Power Platform Fundamentals",
+      hours: "70",
+      description: "Aspire to understand how Microsoft Power Platform technologies can be used to: Improve processes, Help drive business outcomes.",
     },
     {
       id: 8,
-      icon:'fa-brands fa-aws',
-      title:'AWS Solutions Architect Associate',
-      hours:'60 ',
-      description:'Our AWS Solutions Architect – Associate course is intended for every aspersing individual who want to learn and perform an ..',
+      cover: azureStorageImage,
+      title: "Exam DP-500: Designing and Implementing Enterprise-Scale Analytics Solutions",
+      hours: "60",
+      description: "Cleaning and transforming data, Designing and building enterprise data models, Incorporating advanced analytics capabilities.",
+    },
+    {
+      id: 9,
+      cover: azureADImage,
+      title: "Exam AZ-104: Microsoft Azure Administrator",
+      hours: "60",
+      description: "Comprehensive training on Virtual networks, Storage, Compute, Identity, Security, Governance",
+    },
+    {
+      id: 10,
+      cover: azureImage,
+      title: "Exam AZ-400: Designing and Implementing Microsoft DevOps Solutions",
+      hours: "60",
+      description: "Comprehensive training on code, infrastructure, source control, security, compliance, testing, delivery, monitoring, and feedback.",
+    },
+    {
+      id: 11,
+      cover: azureADImage,
+      title: "Exam AZ-305: Designing Microsoft Azure Infrastructure Solutions",
+      hours: "60",
+      description: "Subject matter expertise in designing cloud and hybrid solutions that run on Azure, including: Compute, Network, Storage, Monitoring, Security",
+    },
+    {
+      id: 12,
+      cover: azureImage,
+      title: "Exam DP-300: Administering Microsoft Azure SQL Solutions",
+      hours: "60",
+      description: "Subject matter expertise in manages on-premises and cloud databases built with SQL Server and Azure SQL services: SQL Server on-premises, Azure SQL services",
+    },
+    {
+      id: 13,
+      cover: googleCloudImage,
+      title: "Google Cloud Digital Leader",
+      hours: "60",
+      description: "Exploring data transformation with Google Cloud, Google Cloud artificial intelligence, Modernizing infrastructure and applications with Google Cloud, Trust and security with Google Cloud, Scaling with Google Cloud operations",
     }
   ];
 
@@ -92,7 +123,7 @@ const HCourses = () => {
 
   return (
     <div className="H_c-courses-section text-center">
-    <h1 className="H_c-h1">Our Courses</h1>
+      <h1 className="H_c-h1">Our Courses</h1>
       <Carousel
         responsive={responsive}
         swipeable={false}
@@ -112,7 +143,9 @@ const HCourses = () => {
         {coursesData.map((courseD) => (
           <div key={courseD.id} className="H_c-slide">
             <div className="H_c-caption">
-              <FontAwesomeIcon icon={courseD.icon} className="H_c-icon" />
+              <div>
+                {courseD.cover && <img src={courseD.cover} className="H_c-icon" alt={`Course ${courseD.id}`} />}
+              </div>
               <h3>{courseD.title}</h3>
               <p>
                 <strong>Hours:</strong> {courseD.hours}
