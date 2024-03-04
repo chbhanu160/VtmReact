@@ -19,7 +19,7 @@ const Hservices = () => {
       id: 1,
       icon:'fa-graduation-cap',
       name: "Training Programs:",
-      bulletPoints: ["Technical Training: Courses covering programming languages, software development methodologies, database management, networking, cybersecurity, etc.","Certification Training: Preparation courses for industry-recognized certifications such as CompTIA, Cisco, Microsoft, AWS, etc."],
+      bulletPoints: ["Technical Training: Courses covering software development, database management, networking, cybersecurity, etc.","Certification Training: Preparation courses for industry-recognized certifications such as CompTIA, Cisco, Microsoft, AWS, etc."],
     },
     {
       id: 2,
