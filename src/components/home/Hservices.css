@@ -31,7 +31,7 @@
     border-radius: 10px;
     padding: 20px;
     text-align: center;
-    height: 400px; 
+    height: 420px; 
     width : 400px;
     display: flex;
     flex-direction: column;
@@ -50,14 +50,12 @@
   }
   
   .H_s_l-slide .H_s_l-caption h3 {
-    font-size: 28px; /* Adjust the font size as needed */
-    margin-bottom: 10px;
+    font-size: 28px; 
     color: #004AAD;
   }
   
   .H_s_l-slide .H_s_l-caption p {
-    font-size: 22px; /* Adjust the font size as needed */
-    margin-bottom: 8px;
+    font-size: 22px; 
   color: #004AAD;
   }
   
@@ -81,7 +79,7 @@
   .h_s_c-h2{
     font-size: 35px;
     margin-top: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     justify-content: center;
     align-items: center;
   }
@@ -102,7 +100,7 @@
     padding: 20px;
     text-align: center;
     height: 400px; 
-    width : 400px;
+    width : 420px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -120,16 +118,16 @@
   }
   
   .H_s_c-slide .H_s_c-caption h3 {
-    font-size: 28px; /* Adjust the font size as needed */
-    margin-bottom: 10px;
+    font-size: 28px; 
     color: #004AAD;
   }
   
   .H_s_c-slide .H_s_c-caption p {
     font-size: 22px; /* Adjust the font size as needed */
-    margin-bottom: 8px;
+    /* margin-bottom: 8px; */
   color: #004AAD;
   }
+  
   
   .H_s_c-slide .H_s_c-caption strong {
     font-weight: bold;
