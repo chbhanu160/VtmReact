@@ -1,43 +1,43 @@
 export const homeAbout = [
   {
     id: 1,
-    cover: 'fa-solid fa-trophy-star',
+    cover: "fa-trophy",
     title: "Online Courses",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Flexible online courses let you gain skills from home in diverse subjects.",
   },
   {
     id: 1,
-    cover: "",
+    cover: "fa-graduation-cap",
     title: "Earn A Certificates",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Earn a certificate to boost your professional credibility and open new opportunities.",
   },
   {
     id: 1,
-    cover: "",
+    cover: "fa-star",
     title: "Learn with Expert",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    desc: "Learn from experts for practical insights and skills in a comprehensive educational experience.",
   },
 ]
 export const awrapper = [
   {
-    cover: "fa-solid fa-trophy-star",
-    data: "3000",
+    cover: "fa-trophy",
+    data: "1000",
     title: "SUCCESS STORIES",
   },
 
   {
-    cover: "fa-solid fa-book",
-    data: "320",
-    title: "TRUSTED TUTORS",
+    cover: "fa-book",
+    data: "400",
+    title: "Events",
   },
   {
-    cover: "fa-duotone fa-user-secret",
-    data: "1000",
-    title: "SCHEDULES",
+    cover: "fa-user-secret",
+    data: "200",
+    title: "Services",
   },
   {
-    cover: "fa-solid fa-book",
-    data: "587",
+    cover: "fa-cloud",
+    data: "120",
     title: "COURSES",
   },
 ]

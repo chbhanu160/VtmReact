@@ -3,6 +3,15 @@ import OnlineCourses from "../allcourses/OnlineCourses"
 
 import "../allcourses/courses.css"
 import { coursesCard } from "../../dummydata"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { fab } from '@fortawesome/free-brands-svg-icons';
+import { fas } from '@fortawesome/free-solid-svg-icons';
+
+
+// Add Font Awesome icons to the library
+library.add(fab, fas);
+
 
 const HAbout = () => {
   return (
@@ -20,7 +29,7 @@ const HAbout = () => {
                   <div className='content flex'>
                     <div className='left'>
                       <div className='img'>
-                        <img src={val.cover} alt='' />
+                      {val.cover && <FontAwesomeIcon icon={val.cover} />}
                       </div>
                     </div>
                     <div className='text'>
