@@ -73,6 +73,97 @@ const Events = () => {
       duration: '45 minutes',
       image: require('./Poster/2.jfif')
     },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+
     
   ];
 
@@ -100,25 +191,10 @@ const Events = () => {
 
   return (
     <>
-       <div className="poster">
-      <h2>Conducted events so far</h2>
-      <div className="poster-grid">
-        {poster.map((poster, index) => (
-          <div className="poster-card" key={index}>
-            <div className="poster-details">
-              <p>Date: {poster.date}</p>
-              <p>Speaker: {poster.speaker}</p>
-              <p>Duration: {poster.duration}</p>
-            </div>
-            <img src={poster.image} alt={`Poster for ${poster.speaker}`} />
-          </div>
-        ))}
-      </div>
-    </div>
 
-      {/* slider */}
+     {/* slider */}
       
-      <div className="events-section text-center">
+     <div className="events-section text-center">
       <h1 className="events_h1">Connecting Moments, Inspiring Journeys – Where Every Event Tells a Unique Story!</h1>
     <Carousel
       responsive={responsive}
@@ -144,6 +220,25 @@ const Events = () => {
       ))}
     </Carousel>
   </div>
+
+  
+       <div className="poster">
+      <h2>Conducted events so far</h2>
+      <div className="poster-grid">
+        {poster.map((poster, index) => (
+          <div className="poster-card" key={index}>
+            <div className="poster-details">
+              <p>Date: {poster.date}</p>
+              <p>Speaker: {poster.speaker}</p>
+              <p>Duration: {poster.duration}</p>
+            </div>
+            <img src={poster.image} alt={`Poster for ${poster.speaker}`} />
+          </div>
+        ))}
+      </div>
+    </div>
+
+     
 
     </>
   );
