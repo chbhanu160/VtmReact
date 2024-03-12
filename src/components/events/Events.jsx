@@ -23,6 +23,11 @@ import event16 from './event/16.jpeg';
 import event17 from './event/17.jpeg';
 import event18 from './event/18.jpeg';
 import event19 from './event/19.jpeg';
+import event20 from './event/20.jfif';
+import event21 from './event/21.jfif';
+import event22 from './event/22.jfif';
+import event23 from './event/23.jfif';
+
 
 const Events = () => {
   // const [selectedDate, setSelectedDate] = useState(new Date());
@@ -48,17 +53,30 @@ const Events = () => {
     { id: 17, image: event17, caption: 'Image 17 Caption' },
     { id: 18, image: event18, caption: 'Image 18 Caption' },
     { id: 19, image: event19, caption: 'Image 19 Caption' },
-
-  
+    { id: 20, image: event20, caption: 'Image 20 Caption' },
+    { id: 21, image: event21, caption: 'Image 21 Caption' },
+    { id: 22, image: event22, caption: 'Image 22 Caption' },
+    { id: 23, image: event23, caption: 'Image 23 Caption' },
+  ];
+   
+  const poster = [
+    {
+      date: '2024-03-15',
+      speaker: 'John Doe',
+      duration: '1 hour',
+      id:1,
+      image: require('./Poster/1.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/2.jfif')
+    },
+    
   ];
 
- //upcoming event section
-  // const upcomingEventImage = require(`./6.jpg`);
-
-  // const handleDateChange = (date) => {
-  //   setSelectedDate(date);
-  //   // You can add logic here to filter and display events for the selected date
-  // };
+  
 
   // slider section
 
@@ -82,16 +100,21 @@ const Events = () => {
 
   return (
     <>
-      {/* <section className="calendar-section padding">
-        <div className="calendar-container">
-          <CustomCalendar onChange={handleDateChange} value={selectedDate} />
-        </div>
-
-        <div className="upcoming-event-container">
-          <h2>Upcoming Event</h2>
-          <img src={upcomingEventImage} alt="Upcoming Event" />
-        </div>
-      </section> */}
+       <div className="poster">
+      <h2>Conducted events so far</h2>
+      <div className="poster-grid">
+        {poster.map((poster, index) => (
+          <div className="poster-card" key={index}>
+            <div className="poster-details">
+              <p>Date: {poster.date}</p>
+              <p>Speaker: {poster.speaker}</p>
+              <p>Duration: {poster.duration}</p>
+            </div>
+            <img src={poster.image} alt={`Poster for ${poster.speaker}`} />
+          </div>
+        ))}
+      </div>
+    </div>
 
       {/* slider */}
       
