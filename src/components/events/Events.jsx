@@ -77,91 +77,103 @@ const Events = () => {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/3.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/4.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/5.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/6.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/7.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/8.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/9.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/10.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/11.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/12.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/13.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/14.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/15.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/16.jfif')
     },
     {
       date: '2024-03-20',
       speaker: 'Jane Smith',
       duration: '45 minutes',
-      image: require('./Poster/2.jfif')
+      image: require('./Poster/17.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/18.jfif')
+    },
+    {
+      date: '2024-03-20',
+      speaker: 'Jane Smith',
+      duration: '45 minutes',
+      image: require('./Poster/19.jfif')
     },
 
     
@@ -221,7 +233,7 @@ const Events = () => {
     </Carousel>
   </div>
 
-  
+
        <div className="poster">
       <h2>Conducted events so far</h2>
       <div className="poster-grid">
