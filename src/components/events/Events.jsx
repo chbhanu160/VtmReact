@@ -22,11 +22,11 @@ import event15 from './event/15.jpeg';
 import event16 from './event/16.jpeg';
 import event17 from './event/17.jpeg';
 import event18 from './event/18.jpeg';
-import event19 from './event/19.jpeg';
+import event19 from './event/19.jfif';
 import event20 from './event/20.jfif';
 import event21 from './event/21.jfif';
 import event22 from './event/22.jfif';
-import event23 from './event/23.jfif';
+
 
 
 const Events = () => {
@@ -52,11 +52,10 @@ const Events = () => {
     { id: 16, image: event16, caption: 'Banasthali Vidyapith University Hackathon 2023' },
     { id: 17, image: event17, caption: '18th Azure Open source tour at Arya College of Engineering' },
     { id: 18, image: event18, caption: 'Microsoft Certified Trainer Meet in Chennai' },
-    { id: 19, image: event19, caption: 'Image 19 Caption' },
-    { id: 20, image: event20, caption: 'Azure Data Engineering training at Deloitte Bangalore' },
+    { id: 19, image: event19, caption: 'Azure Data Engineering training at Deloitte Bangalore' },
+    { id: 20, image: event20, caption: 'Banasthali Vidyapith University Hackathon 2023' },
     { id: 21, image: event21, caption: 'Banasthali Vidyapith University Hackathon 2023' },
     { id: 22, image: event22, caption: 'Banasthali Vidyapith University Hackathon 2023' },
-    { id: 23, image: event23, caption: 'Banasthali Vidyapith University Hackathon 2023' },
   ];
    
   const poster = [
