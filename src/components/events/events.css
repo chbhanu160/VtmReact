@@ -13,10 +13,12 @@
   margin-left: 50px;
   margin-right: 50px;
 }
+
 .poster h2{
   text-align: center;
   margin-top: 50px;
-  margin-bottom: 40px;
+  margin-bottom: 50px;
+  font-size: 44px;
   color: #004AAD;
 }
 
@@ -38,7 +40,7 @@
 }
 
 .poster-card:hover .poster-details {
-  opacity: 1; /* Display details on hover */
+  opacity: 1; 
 }
 
 .poster-card:hover::before {
@@ -61,8 +63,8 @@
   margin: 5px 0;
   color: white; /* Adjust text color to contrast with image */
   font-weight: bold; 
-  font-size: 22px;
-  text-align: left;
+  font-size: 18px;
+  text-align: center;
 }
 
 /* slider */
@@ -71,6 +73,7 @@
   color: #004AAD;
   margin-top: 20px;
 }
+
 .events-section {
   margin-top: 20px;
   padding: 20px;

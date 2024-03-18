@@ -60,118 +60,118 @@ const Events = () => {
    
   const poster = [
     {
-      date: '2024-03-15',
-      speaker: 'John Doe',
-      duration: '1 hour',
+      date: '22 March 2022',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       id:1,
       image: require('./Poster/1.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '23 March 2022',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       image: require('./Poster/2.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '11 Sep 2022',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       image: require('./Poster/3.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      // date: '2024-03-20',
+      speaker: 'Deeksha Sharma',
+      // place: '45 minutes',
       image: require('./Poster/4.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '03 Oct 2022',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       image: require('./Poster/5.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '03 Dec 2022',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       image: require('./Poster/6.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '20 Jan 2022',
+      speaker: 'Deeksha Sharma',
+      // place: '45 minutes',
       image: require('./Poster/7.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '17 March 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'RVCE, Bengaluru',
       image: require('./Poster/8.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '17 March 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Online Meet',
       image: require('./Poster/9.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '27 May 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia,Vietnam,Thailand,Malaysia,Bangladesh,Singapore,Philippines',
       image: require('./Poster/10.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '08 May 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Chandigarh University',
       image: require('./Poster/11.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '19,20 August 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Banasthali Vidyapith',
       image: require('./Poster/12.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '19 Sep 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'UEm, Jaipur',
       image: require('./Poster/13.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '28 Oct 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Online Meet',
       image: require('./Poster/14.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '26 Oct 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Vivekananda Global University ,Jaipur',
       image: require('./Poster/15.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      // date: '2024-03-20',
+      speaker: 'Deeksha Sharma',
+      // place: '45 minutes',
       image: require('./Poster/16.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      // date: '2024-03-20',
+      // speaker: 'Deeksha Sharma',
+      // place: '45 minutes',
       image: require('./Poster/17.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '23 Dec 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Indonesia,Vietnam,Thailand,Malaysia,Bangladesh,Singapore,Philippines',
       image: require('./Poster/18.jfif')
     },
     {
-      date: '2024-03-20',
-      speaker: 'Jane Smith',
-      duration: '45 minutes',
+      date: '30 Dec 2023',
+      speaker: 'Deeksha Sharma',
+      place: 'Microsoft office, Gurgaon',
       image: require('./Poster/19.jfif')
     },
 
@@ -204,6 +204,21 @@ const Events = () => {
     <>
 
      {/* slider */}
+
+     <div className="poster">
+      <h2>Conducted events so far</h2>
+      <div className="poster-grid">
+        {poster.map((poster, index) => (
+          <div className="poster-card" key={index}>
+            <div className="poster-details">
+              <p>Date: {poster.date}</p>
+              <p>Speaker: {poster.speaker}</p>
+              <p>Place: {poster.place}</p>
+            </div>
+            <img src={poster.image} alt={`Poster for ${poster.speaker}`} />
+          </div>
+        ))}
+      </div>
       
      <div className="events-section text-center">
       <h1 className="events_h1">Connecting Moments, Inspiring Journeys – Where Every Event Tells a Unique Story!</h1>
@@ -217,7 +232,7 @@ const Events = () => {
       autoPlaySpeed={5000}
       keyBoardControl={true}
       customTransition="all .5"
-      transitionDuration={500}
+      transitionplace={500}
       containerClass="E-carousel-container"
       removeArrowOnDeviceType={["tablet", "mobile"]}
       dotListClass="E-custom-dot-list-style"
@@ -233,20 +248,7 @@ const Events = () => {
   </div>
 
 
-       <div className="poster">
-      <h2>Conducted events so far</h2>
-      <div className="poster-grid">
-        {poster.map((poster, index) => (
-          <div className="poster-card" key={index}>
-            <div className="poster-details">
-              <p>Date: {poster.date}</p>
-              <p>Speaker: {poster.speaker}</p>
-              <p>Duration: {poster.duration}</p>
-            </div>
-            <img src={poster.image} alt={`Poster for ${poster.speaker}`} />
-          </div>
-        ))}
-      </div>
+      
     </div>
 
      
