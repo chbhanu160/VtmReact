@@ -3,6 +3,7 @@ import "./style.css"
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
+
 const Testimonial = () => {
   const testimonial = [
   {
@@ -46,7 +47,6 @@ const responsive = {
 
  
  return (
-
    
     <div className="H_t-testimonial-section text-center">
     <h1 className="H_t-h1">TESTIMONIAL</h1>
@@ -77,6 +77,17 @@ const responsive = {
 
             <h3>{feedback.name}</h3>
             <p>{feedback.desc}</p>
+
+const Testimonal = () => {
+  return (
+    <>
+      <section className='testimonal padding'>
+        <div className='Htest_container'>
+        <div class="text-center">
+        <h1>TESTIMONIAL</h1>
+        <h2>Our Successful Students</h2>
+    </div>
+
 
           </div>
         </div>
