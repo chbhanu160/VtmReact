@@ -9,7 +9,7 @@ const Testimonial = () => {
   {
     id: 1,
     name: "Yash Mohan",
-    desc: "I am thrilled to share that I have successfully cleared not one, not two, but five Azure certifications! 🥳🚀 It has been an incredible journey of growth and learning, and I am grateful for the opportunities that these certifications have opened up for me. 💼💪Achieving these certifications has been a significant milestone in my professional career, and I am proud to have expanded my knowledge and expertise in various Azure technologies. 🏆 Here are the Azure certifications I have earned:1️⃣ Microsoft Certified: Azure Fundamentals 2️⃣ Microsoft Certified: Azure AI Fundamentals 3️⃣ Microsoft Certified: Azure Data Fundamentals4️⃣ Microsoft Certified: Azure Data Scientist Associate 5️⃣ Microsoft Certified: Azure Data Engineer Associate. I want to express my deepest gratitude to my incredible mentor, DEEKSHA S., whose guidance and support have been instrumental in my success. As they say, For anything worthwhile, the foundation should be strong, and Deeksha has provided me with a solid foundation to excel in the world of Azure 🙏🌟",
+    desc: "I am thrilled to share that I have successfully cleared not one, not two, but five Azure certifications! 💼💪Achieving these certifications has been a significant milestone in my professional career",
     cover: "./images/testo/t1.webp",
   },
   {
@@ -17,6 +17,34 @@ const Testimonial = () => {
     name: "Yash Mohan",
     desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
     cover: "./images/testo/t2.webp",
+  },
+  {
+    id: 3,
+    name: "ROGER SCOTT",
+    post: "MARKETING MANAGER",
+    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    cover: "./images/testo/t3.webp",
+  },
+  {
+    id: 3,
+    name: "ROGER SCOTT",
+    post: "MARKETING MANAGER",
+    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    cover: "./images/testo/t3.webp",
+  },
+  {
+    id: 3,
+    name: "ROGER SCOTT",
+    post: "MARKETING MANAGER",
+    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    cover: "./images/testo/t3.webp",
+  },
+  {
+    id: 3,
+    name: "ROGER SCOTT",
+    post: "MARKETING MANAGER",
+    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
+    cover: "./images/testo/t3.webp",
   },
   {
     id: 3,
