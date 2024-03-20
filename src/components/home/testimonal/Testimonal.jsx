@@ -74,28 +74,16 @@ const responsive = {
             <div>
               {feedback.cover && <img src={feedback.cover} className="H_t-icon" alt={`Course ${feedback.id}`} />}
             </div>
-
             <h3>{feedback.name}</h3>
             <p>{feedback.desc}</p>
-
-const Testimonal = () => {
-  return (
-    <>
-      <section className='testimonal padding'>
-        <div className='Htest_container'>
-        <div class="text-center">
-        <h1>TESTIMONIAL</h1>
-        <h2>Our Successful Students</h2>
-    </div>
-
-
-          </div>
-        </div>
+            </div>
+            </div>
       ))}
+     </Carousel>
 
-    </Carousel>
     <button className='H_t-view'>View More</button>
-      </div>
- );
+    </div>
+  );
  };
+
 export default Testimonial;
