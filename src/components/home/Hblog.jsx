@@ -1,6 +1,7 @@
 import React from "react"
 import "../blog/blog.css"
 import { blog } from "../../dummydata"
+import "./Hblog.css"
 
 
 // copy code of blog => blogCard
@@ -9,9 +10,13 @@ const Hblog = () => {
   return (
     <div>
       <section className='blog'>
-        <div className='container'>
-          <h1>OUR BLOG</h1>
+        <div className='Hb-container'>
+        <div class="text-center" id="blog_title">
+
+        <h1>OUR BLOG</h1>
           <h2>Recent From Blog</h2>
+        </div>
+          
           <div className='grid2'>
             {blog.slice(0, 3).map((val) => (
               <div className='items shadow'>

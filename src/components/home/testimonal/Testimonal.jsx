@@ -6,9 +6,11 @@ const Testimonal = () => {
   return (
     <>
       <section className='testimonal padding'>
-        <div className='container'>
-          <h1>TESTIMONIAL</h1>
-          <h2>Our Successful Students</h2>
+        <div className='Htest_container'>
+        <div class="text-center">
+        <h1>TESTIMONIAL</h1>
+        <h2>Our Successful Students</h2>
+    </div>
 
           <div className='content grid2'>
             {testimonal.map((val) => (
