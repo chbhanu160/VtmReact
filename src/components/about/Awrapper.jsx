@@ -15,10 +15,12 @@ library.add(fab, fas);
 const Awrapper = () => {
   return (
     <>
+    
       <section className='awrapper'>
         <div className='container grid'>
           {awrapper.map((val, index) => {
             return (
+              <div className="d-flex justify-content-center align-items-center">
               <div className='box flex' key={index}>
                 <div className='aw_img'>
                 {val.cover && <FontAwesomeIcon icon={val.cover} />}
@@ -28,6 +30,7 @@ const Awrapper = () => {
                   <h1><NumberCounter endValue={val.data} /></h1>
                   <h3 id="title_text">{val.title}</h3>
                 </div>
+              </div>
               </div>
             );
           })}
