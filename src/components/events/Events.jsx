@@ -78,12 +78,7 @@ const Events = () => {
       place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       image: require('./Poster/3.jfif')
     },
-    {
-      // date: '2024-03-20',
-      speaker: 'Deeksha Sharma',
-      // place: '45 minutes',
-      image: require('./Poster/4.jfif')
-    },
+  
     {
       date: '03 Oct 2022',
       speaker: 'Deeksha Sharma',
@@ -96,23 +91,12 @@ const Events = () => {
       place: 'Indonesia, Thailand, Malaysia, Singapore, Korea',
       image: require('./Poster/6.jfif')
     },
-    {
-      date: '20 Jan 2022',
-      speaker: 'Deeksha Sharma',
-      // place: '45 minutes',
-      image: require('./Poster/7.jfif')
-    },
+    
     {
       date: '17 March 2023',
       speaker: 'Deeksha Sharma',
       place: 'RVCE, Bengaluru',
       image: require('./Poster/8.jfif')
-    },
-    {
-      date: '17 March 2023',
-      speaker: 'Deeksha Sharma',
-      place: 'Online Meet',
-      image: require('./Poster/9.jfif')
     },
     {
       date: '27 May 2023',
@@ -174,8 +158,24 @@ const Events = () => {
       place: 'Microsoft office, Gurgaon',
       image: require('./Poster/19.jfif')
     },
-
-    
+    {
+      // date: '2024-03-20',
+      speaker: 'Deeksha Sharma',
+      // place: '45 minutes',
+      image: require('./Poster/4.jfif')
+    },
+    {
+      date: '20 Jan 2022',
+      speaker: 'Deeksha Sharma',
+      // place: '45 minutes',
+      image: require('./Poster/7.jfif')
+    },
+    {
+      date: '17 March 2023',
+      speaker: 'Deeksha Sharma',
+      // place: 'Online Meet',
+      image: require('./Poster/9.jfif')
+    },
   ];
 
   
@@ -206,7 +206,7 @@ const Events = () => {
      {/* slider */}
 
      <div className="poster">
-      <h2>Conducted events so far</h2>
+      <h2>"Echoes of Success: Recalling Our Conducted Events</h2>
       <div className="poster-grid">
         {poster.map((poster, index) => (
           <div className="poster-card" key={index}>

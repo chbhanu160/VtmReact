@@ -40,18 +40,16 @@ footer .container {
   justify-content: center;
 }
 
+
 @media screen and (max-width: 768px) {
   footer .container {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-#social a:hover{
-  color: #004AAD;
-}
 
 footer .logo .icon {
-  background-color: #004AAD;
+  background-color: hsl(214, 100%, 34%);
   color: white;
   margin-right: 10px;
 }
@@ -73,9 +71,10 @@ footer h3 {
   justify-content: center;
   text-align: center;
 }
-#social{
+#f-social{
   margin-left: -10px;
 }
+
 #exp #quick link:hover{
   color: #004AAD;
 }

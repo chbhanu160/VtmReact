@@ -12,7 +12,7 @@ const Footer = () => {
           <div className="box logo">
             <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
             
-            <div id="social">
+            <div id="f-social">
               <a
                 href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true"
                 target="_new"

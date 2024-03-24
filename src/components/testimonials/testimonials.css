@@ -9,6 +9,7 @@
   color: #004AAD;
   margin-top: 20px;
 }
+
 .T-carousel-container {
   max-width: 100%;
   margin: 0 auto;
@@ -24,7 +25,7 @@
 
 .T-slide img {
   width: 100%; /* Set the width to 100% for responsiveness */
-  height: 500px; /* Set the desired height for all images */
+  height: 750px; /* Set the desired height for all images */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   object-fit: cover;

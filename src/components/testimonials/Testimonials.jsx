@@ -7,18 +7,11 @@ import './testimonials.css';
 const Testimonials = () => {
 
   const testimonials = [
-    { id: 1, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.29 AM (1).jpeg') },
-    { id: 2, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.30 AM.jpeg') },
-    { id: 3, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.29 AM.jpeg') },
-    { id: 4, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.31 AM.jpeg') },
-    { id: 5, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.32 AM (1).jpeg') },
-    { id: 6, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.32 AM.jpeg') },
-    { id: 7, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.33 AM (1).jpeg') },
-    { id: 8, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.33 AM.jpeg') },
-    { id: 9, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.35 AM.jpeg') },
-    { id: 10, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.36 AM (1).jpeg') },
-    { id: 11, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.36 AM.jpeg') },
-    { id: 12, image: require('./feedback/WhatsApp Image 2024-01-08 at 12.39.37 AM.jpeg') },
+    { id: 1, image: require('./feedback/1.jpg') },
+    { id: 2, image: require('./feedback/2.jpg') },
+    { id: 3, image: require('./feedback/3.jpg') },
+    { id: 4, image: require('./feedback/4.jpg') },
+    { id: 5, image: require('./feedback/5.jpg') },
   ];
 
   const responsive = {

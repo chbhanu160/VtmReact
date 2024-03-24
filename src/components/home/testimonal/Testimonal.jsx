@@ -8,15 +8,15 @@ const Testimonial = () => {
   const testimonial = [
   {
     id: 1,
-    name: "Yash Mohan",
-    desc: "I am thrilled to share that I have successfully cleared not one, not two, but five Azure certifications! 💼💪Achieving these certifications has been a significant milestone in my professional career",
-    cover: "./images/testo/t1.webp",
+    name: "Vanshika Gupta",
+    desc: "Empowered and inspired by a day of profound insights at the Code Without Barriers - Gurugram Meetup! 💡 Engaged in transformative talks by industry leaders like Sanya Duggal, DEEKSHA SHARMA , and Siddharth Chopra, unraveling the future of technology and skill development. 🌐✨",
+    cover: "./images/testo/t1.jpg",
   },
   {
     id: 2,
-    name: "Yash Mohan",
-    desc: "Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.",
-    cover: "./images/testo/t2.webp",
+    name: "Katrina Rana",
+    desc: "Excited to share the experience at Microsoft #codewithoutbarrier- realm of Azure !The experts: DEEKSHA SHARMA-enlightening session on intricacies of Microsoft Azure, unraveling the potential it holds for developers- Azure services and Azure cloud-the Cloud computing needs and scope☁️ 🖥️ -How to start as a beginner to have a career in cloud computing🚀",
+    cover: "./images/testo/t2.jpg",
   },
   {
     id: 3,

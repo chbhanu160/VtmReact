@@ -12,13 +12,12 @@ h1 {
 
 .about-overview-box,
 .specialties-box {
-  border: 4px solid #004AAD; /* Add a border */
+  border: 2px solid #004AAD; /* Add a border */
   padding: 25px; /* Add padding inside the box */
   margin-top: 20px; /* Adjust margin at the top for spacing */
   margin-bottom: 20px; /* Add margin at the bottom for spacing */
-  
-  /* background-color: #b2afe3; */
-  border-radius: 8px; /* Add rounded corners */
+  background-color: #fff;
+  border-radius: 8px;
   box-shadow: 0 10 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
 .about-overview-box p{
@@ -31,6 +30,7 @@ h1 {
   color: #0c0c0c;
 }
 
+
 .specialties-cards {
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +38,7 @@ h1 {
 
 .specialty-card {
   background-color: #fff;
-  border: 4px solid #dbdbe0;
+  border: 1px solid #dbdbe0;
   border-radius: 8px;
   padding: 10px;
   margin: 5px;
@@ -129,7 +129,7 @@ text-align: justify;
 
 /*----------awrapper------------*/
 .awrapper {
-  /* background-image: url("/public/images/awrapper.webp"); */
+ 
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
