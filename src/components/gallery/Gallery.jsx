@@ -17,17 +17,17 @@ import image11 from './Training/11.jpeg';
 
 const Gallery = () => {
   const galleryImages = [
-    { id: 1, image: image1, caption: 'Image 1 Caption' },
-    { id: 2, image: image2, caption: 'Image 2 Caption' },
-    { id: 3, image: image3, caption: 'Image 3 Caption' },
-    { id: 4, image: image4, caption: 'Image 4 Caption' },
-    { id: 5, image: image5, caption: 'Image 5 Caption' },
-    { id: 6, image: image6, caption: 'Image 6 Caption' },
-    { id: 7, image: image7, caption: 'Image 7 Caption' },
-    { id: 8, image: image8, caption: 'Image 8 Caption' },
-    { id: 9, image: image9, caption: 'Image 9 Caption' },
-    { id: 10, image: image10, caption: 'Image 10 Caption' },
-    { id: 11, image: image11, caption: 'Image 11 Caption' },
+    { id: 1, image: image11, caption: 'Azure Synapse Datawarehouse session at SPJ London, UK' },
+    { id: 2, image: image2, caption: 'Data Engineer session at Deloitte, Banglore office' },
+    { id: 3, image: image3, caption: 'Azure Data Engineering session at Nihilent Technology, Pune' },
+    { id: 4, image: image4, caption: 'Azure Data Engineering session at Nihilent Technology, Pune' },
+    { id: 5, image: image5, caption: 'Azure Session at UST Global Trivandrum' },
+    { id: 6, image: image6, caption: 'Azure Session at UST Global Trivandrum' },
+    { id: 7, image: image7, caption: 'Azure Session at UST Global Trivandrum' },
+    { id: 8, image: image8, caption: 'Microsoft Azure session at Happiest Minds Banglore' },
+    { id: 9, image: image9, caption: 'Microsoft Azure session at Happiest Minds Banglore' },
+    { id: 10, image: image10, caption: 'Data Engineering session at Deloitte, Banglore office' },
+    { id: 11, image: image1, caption: 'Azure AI India tour session' },
   ];
 
   const responsive = {
