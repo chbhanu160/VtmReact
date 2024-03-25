@@ -129,13 +129,12 @@ text-align: justify;
 
 /*----------awrapper------------*/
 .awrapper {
-  /* background-image: url("/public/images/awrapper.webp"); */
+
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   /* height: 30vh; */
   color: #fff;
-  border: solid #004AAD;
   border-radius: 15px;
   /* margin-top: 50px; */
   padding-top: 15px;
@@ -150,13 +149,7 @@ text-align: justify;
                 0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-/* .awrapper .box {
-  padding: 0px 0;
-} */
 
-/* .awrapper img {
-  margin-right: 30px;
-} */
 .aw_img{
   font-size: 62px;
   color: #004AAD;
