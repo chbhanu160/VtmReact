@@ -17,7 +17,7 @@ const Awrapper = () => {
     <>
     
       <section className='awrapper'>
-        <div className='container grid'>
+        <div className='grid'>
           {awrapper.map((val, index) => {
             return (
               <div className="d-flex justify-content-center align-items-center">

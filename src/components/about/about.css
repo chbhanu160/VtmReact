@@ -133,15 +133,14 @@ text-align: justify;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  /* height: 30vh; */
   color: #fff;
   border-radius: 15px;
-  /* margin-top: 50px; */
   padding-top: 15px;
   width: 75vw;
   background-color: #f7f5f5;
   margin: 50px auto;
- 
+  padding-left:20px ;
+  padding-right: 20px;
 
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 
                 0 0 8px rgba(255, 255, 255, 0.6), 
@@ -153,18 +152,18 @@ text-align: justify;
 .aw_img{
   font-size: 62px;
   color: #004AAD;
-  margin-right: 10px;
+  margin-right: 25px;
   
 }
 
 .awrapper h1 {
-  font-size: 45px;
+  font-size: 40px;
 }
 
 .awrapper h3 {
   font-size: 20px;
   font-weight: 500;
-
+  margin-left:auto;
 }
 /*----------awrapper------------*/
 @media screen and (max-width: 768px) {
