@@ -126,7 +126,7 @@ const Contact = () => {
 
             <h3>Follow us here</h3>
 
-            <div id="social" className="d-flex justify-content-center">
+            <div id="c-social" className="d-flex justify-content-center">
               <a href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true" target="_new">
                 <i className="fab fa-linkedin-in icon"></i>
               </a>

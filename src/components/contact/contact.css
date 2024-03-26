@@ -101,26 +101,19 @@ button:hover {
   background-color: #004aad;
 }
 
-#social {
+#c-social {
   margin-top: 20px;
-margin-left: 200px;
+margin-left: 35px;
 
 }
-#social a i{
-  font-size: 2rem;
+#c-social a i{
+  font-size: 1.7rem;
 }
 
 .icon {
-  font-size: 20px;
-
-  font-size: 24px;
-
-  font-size: 20px;
-
-
   margin-right: 10px;
   color: #004aad;
- 
+
 }
 
 .contacts h3 {
