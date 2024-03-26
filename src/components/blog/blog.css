@@ -1,34 +1,41 @@
-.blog img {
-  width: 100%;
-  height: 100%;
+.bblog img {
+
+  height: 200px;
 }
-.blog .text {
+.bblog{
+  width: 100%;
+  height:100%;
+}
+
+.bblog .text {
   padding: 40px 30px;
 }
-.blog h1 {
+.bblog h1 {
   font-weight: 500;
   font-size: 22px;
   line-height: 30px;
   margin: 20px 0;
   transition: 0.5s;
+  text-align: left;
 }
-.blog h1:hover {
+.bblog h1:hover {
   color: #027Dff;
   cursor: pointer;
 }
-.blog span {
+.bblog span {
   text-transform: uppercase;
   font-weight: 500;
   color: #027Dff;
 }
-.blog span label {
+.bblog span label {
   margin-left: 10px;
-  color: grey;
+  color: rgb(0, 0, 0);
   font-size: 14px;
 }
-.blog span:nth-last-child(1) label {
+.bblog span:nth-last-child(1) label {
   color: #027Dff;
 }
-.blog p {
-  color: grey;
+.bblog p {
+  color: rgb(0, 0, 0);
+  text-align: justify;
 }

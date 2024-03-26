@@ -6,9 +6,8 @@ import "./blog.css"
 const Blog = () => {
   return (
     <>
-      <Back title='Blog Posts' />
-      <section className='blog padding'>
-        <div className='container grid2'>
+      <section className='bblog padding'>
+        <div className='flex'>
           <BlogCard />
         </div>
       </section>

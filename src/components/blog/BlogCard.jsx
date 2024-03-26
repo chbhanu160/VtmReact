@@ -1,13 +1,13 @@
-import React from "react"
-import { blog } from "../../dummydata"
+import React from "react";
+import { blog } from "../../dummydata";
 
 const BlogCard = () => {
   return (
     <>
       {blog.map((val) => (
-        <div className='items shadow'>
+        <div className='items shadow' key={val.id}>
           <div className='blog_img'>
-            <img src={val.cover} alt='' />
+            <img src={val.cover} alt='Blog Cover' />
           </div>
           <div className='text'>
             <div className='admin flexSB'>
@@ -19,18 +19,18 @@ const BlogCard = () => {
                 <i className='fa fa-calendar-alt'></i>
                 <label htmlFor=''>{val.date}</label>
               </span>
-              <span>
-                <i className='fa fa-comments'></i>
-                <label htmlFor=''>{val.com}</label>
-              </span>
             </div>
             <h1>{val.title}</h1>
             <p>{val.desc}</p>
           </div>
+
+          <div>
+            <button onClick={() => window.open(val.to, "_blank")} type="button">Read More</button>
+          </div>
         </div>
       ))}
     </>
-  )
-}
+  );
+};
 
-export default BlogCard
+export default BlogCard;
