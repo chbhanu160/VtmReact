@@ -15,11 +15,12 @@
     align-items: center;
     width: 100%; /* Set the width to 100% for responsiveness */
     height: 550px;
-  
+    
   }
   
   .H_c-slide .H_c-caption {
     border: 2px solid #004AAD;
+    background-color: white;
     border-radius: 10px;
     padding: 20px;
     text-align: center;

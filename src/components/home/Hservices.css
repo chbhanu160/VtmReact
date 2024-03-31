@@ -29,6 +29,7 @@
   .H_s_l-slide .H_s_l-caption {
     border: 2px solid #004AAD;
     border-radius: 10px;
+    background-color: white;
     padding: 20px;
     text-align: center;
     height: 420px; 
@@ -97,6 +98,7 @@
   .H_s_c-slide .H_s_c-caption {
     border: 2px solid #004AAD;
     border-radius: 10px;
+    background-color: white;
     padding: 20px;
     text-align: center;
     height: 400px; 
