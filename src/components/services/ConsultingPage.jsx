@@ -82,7 +82,13 @@ const ConsultingPage = () => {
       icon:'fa-cloud-arrow-up',
       name: "Managed IT Services:",
       bulletPoints:[ "Offering ongoing IT support, maintenance, and monitoring.  "," Proactive management of IT systems to prevent issues."]
-    }
+    },
+    {
+      id: 14,
+      icon:'fa-globe',
+      name: "Web Development & Hosting Services:",
+      bulletPoints:[ "We craft stunning and functional websites using the MERN stack, taking care of design, development, and secure hosting for your online success."]
+    },
   ];
 
   return (

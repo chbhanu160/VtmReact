@@ -12,7 +12,7 @@ const LearningPage = () => {
     },
     {
       id: 2,
-      icon:'fa-globe',
+      icon:'fa-code',
       name: "Workshops and Seminars:",
       bulletPoints: ["Customized workshops and seminars on specific technologies or industry trends.","Hands-on training sessions to provide practical experience." ],
     },
