@@ -5,6 +5,9 @@
   padding: 0;
 }
 
+.s_media_icon{
+  font-size: 2.5rem;
+}
 /* Add margin-bottom to li elements in the footer */
 #exp li,
 #quick li {
@@ -43,8 +46,8 @@ footer .container {
 
 /* Styles for the footer logo icon */
 footer .logo .icon {
-  background-color: hsl(214, 100%, 34%);
-  color: white;
+  /* background-color: hsl(214, 100%, 34%); */
+  color: rgb(9, 71, 207);
   margin-right: 10px;
 }
 
@@ -118,12 +121,6 @@ footer .last i {
   footer .last i {
     width: auto;
   }
-
-  /* Media query for contact section */
-  #f_contact li {
-    flex-direction: column;
-    align-items: center;
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -149,62 +146,42 @@ footer .last i {
   .legal p {
     font-size: 14px;
   }
-
-  #f_contact li i {
-    width: auto;
-  }
 }
 
-#footer{
+#footer {
   background: #f7f7fa;
 }
-.social-media a {
-   
-    justify-content: center;
-    align-items: center;
-    width: 4rem;
-    height: 4rem;
-    background: transparent;
-    
-    text-decoration: none;
-    border-radius: 50%;
-    font-size: 1.5rem;
-    color: var(--main-color);
-    margin: 3rem 1.5rem 3rem 0;
-    /* transition: 0.5s ease; */
-  }
-.social-media a:hover {
-   
-  color: #F29727;
-  /* box-shadow: 0 0 1rem #F29727; */
-  }
-  /* .links p:hover{
-    color:#F29727;
-  }
 
-  .inside_text,link p{
-    color:#6d6d6d;
-    font-size: 1rem;
-  } */
-  .inside_text p:hover{
-    color:#F29727;
-    cursor: pointer
-    
-  }
-  #logoo{
-    width: 15%;
+.social-media a {
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: transparent;
+  text-decoration: none;
+  border-radius: 50%;
+  font-size: 1.5rem;
+  color: var(--main-color);
+  margin: 3rem 1.5rem 3rem 0;
 }
-.colorful-hr{
-    height: 3px;
-    
-    background-color: #DC823D;
-   
-    
-  }
-  
-  .colorful-hr_four_color {
-    height: 3px;
-    background-image: linear-gradient(to right,#5dbdc6, #5dbdc6 25%, #fcd932 25%, #fcd932 50%, #f75835 50%, #f75835 75%, #255bda 75%, #255bda);
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
-  }
+
+.social-media a:hover {
+  color: #F29727;
+}
+
+.inside_text p:hover {
+  color: #F29727;
+  cursor: pointer;
+}
+
+.colorful-hr {
+  height: 3px;
+  background-color: #DC823D;
+}
+
+.colorful-hr_four_color {
+  height: 3px;
+  background-image: linear-gradient(to right, #5dbdc6, #5dbdc6 25%, #fcd932 25%, #fcd932 50%, #f75835 50%, #f75835 75%, #255bda 75%, #255bda);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
