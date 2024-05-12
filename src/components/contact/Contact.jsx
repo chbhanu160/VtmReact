@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import emailjs from 'emailjs-com';
-import Back from "../common/back/Back";
 import "./contact.css";
 
 const Contact = () => {

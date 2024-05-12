@@ -1,5 +1,4 @@
 import React from "react";
-import { blog } from "../../../dummydata";
 import "./footer.css";
 import { Link } from "react-router-dom";
 
@@ -7,7 +6,7 @@ const Footer = () => {
   return (
     <>
       
-      <footer className="gradient-custom">
+      <footer >
         <div className="container padding">
           <div className="box logo">
             <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
@@ -96,7 +95,7 @@ const Footer = () => {
           </div>
         </div>
       </footer>
-      <div className="legal gradient-custom">
+      <div className="legal">
         <p>
           Copyright ©2024 All rights reserved | VisionaryTechMate{" "}
           <i className="fa fa-heart"></i>

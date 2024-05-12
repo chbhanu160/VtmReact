@@ -3,7 +3,7 @@ import React from "react"
 const Head = () => {
   return (
     <>
-      <section className='head gradient-custom'>
+      <section className='head '>
 
      
         <div className='container flexSB'>

@@ -2,7 +2,6 @@
 
 import React from "react";
 import "./about.css";
-import Back from "../common/back/Back";
 import AboutCard from "./AboutCard";
 
 const About = () => {
@@ -45,7 +44,7 @@ const About = () => {
 
   return (
     <div className="about-container">
-      {/* <Back title="VisionaryTechMate" /> */}
+  
       <div className="about-overview-box">
         <h2>Overview</h2> <br />
         <p>{overviewText}</p>
