@@ -5,11 +5,14 @@ import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <>
+    <div>
+     
       
-      <footer className="gradient-custom">
-        <div className="container padding">
-          <div className="box logo">
+       
+          <div className="d-flex justify-content-center align-items-center">
+          
+          <div className="row">
+          <div className="col-lg-2 col-sm-12 col-md-4">
             <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
             
             <div id="f-social">
@@ -40,69 +43,72 @@ const Footer = () => {
               </a>
             </div>
           </div>
-          <div className="box link" id="exp">
-            <h3>Explore</h3>
-            <ul>
-              <li>
-                <Link to="/about">About Us</Link>
-              </li>
-              <li>
-                <Link to="/services">Services</Link>
-              </li>
-              <li>
-                <Link to="/courses">Courses</Link>
-              </li>
-              <li>
-                <Link to="/blog">Blog</Link>
-              </li>
-            </ul>
+  <div className="col-lg-3 col-sm-12 col-md-4">
+    <h3>Explore</h3>
+    <ul>
+      <li>
+        <Link to="/about">About Us</Link>
+      </li>
+      <li>
+        <Link to="/services">Services</Link>
+      </li>
+      <li>
+        <Link to="/courses">Courses</Link>
+      </li>
+      <li>
+        <Link to="/blog">Blog</Link>
+      </li>
+    </ul>
+  </div>
+  <div className="col-lg-3 col-sm-12 col-md-4">
+    <h3>Quick Links</h3>
+    <ul>
+      <li>
+        <Link to="/contact">Contact Us</Link>
+      </li>
+      <li>
+        <Link to="/gallery">Gallery</Link>
+      </li>
+      <li>
+        <Link to="/events">Events</Link>
+      </li>
+      <li>
+        <Link to="/testimonials">Testimonial</Link>
+      </li>
+    </ul>
+  </div>
+  <div className="col-lg-3 col-sm-12 col-md-4">
+    <h3>Contact Us </h3>
+    <ul>
+      <li className="my-0">
+        <i className="fa fa-location-arrow"></i>
+        <p>Sahkar Nagar,Khatipura road, jhotwara, Jaipur, Rajasthan - 302012</p>
+      </li>
+      <li className="my-0">
+        <i className="fa fa-phone-alt"></i>
+        <p>+91 6375597272</p>
+      </li>
+      <li className="my-0">
+        {/* <i className="fa fa-envelope"></i> */}
+        <p>visionarytechmate@gmail.com</p>
+      </li>
+    </ul>
+  </div>
+</div>
           </div>
-          <div className="box link" id="quick">
-            <h3>Quick Links</h3>
-            <ul>
-              <li>
-                <Link to="/contact">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="/gallery">Gallery</Link>
-              </li>
-              <li>
-                <Link to="/events">Events</Link>
-              </li>
-              <li>
-                <Link to="/testimonials">Testimonial</Link>
-              </li>
-            </ul>
-          </div>
-         
-          <div className="box last" id="f_contact">
-            <h3>Contact Us </h3>
-            <ul>
-              <li className="my-0">
-                <i className="fa fa-location-arrow"></i>
-               <p>Sahkar Nagar,Khatipura road, jhotwara, Jaipur, Rajasthan -
-                302012</p> 
-              </li>
+        
 
-              <li className="my-0">
-                <i className="fa fa-phone-alt"></i>
-               <p> +91 6375597272</p>
-              </li>
-              <li className="my-0">
-                <i className="fa fa-envelope"></i>
-               <p>visionarytechmate@gmail.com</p> 
-              </li>
-            </ul>
-          </div>
-        </div>
-      </footer>
-      <div className="legal gradient-custom">
+
+          
+        
+      
+      <div className="legal">
         <p>
           Copyright ©2024 All rights reserved | VisionaryTechMate{" "}
           <i className="fa fa-heart"></i>
         </p>
       </div>
-    </>
+    </div>
   );
 };
 
