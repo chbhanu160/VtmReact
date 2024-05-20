@@ -6,11 +6,13 @@ import logo from "./logo.png"; // Import the image
 const Footer = () => {
   return (
     <>
+      
       <footer className="gradient-custom">
         <div className="container padding">
           <div className="box logo">
-            <img src={logo} id="vtm_flogo" alt="vtm" />
-            <div>
+            <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
+            
+            <div id="f-social">
               <a
                 href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true"
                 target="_blank"
@@ -75,20 +77,23 @@ const Footer = () => {
               </li>
             </ul>
           </div>
+         
           <div className="box last" id="f_contact">
-            <h3>Contact Us</h3>
+            <h3>Contact Us </h3>
             <ul>
               <li className="my-0">
                 <i className="fa fa-location-arrow"></i>
-                <p>Sahkar Nagar, Khatipura Road, Jhotwara, Jaipur, Rajasthan - 302012</p>
+               <p>Sahkar Nagar,Khatipura road, jhotwara, Jaipur, Rajasthan -
+                302012</p> 
               </li>
+
               <li className="my-0">
-                <i className="fa fa-phone"></i> {/* Changed from fa-phone-alt to fa-phone */}
-                <p>+91 6375597272</p>
+                <i className="fa fa-phone-alt"></i>
+               <p> +91 6375597272</p>
               </li>
               <li className="my-0">
                 <i className="fa fa-envelope"></i>
-                <p>visionarytechmate@gmail.com</p>
+               <p>visionarytechmate@gmail.com</p> 
               </li>
             </ul>
           </div>

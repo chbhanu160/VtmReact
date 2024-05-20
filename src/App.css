@@ -11,12 +11,9 @@
 body {
   font-family: "Roboto", sans-serif;
   /* background-color: #b0b0ce; */
-
   
-}
-.gradient-custom {
-  background: rgb(185,215,255);
   background: linear-gradient(90deg, rgba(185,215,255,1) 0%, rgba(193,255,252,1) 51%, rgba(158,200,255,1) 100%);
+
 }
 
 .event-carousel {
@@ -37,6 +34,7 @@ body {
   max-width: 85%;
   margin: auto;
 }
+
 .flexSB {
   display: flex;
   justify-content: space-between;
@@ -136,15 +134,18 @@ p {
   color: #fff;
   text-align: center;
 }
+
 .back h1 {
   font-size: 100px;
   font-weight: 400;
 }
+
 .back h2 {
   font-weight: 500;
   font-size: 17px;
   text-transform: uppercase;
 }
+
 .margin {
   margin-top: 40.3%;
 }
