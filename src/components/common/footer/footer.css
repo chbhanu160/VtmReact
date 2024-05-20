@@ -11,6 +11,10 @@
   margin-bottom: 10px;
 }
 
+.s_media_icon{
+  font-size: 2rem;
+  padding-right: 1rem;
+}
 /* Remove text decoration and display inline-block for anchor elements in the footer */
 #exp a,
 #quick a {
@@ -45,7 +49,8 @@ footer .container {
 footer .logo .icon {
   /* background-color: hsl(214, 100%, 34%); */
   color: rgb(9, 71, 207);
-  margin-right: 10px;
+  margin-right: 15px;
+  
 }
 
 /* Styles for footer headings */
