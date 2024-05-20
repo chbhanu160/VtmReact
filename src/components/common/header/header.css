@@ -5,20 +5,23 @@
 .head {
   padding: 20px 0;
   color: #fff;
+  display: flex; 
+  justify-content: space-between; 
+  align-items: center; 
 }
 
 #h-social {
-  margin-right: -7rem; /* Adjust margin for social icons */
-  margin-top: 50px;
+ 
+  margin-top: 30px;
 }
 
-#vtm_hlogo {
-  margin-left: -135px;
-}
 
-.head .icon {
-  margin-left: 10px;
-  font-size: 24px; /* Increase font size for social icons */
+
+@media (min-width: 576px) {
+  .head .icon {
+    font-size: 24px; 
+  }
+ 
 }
 
 /*--------header------------*/
@@ -69,6 +72,10 @@
   .head .icon {
     margin-left: 5px; /* Adjust margin for social icons */
   }
+  
+  .navbar-toggler {
+    margin-right: 0.5rem; /* Adjust margin for toggler */
+  }
 }
 
 /* Medium Devices (tablets, 768px and up) */
@@ -84,6 +91,7 @@
   .start {
     clip-path: none;
     padding: 10px 15px; /* Adjust padding for start button */
+    margin-right: 30px; /* Adjust margin for start button */
   }
   
   .navbar-nav .nav-link {
@@ -94,7 +102,6 @@
 /* Extra Large Devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .start {
-    clip-path: none;
-    padding: 10px 20px; /* Adjust padding for start button */
+    margin-right: 60px; /* Reset margin for start button */
   }
 }

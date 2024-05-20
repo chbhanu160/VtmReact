@@ -14,7 +14,7 @@ const Header = () => {
 
   return (
     <>
-      <Head /> {/* Move the Head component outside of the Navbar */}
+      <Head />
       <Navbar id="navbg" expand="lg">
         <Navbar.Toggle onClick={handleClick} aria-controls="navbarT" />
         <Navbar.Collapse id="navbar">
@@ -29,7 +29,7 @@ const Header = () => {
               About
             </Nav.Link>
 
-            <NavDropdown title="Services" classname="dropdown">
+            <NavDropdown title="Services" className="dropdown">
               <NavDropdown.Item as={Link} to="/services">
                 All Services
               </NavDropdown.Item>
