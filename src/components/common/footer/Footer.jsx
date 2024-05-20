@@ -1,39 +1,41 @@
 import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
+import logo from "./logo.png"; // Import the image
 
 const Footer = () => {
   return (
     <>
-      
-      <footer >
+      <footer className="gradient-custom">
         <div className="container padding">
           <div className="box logo">
-            <img src={require("./logo.png")} id="vtm_flogo" alt="vtm" />
-            
+            <img src={logo} id="vtm_flogo" alt="vtm" />
             <div id="f-social">
               <a
                 href="https://www.linkedin.com/company/visionary-techmate/mycompany/?viewAsMember=true"
-                target="_new"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-linkedin-in icon"></i>
               </a>
               <a
                 href="https://www.facebook.com/profile.php?id=100088829731631"
-                target="_new"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-facebook-f icon"></i>
               </a>
               <a
                 href="https://www.instagram.com/cloud__talk/?igshid=OGU0MmVlOWVjOQ%3D%3D"
-                target="_new"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-               
                 <i className="fab fa-instagram icon"></i>
               </a>
               <a
                 href="https://www.youtube.com/channel/UC0xHeCcMjsHoPqup193_nNw"
-                target="_new"
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <i className="fab fa-youtube icon"></i>
               </a>
@@ -73,29 +75,26 @@ const Footer = () => {
               </li>
             </ul>
           </div>
-         
           <div className="box last" id="f_contact">
-            <h3>Contact Us </h3>
+            <h3>Contact Us</h3>
             <ul>
               <li className="my-0">
                 <i className="fa fa-location-arrow"></i>
-               <p>Sahkar Nagar,Khatipura road, jhotwara, Jaipur, Rajasthan -
-                302012</p> 
+                <p>Sahkar Nagar, Khatipura Road, Jhotwara, Jaipur, Rajasthan - 302012</p>
               </li>
-
               <li className="my-0">
-                <i className="fa fa-phone-alt"></i>
-               <p> +91 6375597272</p>
+                <i className="fa fa-phone"></i> {/* Changed from fa-phone-alt to fa-phone */}
+                <p>+91 6375597272</p>
               </li>
               <li className="my-0">
                 <i className="fa fa-envelope"></i>
-               <p>visionarytechmate@gmail.com</p> 
+                <p>visionarytechmate@gmail.com</p>
               </li>
             </ul>
           </div>
         </div>
       </footer>
-      <div className="legal">
+      <div className="legal gradient-custom">
         <p>
           Copyright ©2024 All rights reserved | VisionaryTechMate{" "}
           <i className="fa fa-heart"></i>

@@ -30,7 +30,7 @@ const Contact = () => {
 
   return (
     <>
-      <section className="contacts padding">
+      <section>
         <div className="container_con shadow flexSB">
           <div className="left row">
             <img src={require("./15.svg")} alt="contact" />
