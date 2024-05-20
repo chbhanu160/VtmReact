@@ -8,18 +8,14 @@
 }
 
 #h-social {
-  margin-right: -7rem; /* Adjust margin for social icons */
-  margin-top: 50px;
+  margin-right: -6rem;
 }
-#vtm_hlogo{
-  margin-left: -135px;
-}
+
+
 .head .icon {
   margin-left: 10px;
   font-size: 24px; /* Increase font size for social icons */
 }
-
-/*--------head------------*/
 
 /*--------header------------*/
 
@@ -61,28 +57,9 @@
 .toggle {
   display: none;
 }
-
 /*--------header------------*/
 
-/* Media Queries for Maximum Responsiveness */
-
-/* Small Devices (landscape phones, 576px and up) */
-@media (min-width: 576px) {
-  .head .icon {
-    margin-left: 5px; /* Adjust margin for social icons */
-  }
-}
-
-/* Medium Devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  .head .icon {
-    margin-left: 10px; /* Adjust margin for social icons */
-    font-size: 28px; /* Increase font size for social icons */
-  }
-}
-
-/* Large Devices (desktops, 992px and up) */
-@media (min-width: 992px) {
+@media screen and (max-width: 768px) {
   .start {
     clip-path: none;
     padding: 10px 15px; /* Adjust padding for start button */
