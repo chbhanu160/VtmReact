@@ -1,15 +1,27 @@
-/* Hero.css */
 
-.hero_container {
-  position: relative;
-  text-align: left;
-  background-image: url("./bg.svg");
-  background-size: cover;
+#image_col {
+  margin-top: 70px;
+  border-radius: 2rem;
+  background-image: url("./bgg.png");
+  background-size: cover; /* Ensure the background image covers the entire div */
+  background-position: right; /* Align the background image to the right */
   background-repeat: no-repeat;
-  background-position: center center;
-  height: 90vh;
-  width: 100%;
-  background-attachment: fixed;
+  height: 75vh;
+  width: 50%;
+  /* background-attachment: fixed; */
+}
+@media (max-width: 760px) {
+  #image_col {
+    width: 100%;
+    background-position: center; /* Align the background image to the right */
+
+
+  }
+}
+
+
+#main_page{
+  background-color: #ffffff;
 }
 
 #hero_heading h1 {
@@ -39,10 +51,11 @@
 }
 
 .hero_button {
-  margin-top: 12px; /* Adjusted margin for better spacing */
+  /* margin-top: 12px;  */
   cursor: pointer;
   margin-left: 50px;
-  margin-bottom: auto;
+  height: 50px;
+  /* margin-bottom: auto; */
 }
 
 .get-started-btn,
@@ -85,9 +98,7 @@
     margin-right: 10px; /* Adjust margin for smaller screens */
   }
 
-  .hero_button {
-    margin-left: 20px; /* Adjust margin for smaller screens */
-  }
+  
 }
 
 /* Medium Devices (tablets, 768px and up) */
@@ -108,9 +119,7 @@
     margin-right: 20px; /* Adjust margin for medium screens */
   }
 
-  .hero_button {
-    margin-left: 40px; /* Adjust margin for medium screens */
-  }
+  
 }
 
 /* Large Devices (desktops, 992px and up) */
@@ -131,7 +140,5 @@
     margin-right: 15px; /* Reset margin for large screens */
   }
 
-  .hero_button {
-    margin-left: 50px; /* Reset margin for large screens */
-  }
+  
 }
