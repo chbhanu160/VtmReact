@@ -1,7 +1,7 @@
-
-#img_id{
+#img_id {
   color: #004AAD;
 }
+
 .about-container {
   padding: 20px; /* Add padding for spacing */
 }
@@ -18,32 +18,36 @@ h1 {
   margin-bottom: 20px; /* Add margin at the bottom for spacing */
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: 0 10 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1); /* Add a subtle box shadow */
 }
-.about-overview-box p{
-  color:#0c0c0c ;
-  text-align: justify; 
+
+.about-overview-box p {
+  color: #0c0c0c;
+  text-align: justify;
 }
+
 .specialties-box h2 {
   font-size: 1.5rem; /* Adjust the font size of the heading */
   margin-bottom: 20px; /* Add margin at the bottom of the heading */
   color: #0c0c0c;
 }
 
-
 .specialties-cards {
   display: flex;
   flex-wrap: wrap;
+  gap: 10px; /* Add some space between cards */
 }
 
 .specialty-card {
   background-color: #fff;
   border: 1px solid #dbdbe0;
   border-radius: 8px;
-  padding: 10px;
-  margin: 5px;
+  padding: 20px; /* Increase padding for better spacing */
+  flex: 1 1 calc(33.333% - 20px); /* Responsive card width */
+  margin: 10px; /* Add margin for spacing */
   cursor: pointer;
   transition: background-color 0.3s ease;
+  box-sizing: border-box; /* Ensure padding and border are included in the element's total width and height */
 }
 
 .specialty-card:hover {
@@ -51,7 +55,6 @@ h1 {
   color: white;
 }
 
-/* Additional styling for AboutCard */
 .about-card {
   margin-top: 10px; /* Add margin at the top of the AboutCard */
 }
@@ -62,7 +65,6 @@ h1 {
 
 .aboutHome #heading {
   text-align: left;
-  /* padding: 0; */
 }
 
 .aboutHome .left img {
@@ -89,12 +91,12 @@ h1 {
   width: 200px;
 }
 
-.About_img{
+.About_img {
   font-size: 62px;
   color: #004AAD;
 }
 
-.About_img:hover{
+.About_img:hover {
   color: #fff;
   cursor: pointer;
 }
@@ -110,9 +112,9 @@ h1 {
 }
 
 .aboutHome .item_flexSB p {
-color: #999999;
-font-size: 20px;
-text-align: justify;
+  color: #999999;
+  font-size: 20px;
+  text-align: justify;
 }
 
 .aboutHome .item_flexSB:hover {
@@ -127,9 +129,101 @@ text-align: justify;
   color: #fff;
 }
 
+/* Media Queries for Responsiveness */
+
+/* Tablets and larger phones */
+@media screen and (max-width: 992px) {
+  .aboutHome .right {
+    padding: 50px 30px;
+  }
+
+  .specialties-cards {
+    flex-direction: column;
+  }
+
+  .specialty-card {
+    flex: 1 1 100%; /* Full width on smaller screens */
+    margin: 5px 0; /* Adjust margin for single column layout */
+  }
+}
+
+/* Smaller tablets and large phones */
+@media screen and (max-width: 768px) {
+  .aboutHome .right {
+    padding: 30px 20px;
+  }
+
+  .about-overview-box,
+  .specialties-box {
+    padding: 20px; /* Reduce padding */
+    margin-top: 15px; /* Adjust margin */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  .specialties-box h2 {
+    font-size: 1.25rem; /* Adjust font size */
+  }
+
+  .specialty-card {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .aboutHome .item_flexSB p {
+    font-size: 18px; /* Reduce font size */
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 576px) {
+  .about-container {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .about-overview-box,
+  .specialties-box {
+    padding: 15px; /* Reduce padding */
+  }
+
+  .specialties-box h2 {
+    font-size: 1rem; /* Adjust font size */
+    margin-bottom: 15px; /* Adjust margin */
+  }
+
+  .specialty-card {
+    padding: 10px; /* Reduce padding */
+  }
+
+  .aboutHome .right {
+    padding: 20px 10px; /* Adjust padding */
+  }
+
+  .aboutHome .item_flexSB h2 {
+    font-size: 20px; /* Adjust font size */
+  }
+
+  .aboutHome .item_flexSB p {
+    font-size: 16px; /* Adjust font size */
+  }
+
+  .aboutHome .left img {
+    height: auto; /* Let the image height adjust automatically on small screens */
+  }
+
+  .specialty-card {
+    padding: 15px; /* Ensure text does not get cut off */
+    margin: 10px 5px; /* Add margin to prevent cutting off */
+    flex: 1 1 calc(100% - 20px); /* Full width on small screens */
+  }
+
+  .about-overview-box, .specialties-box {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+}
+
+
 /*----------awrapper------------*/
 .awrapper {
-
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -139,21 +233,18 @@ text-align: justify;
   width: 75vw;
   background-color: #f7f5f5;
   margin: 50px auto;
-  padding-left:20px ;
+  padding-left: 20px;
   padding-right: 20px;
-
   box-shadow: 0 0 4px rgba(255, 255, 255, 0.8), 
-                0 0 8px rgba(255, 255, 255, 0.6), 
-                0 0 10px rgba(255, 255, 255, 0.4), 
-                0 0 15px rgba(255, 255, 255, 0.2);
+              0 0 8px rgba(255, 255, 255, 0.6), 
+              0 0 10px rgba(255, 255, 255, 0.4), 
+              0 0 15px rgba(255, 255, 255, 0.2);
 }
 
-
-.aw_img{
+.aw_img {
   font-size: 62px;
   color: #004AAD;
   margin-right: 25px;
-  
 }
 
 .awrapper h1 {
@@ -163,22 +254,92 @@ text-align: justify;
 .awrapper h3 {
   font-size: 20px;
   font-weight: 500;
-  margin-left:auto;
+  margin-left: auto;
 }
-/*----------awrapper------------*/
-@media screen and (max-width: 768px) {
-  .aboutHome .container {
-    flex-direction: column-reverse;
-  }
-  .aboutHome .row {
-    width: 100%;
-  }
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and large phones */
+@media screen and (max-width: 992px) {
   .awrapper {
-    height: 50vh;
+    width: 85vw;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 40px auto;
+  }
+  
+  .aw_img {
+    font-size: 50px;
+    margin-right: 20px;
+  }
+
+  .awrapper h1 {
+    font-size: 32px;
+  }
+
+  .awrapper h3 {
+    font-size: 18px;
   }
 }
 
-#learn_anything{
+/* Phones */
+@media screen and (max-width: 768px) {
+  .awrapper {
+    width: 90vw;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin: 30px auto;
+    height: auto; /* Adjust height for better fit on small screens */
+  }
+
+  .aw_img {
+    font-size: 40px;
+    margin-right: 15px;
+  }
+
+  .awrapper h1 {
+    font-size: 28px;
+  }
+
+  .awrapper h3 {
+    font-size: 16px;
+  }
+
+  .aboutHome .container {
+    flex-direction: column-reverse;
+  }
+
+  .aboutHome .row {
+    width: 100%;
+  }
+}
+
+/* Small phones */
+@media screen and (max-width: 576px) {
+  .awrapper {
+    width: 95vw;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin: 20px auto;
+    height: auto; /* Adjust height for better fit on small screens */
+  }
+
+  .aw_img {
+    font-size: 32px;
+    margin-right: 10px;
+  }
+
+  .awrapper h1 {
+    font-size: 24px;
+  }
+
+  .awrapper h3 {
+    font-size: 14px;
+  }
+}
+
+/* Specific styles for additional elements */
+#learn_anything {
   color: #004AAD;
   font-weight: 500;
   font-size: 2.3rem;
@@ -186,7 +347,6 @@ text-align: justify;
   margin-top: -20px;
 }
 
-#title_text{
-  color:#004AAD;
+#title_text {
+  color: #004AAD;
 }
-
