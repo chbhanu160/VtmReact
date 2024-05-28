@@ -15,7 +15,11 @@
   margin-top: 30px;
 }
 
-
+#h-social a i:hover {
+  color: #ffffff; 
+  transform: scale(1.1); 
+  transition: all 0.3s ease-in-out; 
+}
 
 @media (min-width: 576px) {
   .head .icon {
@@ -25,7 +29,6 @@
 }
 
 /*--------header------------*/
-
 #navbg {
   background-color: rgb(217, 230, 246);
   z-index: 1;
@@ -66,19 +69,16 @@
 }
 
 /* Media Queries for Maximum Responsiveness */
-
-/* Small Devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .head .icon {
     margin-left: 5px; /* Adjust margin for social icons */
   }
-  
+
   .navbar-toggler {
     margin-right: 0.5rem; /* Adjust margin for toggler */
   }
 }
 
-/* Medium Devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .head .icon {
     margin-left: 10px; /* Adjust margin for social icons */
@@ -86,22 +86,35 @@
   }
 }
 
-/* Large Devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .start {
     clip-path: none;
     padding: 10px 15px; /* Adjust padding for start button */
     margin-right: 30px; /* Adjust margin for start button */
   }
-  
+
   .navbar-nav .nav-link {
     font-size: 18px; /* Increase font size for navigation links */
   }
 }
 
-/* Extra Large Devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .start {
     margin-right: 60px; /* Reset margin for start button */
   }
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+  background-color: #fff;
+  border: none;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.dropdown-item {
+  color: #333;
+}
+
+.dropdown-item:hover {
+  background-color: #f8f9fa;
 }

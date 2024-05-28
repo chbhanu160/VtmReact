@@ -1,8 +1,6 @@
-// Header.js
-
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Head from "./Head";
+import Head from "./Head"; // Assuming Head component is in the same folder
 import { Nav, Navbar, NavDropdown } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./header.css";
@@ -17,8 +15,8 @@ const Header = () => {
       <Head />
       <Navbar id="navbg" expand="lg">
         <Navbar.Toggle onClick={handleClick} aria-controls="navbarT" />
-        <Navbar.Collapse id="navbar">
-          <Nav id="navbar-item">
+        <Navbar.Collapse id="navbarT">
+          <Nav className="mr-auto" id="navbar-item">
             <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
@@ -28,8 +26,7 @@ const Header = () => {
             <Nav.Link as={Link} to="/about">
               About
             </Nav.Link>
-
-            <NavDropdown title="Services" className="dropdown">
+            <NavDropdown title="Services" id="services-dropdown">
               <NavDropdown.Item as={Link} to="/services">
                 All Services
               </NavDropdown.Item>
@@ -41,7 +38,6 @@ const Header = () => {
                 Consulting
               </NavDropdown.Item>
             </NavDropdown>
-
             <Nav.Link as={Link} to="/testimonials">
               Testimonials
             </Nav.Link>

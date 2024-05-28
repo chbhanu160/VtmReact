@@ -1,5 +1,6 @@
 .online-courses {
   text-align: center;
+  padding: 20px; /* Add some padding for smaller screens */
 }
 
 .courses-heading {
@@ -12,8 +13,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  max-width: 1200px; 
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px;
+  margin: 0 auto;
   margin-bottom: 30px;
 }
 
@@ -22,8 +23,8 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 520px; /* Adjust the height as needed */
-  width: 350px; /* Adjust the width as needed */
+  height: 520px;
+  width: 350px;
   margin: 10px;
   background-color: #f4f4f4;
   border: 2px solid #004AAD;
@@ -31,10 +32,10 @@
   padding: 10px;
   position: relative;
   transition: transform 0.3s ease-in-out;
+}
 
-  &:hover {
-    transform: scale(1.05);
-  }
+.course-card:hover {
+  transform: scale(1.05);
 }
 
 .content-container {
@@ -51,8 +52,7 @@
   width: 80px;
 }
 
-h3,
-p {
+h3, p {
   text-align: center;
   margin: 5px 0;
 }
@@ -63,4 +63,47 @@ button.know-more-button {
   padding: 5px 10px;
   border: none;
   cursor: pointer;
+}
+
+/* Media Queries for Maximum Responsiveness */
+
+/* Tablets and up */
+@media (max-width: 992px) {
+  .courses-flex {
+    justify-content: center; /* Center align the cards on smaller screens */
+  }
+
+  .course-card {
+    width: 45%; /* Adjust card width for tablets */
+    margin: 15px 5px; /* Adjust margins for better spacing */
+  }
+}
+
+/* Small Devices (phones) */
+@media (max-width: 576px) {
+  .courses-heading {
+    font-size: 32px; /* Adjust heading size for smaller screens */
+    margin-top: 30px;
+    margin-bottom: 20px;
+  }
+
+  .course-card {
+    width: 100%; /* Full width for smaller screens */
+    margin: 10px 0; /* Adjust margin for better spacing */
+    height: auto; /* Auto height for better adaptability */
+  }
+
+  .icon-container {
+    height: 60px; /* Adjust icon size for smaller screens */
+    width: 60px;
+  }
+
+  h3, p {
+    font-size: 16px; /* Adjust text size for smaller screens */
+  }
+
+  button.know-more-button {
+    padding: 8px 12px; /* Adjust button padding */
+    font-size: 14px; /* Adjust button text size */
+  }
 }
