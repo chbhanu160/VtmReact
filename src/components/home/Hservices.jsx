@@ -186,7 +186,7 @@ const Hservices = () => {
 
   return (
     <div>
-      <div className="H_s_l-services-section text-center">
+      <div className="H_s_l-services-section text-center mx-2">
     <h1 className="H_s_l-h1">Our Services</h1>
     <h2 className='h_s_l-h2'>Learning Services</h2>
       <Carousel

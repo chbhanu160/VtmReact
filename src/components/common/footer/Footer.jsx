@@ -80,7 +80,7 @@ const Footer = () => {
          
           <div className="box last" id="f_contact">
             <h3>Contact Us </h3>
-            <ul>
+            <ul className="list-unstyled">
               <li className="my-0">
                 <i className="fa fa-location-arrow"></i>
                <p>Sahkar Nagar,Khatipura road, jhotwara, Jaipur, Rajasthan -

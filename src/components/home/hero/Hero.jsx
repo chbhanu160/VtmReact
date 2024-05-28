@@ -25,9 +25,8 @@ const Hero = () => {
             </Link>
             
             <Link to="/courses">
-  <Button className="primary mx-5 my-5">
-    VIEW COURSE<i className="fa fa-long-arrow-alt-right"></i>
-  </Button>
+            <Button className="mx-5 my-5" variant="primary">VIEW COURSE<i className="fa fa-long-arrow-alt-right"></i></Button>
+
 </Link>
 
             

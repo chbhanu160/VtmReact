@@ -124,7 +124,7 @@ const HCourses = () => {
   };
 
   return (
-    <div className="H_c-courses-section text-center">
+    <div className="H_c-courses-section text-center my-3 mx-2">
       <h1 className="H_c-h1">Our Courses</h1>
       <Carousel
         responsive={responsive}
