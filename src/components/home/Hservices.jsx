@@ -220,7 +220,7 @@ const Hservices = () => {
     
 
         
-    <div className="H_s_c-services-section text-center">
+    <div className="H_s_c-services-section text-center mx-2">
     <h2 className='h_s_c-h2'>Consulting Services</h2>
       <Carousel
         responsive={responsive}

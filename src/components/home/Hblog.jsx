@@ -25,8 +25,8 @@ const Hblog = () => {
   };
 
   return (
-    <div className='h-blog'>
-      <div className='Hb-container '>
+    <div className='h-blog mx-1 my-2'>
+      <div className='Hb-container'>
         <div className="text-center" id="blog_title">
           <h1>OUR BLOG</h1>
           <h2>Recent From Our Blog</h2>

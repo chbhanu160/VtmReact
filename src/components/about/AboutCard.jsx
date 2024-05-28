@@ -12,25 +12,30 @@ const AboutCard = () => {
     <>
       <section className='aboutHome'>
         <div className='container flexSB'>
-          <div className='left row'>
+          <div className='left row '>
             <img src='./images/about.png' alt='' />
           </div>
-          <div className='right row'>
-            <p id="learn_anything">LEARN ANYTHING!</p>
-            <div className='items' id="Ab_item">
+
+          <div className='right row my-3'>
+            <p id="learn_anything" className="my-3">LEARN ANYTHING!</p>
+            
+            <div id="Ab_item">
               {homeAbout.map((val, index) => (
                 <div key={index} className='item_flexSB'>
-                  <div className='About_img'>
+                  <div className='About_img text-center'>
                   {val.cover && <FontAwesomeIcon icon={val.cover} />}
                   </div>
                   <div className='text'>
-                    <h2>{val.title}</h2>
+                    <h2 className="text-center">{val.title}</h2>
                     <p>{val.desc}</p>
                   </div>
                 </div>
               ))}
             </div>
+           
+
           </div>
+          
         </div>
       </section>
       <Awrapper />

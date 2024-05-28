@@ -76,7 +76,7 @@ const responsive = {
  
  return (
    
-    <div className="H_t-testimonial-section text-center">
+    <div className="H_t-testimonial-section text-center mx-2">
     <h1 className="H_t-h1">TESTIMONIAL</h1>
     <h2 className="H_t-h2">Our Successful Students</h2>
 

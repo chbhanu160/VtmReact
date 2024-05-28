@@ -85,7 +85,7 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="testimonial-section text-center">
+    <div className="testimonial-section text-center mx-2">
     <h1 className="testimonial_h1">Voices of Success & Echoes of Satisfaction – Our Testimonials Speak Louder than Words.</h1>
     <Carousel
       responsive={responsive}
