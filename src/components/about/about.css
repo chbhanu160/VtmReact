@@ -43,7 +43,7 @@ h1 {
   border: 1px solid #dbdbe0;
   border-radius: 8px;
   padding: 20px; /* Increase padding for better spacing */
-  flex: 1 1 calc(33.333% - 20px); /* Responsive card width */
+  flex: 1 1 calc(15% - 20px);
   margin: 10px; /* Add margin for spacing */
   cursor: pointer;
   transition: background-color 0.3s ease;
