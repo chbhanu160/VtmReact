@@ -184,9 +184,9 @@ p {
   grid-gap: 10px;
 }
 
-.padding {
+/* .padding {
   padding: 80px 0;
-}
+} */
 
 @media screen and (max-width: 992px) {
   .container {

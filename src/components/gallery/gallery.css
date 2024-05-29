@@ -40,4 +40,63 @@
   text-align: center;
 }
 
-/* Add your existing styles if you have any */
+
+
+/* Media Queries */
+
+/* Tablets and up */
+@media (min-width: 768px) {
+  .gallery_h1 {
+    font-size: 36px; /* Adjust heading size for tablets */
+  }
+
+  .G-carousel-item-padding-40-px {
+    padding: 30px; /* Adjust padding for tablets */
+  }
+
+  .G-slide img {
+    height: 500px; /* Adjust max height for tablets */
+  }
+
+  .G-caption {
+    padding: 15px; /* Adjust caption padding for tablets */
+  }
+}
+
+/* Desktops and up */
+@media (min-width: 992px) {
+  .gallery_h1 {
+    font-size: 40px; /* Adjust heading size for desktops */
+  }
+
+  .G-carousel-item-padding-40-px {
+    padding: 20px; /* Adjust padding for desktops */
+  }
+
+  .G-slide img {
+    height: 600px; /* Adjust max height for desktops */
+  }
+
+  .G-caption {
+    padding: 20px; /* Adjust caption padding for desktops */
+  }
+}
+
+/* Large Desktops and up */
+@media (min-width: 1200px) {
+  .gallery_h1 {
+    font-size: 44px; /* Adjust heading size for large desktops */
+  }
+
+  .G-carousel-item-padding-40-px {
+    padding: 10px; /* Adjust padding for large desktops */
+  }
+
+  .G-slide img {
+    height: 700px; /* Adjust max height for large desktops */
+  }
+
+  .G-caption {
+    padding: 25px; /* Adjust caption padding for large desktops */
+  }
+}

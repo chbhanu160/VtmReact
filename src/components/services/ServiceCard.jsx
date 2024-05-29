@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 const ServiceCard = ({ name, bulletPoints ,icon}) => {
   return (
-    <div className="services items shadow" id="servicecard">
+    <div className="services s_items shadow" id="servicecard">
       <FontAwesomeIcon icon={icon} className="H_s_l-icon" />
       <h4>{name}</h4>
       <div className="Ser_description">
