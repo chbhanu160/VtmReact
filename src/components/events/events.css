@@ -10,11 +10,12 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
   gap: 20px;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px; /* Ensure padding on smaller screens */
 }
 
-.poster h2{
+.poster h2 {
   text-align: center;
   margin-top: 50px;
   margin-bottom: 50px;
@@ -40,7 +41,7 @@
 }
 
 .poster-card:hover .poster-details {
-  opacity: 1; 
+  opacity: 1;
 }
 
 .poster-card:hover::before {
@@ -62,16 +63,17 @@
 .poster-details p {
   margin: 5px 0;
   color: white; /* Adjust text color to contrast with image */
-  font-weight: bold; 
+  font-weight: bold;
   font-size: 18px;
   text-align: center;
 }
 
-/* slider */
-.events_h1{
+/* Slider */
+.events_h1 {
   font-size: 32px;
   color: #004AAD;
   margin-top: 20px;
+  text-align: center;
 }
 
 .events-section {
@@ -88,13 +90,14 @@
   padding: 40px;
 }
 
-.E-slide{
+.E-slide {
   position: relative;
 }
 
 .E-slide img {
   width: 100%; /* Set the width to 100% for responsiveness */
-  height: 600px; /* Set the desired height for all images */
+  height: auto; /* Maintain aspect ratio */
+  max-height: 600px; /* Set the desired max height for all images */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   object-fit: cover;
@@ -111,28 +114,86 @@
   text-align: center;
 }
 
-
-
 /* Adjust styles for smaller screens */
 @media screen and (max-width: 768px) {
-  .events-container,
-  .calendar-container,
-  .upcoming-event-container,
-  .slider-container {
-    flex: 1 0 100%;
-    max-width: 100%;
+  .poster-grid {
+    margin-left: 10px;
+    margin-right: 10px;
   }
 
-  .calendar-container {
-    margin-right: 0; /* Remove margin for smaller screens */
-    margin-left: 0; /* Remove left margin for smaller screens */
+  .poster-card .poster-details {
+    font-size: 16px; /* Slightly smaller font size for smaller screens */
   }
 
-  .slider-buttons {
-    top: 5px; /* Adjust the distance from the top for smaller screens */
+  .E-carousel-item-padding-40-px {
+    padding: 20px; /* Reduce padding for smaller screens */
   }
 
-  .E-slide-caption {
-    bottom: 5px; /* Adjust the distance from the bottom for smaller screens */
+  .E-slide img {
+    height: 400px; /* Adjust max height for smaller screens */
+  }
+
+  .E-caption {
+    padding: 8px; /* Adjust caption padding for smaller screens */
+  }
+}
+
+/* Adjust styles for tablets and up */
+@media (min-width: 768px) {
+  .poster-grid {
+    gap: 20px;
+    padding: 0 40px; /* Adjust padding for tablets */
+  }
+
+  .poster h2 {
+    font-size: 36px; /* Adjust heading size for tablets */
+  }
+
+  .E-carousel-item-padding-40-px {
+    padding: 30px; /* Adjust padding for tablets */
+  }
+
+  .E-slide img {
+    height: 500px; /* Adjust max height for tablets */
+  }
+}
+
+/* Adjust styles for desktops and up */
+@media (min-width: 992px) {
+  .poster-grid {
+    gap: 30px;
+    padding: 0 60px; /* Adjust padding for desktops */
+  }
+
+  .poster h2 {
+    font-size: 40px; /* Adjust heading size for desktops */
+  }
+
+  .E-carousel-item-padding-40-px {
+    padding: 40px; /* Maintain padding for desktops */
+  }
+
+  .E-slide img {
+    height: 600px; /* Adjust max height for desktops */
+  }
+}
+
+/* Adjust styles for large desktops and up */
+@media (min-width: 1200px) {
+  .poster-grid {
+    gap: 40px;
+    padding: 0 80px; /* Adjust padding for large desktops */
+  }
+
+  .poster h2 {
+    font-size: 44px; /* Adjust heading size for large desktops */
+  }
+
+  .E-carousel-item-padding-40-px {
+    padding: 50px; /* Adjust padding for large desktops */
+  }
+
+  .E-slide img {
+    height: 700px; /* Adjust max height for large desktops */
   }
 }

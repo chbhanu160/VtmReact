@@ -8,6 +8,7 @@
   font-size: 32px;
   color: #004AAD;
   margin-top: 20px;
+  text-align: center; /* Center align the heading */
 }
 
 .T-carousel-container {
@@ -26,10 +27,9 @@
 .T-slide img {
   width: 100%;
   height: 750px; 
-  object-fit: contain;
+  object-fit: cover;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  object-fit: cover;
 }
 
 .T-caption {
