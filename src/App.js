@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import "./App.css";
 import Header from "./components/common/header/Header";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 import About from "./components/about/About";
 import CourseHome from "./components/allcourses/CourseHome";
