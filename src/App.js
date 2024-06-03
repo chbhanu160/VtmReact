@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from 'react-dom';
 import "./App.css";
 import Header from "./components/common/header/Header";
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom';
 
 import About from "./components/about/About";
 import CourseHome from "./components/allcourses/CourseHome";
@@ -23,13 +23,6 @@ import { fas } from '@fortawesome/free-solid-svg-icons';
 
 library.add(fab, fas);
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
-
 function App() {
   return (
     <div>
@@ -47,11 +40,19 @@ function App() {
           <Route exact path="/services/consulting" component={ConsultingPage} />
           <Route exact path="/blog" component={Blog} />
           <Route exact path="/contact" component={Contact} />
+          <Redirect to="/" />
         </Switch>
         <Footer />
       </Router>
     </div>
   );
 }
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <App />
+  </React.StrictMode>
+);
 
 export default App;

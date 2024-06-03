@@ -1,5 +1,5 @@
 // Testimonials.jsx
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import './testimonials.css';
@@ -105,7 +105,7 @@ const Testimonials = () => {
     >
       {testimonials.map((item, index) => (
         <div key={index} className="T-slide">
-          <img src={item.image} alt={`Image ${item.id}`} />
+          <img src={item.image} alt={`${item.id}`} />
           <div className="T-caption">{item.caption}</div>
         </div>
       ))}
