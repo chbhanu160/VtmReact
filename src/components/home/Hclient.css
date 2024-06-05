@@ -1,39 +1,82 @@
 .H_client-section {
-    padding: 50px 0;
-    margin-bottom: 20px;
-  }
-  
-  .H_clnt-h1 {
-    font-size: 2.5rem;
-    margin-bottom: 40px;
-    color: #004AAD;
-  }
-  
-  .H_clnt-slide {
-    padding: 20px;
-    height: auto;
-    
-  }
-  
-  .H_clnt-caption {
-    padding: 20px;
-    text-align: center;
-    transition: transform 0.3s ease-in-out;
+  padding: 50px 0;
+  margin-bottom: 20px;
 }
-  
-  .H_clnt-slide:hover .H_clnt-caption {
-    transform: scale(1.05);
+
+.H_clnt-h1 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #004AAD;
+}
+
+.H_clnt-slide {
+  padding: 20px;
+  height: auto;
+}
+
+.H_clnt-caption {
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+
+.H_clnt-slide:hover .H_clnt-caption {
+  transform: scale(1.05);
+}
+
+.H_clnt-caption img {
+  width: 300px;  /* fixed size for larger screens */
+  height: 300px;  /* fixed size for larger screens */
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+
+.H_clnt-caption h3 {
+  font-size: 1.5rem;
+  color: #004AAD;
+}
+
+@media (max-width: 1024px) {
+  .H_clnt-h1 {
+    font-size: 2rem;
   }
-  
-  .H_clnt-caption img {
-    width: 30vw;
-    height: 30vh;
-    object-fit: cover;
-    margin-bottom: 15px;
-  }
-  
+
   .H_clnt-caption h3 {
-    font-size: 1.5rem;
-    color: #004AAD;
+    font-size: 1.25rem;
   }
-  
+
+  .H_clnt-caption img {
+    width: 320px;  /* smaller size for tablets */
+    height: 320px;  /* smaller size for tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .H_clnt-h1 {
+    font-size: 1.75rem;
+  }
+
+  .H_clnt-caption h3 {
+    font-size: 1.1rem;
+  }
+
+  .H_clnt-caption img {
+    width: 250px;  /* smaller size for small screens */
+    height: 300px;  /* smaller size for small screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .H_clnt-h1 {
+    font-size: 1.5rem;
+  }
+
+  .H_clnt-caption h3 {
+    font-size: 1rem;
+  }
+
+  .H_clnt-caption img {
+    width: 80px;  /* smallest size for extra small screens */
+    height: 80px;  /* smallest size for extra small screens */
+  }
+}

@@ -5,12 +5,12 @@
 
   .H_s_l-h1{
     font-size: 40px;
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
   .h_s_l-h2{
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 10px;
     justify-content: center;
     align-items: center;
@@ -41,8 +41,8 @@
   }
 
   .H_s_l-view{
-    margin-top: 20px;
-    margin-bottom: 40px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     justify-content: center;
   }
 
@@ -79,7 +79,7 @@
 
   .h_s_c-h2{
     font-size: 35px;
-    margin-top: 10px;
+    margin-top: 5px;
     margin-bottom: 5px;
     justify-content: center;
     align-items: center;
@@ -110,8 +110,8 @@
   }
 
   .H_s_c-view{
-    margin-top: 20px;
-    margin-bottom: 60px;
+    margin-top: 10px;
+    /* margin-bottom: 60px; */
     justify-content: center;
   }
 

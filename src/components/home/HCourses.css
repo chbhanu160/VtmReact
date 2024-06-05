@@ -5,7 +5,7 @@
 
   .H_c-h1{
     font-size: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
 
   
@@ -30,12 +30,12 @@
     flex-direction: column;
     justify-content: space-between;
     transition: transform 0.3s inherit;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
   }
 
   .H_c-view{
     margin-top: 40px;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
   }
 
   .H_c-slide:hover .H_c-caption {

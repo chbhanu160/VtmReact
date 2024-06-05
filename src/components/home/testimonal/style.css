@@ -1,19 +1,19 @@
-.H_c-testimonial-section {
+.H_t-testimonial-section {
   text-align: center;
 }
 
-.H_c-h1 {
+.H_t-h1 {
   font-size: 40px;
   margin-bottom: 30px;
   margin-top: 60px;
 }
 
-.H_c-h2 {
+.H_t-h2 {
   font-size: 30px;
   margin-bottom: 30px;
 }
 
-.H_c-slide {
+.H_t-slide {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -21,7 +21,7 @@
   height: 650px;
 }
 
-.H_c-slide .H_c-caption {
+.H_t-slide .H_t-caption {
   border: 2px solid #004AAD;
   border-radius: 10px;
   padding: 20px;
@@ -36,24 +36,24 @@
 }
 
 
-.H_c-slide:hover .H_c-caption {
+.H_t-slide:hover .H_t-caption {
   transform: scale(1.005);
 }
 
-.H_c-slide .H_c-caption h3 {
+.H_t-slide .H_t-caption h3 {
   font-size: 28px;
   margin-bottom: 10px;
   margin-top: 5px;
   color: #004AAD;
 }
 
-.H_c-slide .H_c-caption{
+.H_t-slide .H_t-caption{
   font-size: 22px;
   margin-bottom: 10px;
   color: #004AAD;
 }
 
-.H_c-icon {
+.H_t-icon {
   color: #004AAD;
   border-radius: 50%;
   height: 150px;
