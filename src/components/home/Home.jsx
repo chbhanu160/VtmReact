@@ -6,6 +6,7 @@ import Hero from "./hero/Hero";
 import Hservices from "./Hservices";
 import Testimonal from "./testimonal/Testimonal";
 import "./home.css"
+import Hclient from "./Hclient";
 
 
 const Home = () => {
@@ -15,6 +16,7 @@ const Home = () => {
       <div className="bg-home">
       <HCourses />
       <Hservices />
+      <Hclient/>
       <AboutCard />
       {/* <HAbout /> */}
       <Testimonal />

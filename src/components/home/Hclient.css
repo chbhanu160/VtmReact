@@ -1,0 +1,39 @@
+.H_client-section {
+    padding: 50px 0;
+    margin-bottom: 20px;
+  }
+  
+  .H_clnt-h1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    color: #004AAD;
+  }
+  
+  .H_clnt-slide {
+    padding: 20px;
+    height: auto;
+    
+  }
+  
+  .H_clnt-caption {
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+}
+  
+  .H_clnt-slide:hover .H_clnt-caption {
+    transform: scale(1.05);
+  }
+  
+  .H_clnt-caption img {
+    width: 30vw;
+    height: 30vh;
+    object-fit: cover;
+    margin-bottom: 15px;
+  }
+  
+  .H_clnt-caption h3 {
+    font-size: 1.5rem;
+    color: #004AAD;
+  }
+  
