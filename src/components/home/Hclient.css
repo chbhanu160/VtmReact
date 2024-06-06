@@ -1,82 +1,66 @@
 .H_client-section {
-  padding: 50px 0;
-  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #fff; /* White ribbon background */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Optional: Add some shadow for a 3D effect */
 }
 
 .H_clnt-h1 {
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-  color: #004AAD;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 2rem;
 }
 
-.H_clnt-slide {
-  padding: 20px;
+.slider-container {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+}
+
+.slider {
+  display: flex;
+  width: calc(200%); /* To accommodate the seamless loop */
+  animation: slide 20s linear infinite;
+}
+
+@keyframes slide {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.slide {
+  min-width: 10%;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.H_clnt-icon {
+  width: 100%;
+  max-width: 150px;
   height: auto;
+  margin: 0 auto;
+  display: block;
 }
 
 .H_clnt-caption {
-  padding: 20px;
-  text-align: center;
-  transition: transform 0.3s ease-in-out;
-}
-
-.H_clnt-slide:hover .H_clnt-caption {
-  transform: scale(1.05);
-}
-
-.H_clnt-caption img {
-  width: 300px;  /* fixed size for larger screens */
-  height: 300px;  /* fixed size for larger screens */
-  object-fit: cover;
-  margin-bottom: 15px;
-}
-
-.H_clnt-caption h3 {
-  font-size: 1.5rem;
-  color: #004AAD;
+  margin-top: 10px;
 }
 
 @media (max-width: 1024px) {
   .H_clnt-h1 {
-    font-size: 2rem;
-  }
-
-  .H_clnt-caption h3 {
-    font-size: 1.25rem;
-  }
-
-  .H_clnt-caption img {
-    width: 320px;  /* smaller size for tablets */
-    height: 320px;  /* smaller size for tablets */
-  }
-}
-
-@media (max-width: 768px) {
-  .H_clnt-h1 {
     font-size: 1.75rem;
   }
 
-  .H_clnt-caption h3 {
-    font-size: 1.1rem;
-  }
-
-  .H_clnt-caption img {
-    width: 250px;  /* smaller size for small screens */
-    height: 300px;  /* smaller size for small screens */
+  .H_clnt-icon {
+    max-width: 120px;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 464px) {
   .H_clnt-h1 {
     font-size: 1.5rem;
   }
 
-  .H_clnt-caption h3 {
-    font-size: 1rem;
-  }
-
-  .H_clnt-caption img {
-    width: 80px;  /* smallest size for extra small screens */
-    height: 80px;  /* smallest size for extra small screens */
+  .H_clnt-icon {
+    max-width: 100px;
   }
 }
