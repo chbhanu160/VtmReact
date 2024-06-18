@@ -1,16 +1,30 @@
-.bblog img {
-
-  height: 200px;
+.blog_container {
+  margin-bottom: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: center;
 }
-.bblog{
+
+.blog_item {
   width: 100%;
-  height:100%;
+  max-width: 600px;
+  margin: 40px;
+  height: auto;
+  box-sizing: border-box;
 }
 
-.bblog .text {
+.blog_item .blog_img img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.blog_item .blog_text {
   padding: 40px 30px;
 }
-.bblog h1 {
+
+.blog_item h1 {
   font-weight: 500;
   font-size: 22px;
   line-height: 30px;
@@ -18,24 +32,102 @@
   transition: 0.5s;
   text-align: left;
 }
-.bblog h1:hover {
-  color: #027Dff;
+
+.blog_item h1:hover {
+  color: #027dff;
   cursor: pointer;
 }
-.bblog span {
+
+.blog_item span {
   text-transform: uppercase;
   font-weight: 500;
-  color: #027Dff;
+  color: #027dff;
 }
-.bblog span label {
+
+.blog_item span label {
   margin-left: 10px;
   color: rgb(0, 0, 0);
   font-size: 14px;
 }
-.bblog span:nth-last-child(1) label {
-  color: #027Dff;
+
+.blog_item span:nth-last-child(1) label {
+  color: #027dff;
 }
-.bblog p {
+
+.blog_item p {
   color: rgb(0, 0, 0);
   text-align: justify;
+}
+
+.blog_button_container {
+  text-align: right;
+  margin-top: 20px;
+}
+
+.blog_button_container button {
+  background-color: #027dff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.blog_button_container button:hover {
+  background-color: #025bbf;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .blog_item {
+    margin: 20px;
+  }
+  
+  .blog_item .blog_text {
+    padding: 30px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog_item {
+    margin: 20px 10px;
+  }
+
+  .blog_item .blog_text {
+    padding: 20px 10px;
+  }
+
+  .blog_item h1 {
+    font-size: 20px;
+  }
+
+  .blog_item p {
+    font-size: 14px;
+  }
+
+  .blog_button_container {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog_item {
+    margin: 10px 5px;
+  }
+
+  .blog_item .blog_text {
+    padding: 15px 10px;
+  }
+
+  .blog_item h1 {
+    font-size: 18px;
+  }
+
+  .blog_item p {
+    font-size: 12px;
+  }
+
+  .blog_button_container {
+    text-align: center;
+  }
 }
