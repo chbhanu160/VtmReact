@@ -24,7 +24,7 @@ const BlogCard = () => {
             <h1>{val.title}</h1>
             <p>{val.desc}</p>
           </div>
-          <div className="blog_button_container">
+          <div className="blog_button_container ">
             <button onClick={() => window.open(val.to, "_blank")} type="button">Read More</button>
           </div>
         </div>
