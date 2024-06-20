@@ -6,14 +6,14 @@
   .H_s_l-h1{
     font-size: 40px;
     margin-top: 10px;
-    margin-bottom: 10px;
+
   }
   .h_s_l-h2{
     font-size: 35px;
     margin-top: 5px;
-    margin-bottom: 10px;
     justify-content: center;
     align-items: center;
+    margin-bottom: 0px;
   }
 
   
@@ -23,7 +23,7 @@
     align-items: center;
     width: 100%; /* Set the width to 100% for responsiveness */
     height: 520px;
-    
+    margin-top: 0px;
   }
   
   .H_s_l-slide .H_s_l-caption {
@@ -80,7 +80,6 @@
   .h_s_c-h2{
     font-size: 35px;
     margin-top: 5px;
-    margin-bottom: 5px;
     justify-content: center;
     align-items: center;
   }
@@ -92,7 +91,7 @@
     align-items: center;
     width: 100%; /* Set the width to 100% for responsiveness */
     height: 520px;
-    
+    margin-top: 0px;
   }
   
   .H_s_c-slide .H_s_c-caption {
@@ -111,7 +110,6 @@
 
   .H_s_c-view{
     margin-top: 10px;
-    /* margin-bottom: 60px; */
     justify-content: center;
   }
 

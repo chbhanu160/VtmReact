@@ -1,31 +1,68 @@
-/* header.css */
-
-/*--------head------------*/
-
+/* General Styles */
 .head {
   padding: 20px 0;
-  color: #fff;
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
 }
 
-#h-social {
- 
-  margin-top: 30px;
+.head_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-#h-social a i:hover {
-  color: #ffffff; 
-  transform: scale(1.1); 
-  transition: all 0.3s ease-in-out; 
+.logo img {
+  height: 170px;
+  width: auto;
 }
 
-@media (min-width: 576px) {
-  .head .icon {
-    font-size: 24px; 
+.social_icons {
+  display: flex;
+  gap: 1rem;
+}
+
+.s_media_icon {
+  color: #004aad;
+  transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+.s_media_icon:hover {
+  color: #0a0a0a;
+  transform: scale(1.1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .head_container {
+    flex-direction: column;
   }
- 
+
+  .social_icons {
+    margin-top: 10px;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .s_media_icon {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .head_container {
+    padding: 0 10px;
+  }
+
+  .logo img {
+    height: 100px;
+  }
+
+  .s_media_icon {
+    font-size: 1.2rem;
+  }
 }
 
 /*--------header------------*/
@@ -53,7 +90,6 @@
 .start {
   background-color: #004aad;
   padding: 10px 20px; /* Adjust padding for start button */
-  color: #ffffff;
   margin-left: auto;
   clip-path: polygon(10% 0%, 100% 0, 100% 100%, 0% 100%);
   margin-right: 60px;
