@@ -15,26 +15,26 @@ const Testimonial = () => {
 
   {
     id: 2,
-    name: "Muskan Singh",
-    desc: "I'm thrilled to share that Team 25 (SHELF) is the 1st Runner-Up 🏆 of HackAIthon, supported by Microsoft Azure and organized by Reskilll and AIC Banasthali Vidyapith. It was an incredible 30-hour journey. Thanks to the entire Reskilll team and AIC Banasthali for this fantastic opportunity. Special thanks to our mentor, Deeksha Sharma, for guiding us throughout.",
-    cover: "./images/testo/t3.jpg",
+    name: "Yash Mohan",
+    desc: "I am thrilled to share that I have successfully cleared five Azure certifications! 1️⃣ Microsoft Certified: Azure Fundamentals 2️⃣ Azure AI Fundamentals 3️⃣ Azure Data Fundamentals 4️⃣ Azure Data Scientist Associate 5️⃣ Azure Data Engineer Associate 🥳🚀 Special thanks to my incredible mentor, DEEKSHA SHARMA, for her invaluable guidance and support. 🙏🌟💼💪",
+    cover: "./images/testo/t2.png",
   },
   {
     id: 3,
-    name: "Nitya Singhal",
-    desc: "🌟Thrilled to share my experience with the #include<her> Cohort 2.0 on AI-900 by Azure Developer Community!🌟I gained insights into AI fundamentals, practical skills in machine learning, and ethical AI considerations. Special thanks to DEEKSHA SHARMA ma'am for her mentorship. Grateful to Azure Developer Community and ReSkills for this opportunity!",
+    name: "Harshita Sharma",
+    desc: "I'm happy to share that I have successfully cleared the Microsoft Certified : Azure Data Engineer Associate DP - 203 exam and secured 896/1000.I would like to thank my trainer DEEKSHA SHARMA ma'am for being such a great mentor and providing me with such a wonderful and interactive learning experience.Also I would like to thank Hanu Software an Insight company for providing me with this wonderful opportunity.",
     cover: "./images/testo/t4.jpg",
   },
   {
     id: 4,
     name: "PALAK SAXENA",
-    desc: "Excited to join the Cloud Computing Team for Interestship 5.0! 🌟Thrilled to have DEEKSHA SHARMA as my mentor once again. There's so much more to learn from you! 😊Looking forward to an exciting journey and contributing to a stronger Women in STEM community! ✨",
+    desc: "I'm happy to share that I have successfully cleared the Microsoft Certified : Azure Data Engineer Associate DP-203 exam and secured 917 out of 1000.I would like to thank my trainer DEEKSHA SHARMA ma'am for providing a wonderful and interactive learning experience.Also I would like to thank Hanu Software an Insight company for providing me with this wonderful opportunity.Keep Learning. Keep Growing.",
     cover: "./images/testo/t5.jpg",
   },
   {
     id: 5,
-    name: "Vishesh Koul",
-    desc: "I am happy to share that I have cleared Microsoft Azure DP-203 certification with flying colors.I would like to thank my trainer DEEKSHA SHARMA mam for guiding me throughout the journey.",
+    name: "Karan Sabnani",
+    desc: "I am happy to share that I have cleared Microsoft Azure DP-203 certification with flying colors.I would like to thank my trainer DEEKSHA SHARMA mam for guiding me throughout the journey.Also I would like to thank Hanu Software an Insight company for providing me with this wonderful opportunity.Keep Learning. Keep Growing.",
     cover: "./images/testo/t6.jpg",
   },
   {

@@ -26,8 +26,9 @@
 
 .T-slide img {
   width: 100%;
-  height: 750px; 
-  object-fit: cover;
+  height: auto; /* Adjusted to maintain aspect ratio */
+  max-height: 750px; /* Max height for larger screens */
+  object-fit: contain; /* Ensure the entire image is displayed */
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -75,7 +76,7 @@
   }
 
   .T-slide img {
-    height: 600px;
+    max-height: 600px; /* Adjusted max height */
   }
 
   .primary {
@@ -90,7 +91,7 @@
   }
 
   .T-slide img {
-    height: 500px;
+    max-height: 500px; /* Adjusted max height */
   }
 
   .primary {
@@ -115,7 +116,7 @@
   }
 
   .T-slide img {
-    height: 400px;
+    max-height: 400px; /* Adjusted max height */
   }
 
   .primary {
@@ -140,7 +141,7 @@
   }
 
   .T-slide img {
-    height: 300px;
+    max-height: 300px; /* Adjusted max height */
   }
 
   .primary {

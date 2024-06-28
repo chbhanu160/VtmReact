@@ -1,4 +1,3 @@
-// Testimonials.jsx
 import React from 'react';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
@@ -86,31 +85,31 @@ const Testimonials = () => {
 
   return (
     <div className="testimonial-section text-center mx-2">
-    <h1 className="testimonial_h1">Voices of Success & Echoes of Satisfaction – Our Testimonials Speak Louder than Words.</h1>
-    <Carousel
-      responsive={responsive}
-      swipeable={false}
-      draggable={false}
-      showDots={true}
-      infinite={true}
-      autoPlay={true}
-      autoPlaySpeed={5000}
-      keyBoardControl={true}
-      customTransition="all .5"
-      transitionDuration={500}
-      containerClass="T-carousel-container"
-      removeArrowOnDeviceType={["tablet", "mobile"]}
-      dotListClass="T-custom-dot-list-style"
-      itemClass="T-carousel-item-padding-40-px"
-    >
-      {testimonials.map((item, index) => (
-        <div key={index} className="T-slide">
-          <img src={item.image} alt={`${item.id}`} />
-          <div className="T-caption">{item.caption}</div>
-        </div>
-      ))}
-    </Carousel>
-  </div>
+      <h1 className="testimonial_h1">Voices of Success & Echoes of Satisfaction – Our Testimonials Speak Louder than Words.</h1>
+      <Carousel
+        responsive={responsive}
+        swipeable={false}
+        draggable={false}
+        showDots={true}
+        infinite={true}
+        autoPlay={true}
+        autoPlaySpeed={5000}
+        keyBoardControl={true}
+        customTransition="all .5"
+        transitionDuration={500}
+        containerClass="T-carousel-container"
+        removeArrowOnDeviceType={["tablet", "mobile"]}
+        dotListClass="T-custom-dot-list-style"
+        itemClass="T-carousel-item-padding-40-px"
+      >
+        {testimonials.map((item, index) => (
+          <div key={index} className="T-slide">
+            <img src={item.image} alt={`${item.id}`} />
+            <div className="T-caption">{item.caption}</div>
+          </div>
+        ))}
+      </Carousel>
+    </div>
   );
 };
 
